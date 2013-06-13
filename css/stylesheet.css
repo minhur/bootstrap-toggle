@@ -17,6 +17,9 @@
 .sidenav.affix {
 	top: 20px;
 }
+.sidenav li a {
+	border-radius: 3px;
+}
 .bs-docs-example .toggle {
 	margin-right: 10px;
 }

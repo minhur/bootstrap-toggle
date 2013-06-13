@@ -42,6 +42,8 @@
 							<li><a href="#text">Custom Text</a></li>
 							<li><a href="#icons">Icons</a></li>
 							<li><a href="#font">Font Size</a></li>
+							<li><a href="#animation">Animation</a></li>
+							<li><a href="#modal">Modal</a></li>
 						</ul>
 					</div>
 				</div>
@@ -299,7 +301,7 @@
 
 				<div id="font">
 					<h3>Font Size</h3>
-					<p>The font size inside each label can easily be overridden with css.</p>
+					<p>The font size inside each label can be easily overridden with css.</p>
 					<div class="bs-docs-example">
 						<style>
 							#custom3 { width: 100px; } 
@@ -309,13 +311,62 @@
 						<div id="custom3" class="toggle btn btn-large btn-danger" data-toggle="toggle">
 							<input type="checkbox" checked>
 							<div class="toggle-group">
-								<label class="toggle-on btn btn-large btn-danger">
-									STOP
-								</label>
-								<label class="toggle-off btn btn-large active">
-									Set the mode to stop
-								</label>
+								<label class="toggle-on btn btn-large btn-danger">STOP</label>
+								<label class="toggle-off btn btn-large active">Set the mode to stop</label>
 								<span class="toggle-handle btn btn-large"></span>			
+							</div>
+						</div>
+					</div>
+					<pre class="prettyprint"></pre>
+				</div>
+
+				<div id="animation">
+					<h3>Animation</h3>
+					<p>Animation speed can be easily controlled with css <code>transition</code> property on <code>.toggle-group</code>. You can also turn off animation by completely.</p>
+					<div class="bs-docs-example">
+						<style> #custom4 .toggle-group { transition: left 0.6s; -webkit-transition: left 0.6s; } </style>
+						<div id="custom4" class="toggle btn btn-primary" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-primary">On</label>
+								<label class="toggle-off btn active">Off</label>
+								<span class="toggle-handle btn"></span>			
+							</div>
+						</div>
+						<style> #custom5 .toggle-group { transition: left 0.1s; -webkit-transition: left 0.1s; } </style>
+						<div id="custom5" class="toggle btn btn-primary" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-primary">On</label>
+								<label class="toggle-off btn active">Off</label>
+								<span class="toggle-handle btn"></span>			
+							</div>
+						</div>
+						<style> #custom6 .toggle-group { transition: none; -webkit-transition: none; } </style>
+						<div id="custom6" class="toggle btn btn-primary" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-primary">On</label>
+								<label class="toggle-off btn active">Off</label>
+								<span class="toggle-handle btn"></span>			
+							</div>
+						</div>
+					</div>
+					<pre class="prettyprint"></pre>
+				</div>
+
+				<div id="modal">
+					<h3>Modal</h3>
+					<p>Bootstrap Toggle doesn't require initialization. This means you can have html added to the dom with bootstrap toggles and it will still work.</p>
+					<div class="bs-docs-example">
+						<a href="modal.html" data-target="#modal1" class="btn btn-primary" data-toggle="modal">Open Modal</a>
+						<div id="modal1" class="modal hide fade">
+							<div class="modal-header">
+								<h3>Bootstrap Toggle Modal</h3>
+							</div>
+							<div class="modal-body"></div>
+							<div class="modal-footer">
+								<a data-dismiss="modal" class="btn">Close</a>
 							</div>
 						</div>
 					</div>
