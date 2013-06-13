@@ -24,6 +24,9 @@
 h2:not(:first-child) {
 	margin-top: 60px;
 }
+pre.prettyprint {
+	font-size: 12px;
+}
 /* Base class */
 .bs-docs-example {
 	position: relative;
