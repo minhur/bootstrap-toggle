@@ -45,6 +45,8 @@
 							<li><a href="#font">Font Size</a></li>
 							<li><a href="#animation">Animation</a></li>
 							<li><a href="#modal">Modal</a></li>
+							<li class="nav-header">NOTES</li>
+							<li><a href="#issues">Known Issues</a></li>
 						</ul>
 					</div>
 				</div>
@@ -404,6 +406,23 @@
 						</div>
 					</div>
 					<pre class="prettyprint"></pre>
+				</div>
+
+				<div id="issues">
+					<h2 class="muted">Notes</h2>
+					<hr>
+					<h3>Known Issues</h3>
+					<p>There exists a browser issue on webkit for MacOS where border-radius does not get respected on background images. This does not seem to be happening on Windows but only on webkit MacOS.</p>
+					<p>
+						<i class="label label-important">BUG</i>
+						<a href="https://bugs.webkit.org/show_bug.cgi?id=23166" target="_blank">Webkit Bug 23166</a>
+					</p>
+					<p>
+						<i class="label label-important">BUG</i>
+						<a href="http://code.google.com/p/chromium/issues/detail?id=72014" target="_blank">Chromium Issue 72014</a>
+					</p>
+					<p>Chrome Issue 72014 has been resolved on and will be available by Chrome 24 release. Testing on Canary channel has verified that it's been fixed. As for Safari on MacOS support, It's still waiting for a fix. Please raise the issue with browser developers to escalate the matter if you wish to see it fixed.</p>
+					<p>I did find some workarounds to this issues by resorting to not using <code>position</code> properties, but by solving the border clipping issues other limitations followed so the idea was abandonded.</p>
 				</div>
 
 			</div>

@@ -24,8 +24,11 @@
 	margin-right: 10px;
 }
 
-h2:not(:first-child) {
-	margin-top: 60px;
+h2 {
+	padding-top: 40px;
+}
+.main > div:first-child > h2 {
+	padding-top: 0px;
 }
 pre.prettyprint {
 	font-size: 12px;
@@ -101,6 +104,12 @@ ol.linenums li {
 }
 
 @media (max-width: 480px) { 
+	h2 {
+	padding-top: 20px;
+	}
+	.main > div:first-child > h2 {
+		padding-top: 0px;
+	}
 	pre.prettyprint {
 		font-size: 11px;
 	}
@@ -117,6 +126,12 @@ ol.linenums li {
 }
 
 @media (min-width: 768px) and (max-width: 979px) { 
+	h2 {
+		padding-top: 20px;
+	}
+	.main > div:first-child > h2 {
+		padding-top: 0px;
+	}
 	.main {
 		width: 97%;
 	}
