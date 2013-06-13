@@ -39,7 +39,8 @@
 							<li class="nav-header">CUSTOMIZATION</li>
 							<li><a href="#colors">Colors</a></li>
 							<li><a href="#colormix">Color Mix</a></li>
-							<li><a href="#text">Custom Text</a></li>
+							<li><a href="#style">Style</a></li>
+							<li><a href="#text">Custom Text</a></li>							
 							<li><a href="#icons">Icons</a></li>
 							<li><a href="#font">Font Size</a></li>
 							<li><a href="#animation">Animation</a></li>
@@ -255,6 +256,38 @@
 						</div>
 					</div>
 					<pre class="prettyprint"></pre>
+				</div>
+
+				<div id="style">
+					<h3>Style</h3>
+					<p>Feel free to style your toggles using css.<p>
+					<div class="bs-docs-example">
+						<style>
+							.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+							.toggle-handle.ios { border-radius: 20px; width: 10px; }
+						</style>
+						<div class="toggle ios btn btn-primary" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on ios btn btn-primary">On</label>
+								<label class="toggle-off ios btn active">Off</label>
+								<span class="toggle-handle ios btn"></span>			
+							</div>
+						</div>
+						<style>
+							.toggle.android { border-radius: 0px;}
+							.toggle-handle.android { border-radius: 0px; }
+						</style>
+						<div class="toggle android toggle-android btn btn-info" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on android btn btn-info">On</label>
+								<label class="toggle-off android btn btn-inverse">Off</label>
+								<span class="toggle-handle android btn"></span>			
+							</div>
+						</div>
+					</div>
+					<pre class="prettyprint"></pre>	
 				</div>
 
 				<div id="text">
