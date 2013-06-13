@@ -1,6 +1,6 @@
-bootstrap-toggle
+Bootstrap Toggle
 ================
 
 Bootstrap Toggle is a lightweight Bootstrap plugin that allows toggle switches on your pages.
 
-Please visit http://minhur.github.io/bootstrap-toggle/ for more information.
+http://minhur.github.io/bootstrap-toggle
