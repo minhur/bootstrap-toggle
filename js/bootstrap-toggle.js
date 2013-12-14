@@ -1,5 +1,5 @@
 /*
-* bootstrap-toggle v1.0
+* bootstrap-toggle v1.1
 * -----------------------------------
 * Copyright 2013 Min Hur, The New York Times Company
 * This content is released under the MIT License.
@@ -17,6 +17,6 @@
 			$input.prop('checked', false);
 			$toggle.addClass('off');
 		}
-    $input.change();
+		$input.change();
 	});
 }(window.jQuery);
