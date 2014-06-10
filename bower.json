@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap-toggle",
+  "version": "1.1.0",
+  "main": ["./js/bootstrap-toggle.js", "./css/bootstrap-toggle.css"],
+  "homepage": "https://github.com/minhur/bootstrap-toggle",
+  "authors": [
+    "Min Hur <min.hur@nytimes.com>"
+  ],
+  "description": "Bootstrap Toggle is a lightweight Bootstrap plugin that allows toggle switches on your pages",
+  "keywords": [
+    "bootstrap",
+    "toggle",
+    "bootstrap-toggle",
+    "switch"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
