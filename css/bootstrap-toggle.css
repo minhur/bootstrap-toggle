@@ -3,12 +3,19 @@
 * -----------------------------------
 * Copyright 2013 Min Hur, The New York Times Company
 * This content is released under the MIT License.
+* Updated to Bootstrap 3.2.0
 */
+
 .toggle {
 	min-width: 40px;
-	height: 20px;
+	height: 30px;
+    width: 56px;
 	position: relative;
 	overflow: hidden;
+}
+.toggle.btn, .toggle .btn {
+    padding-top:4px;
+    padding-bottom:4px;
 }
 .toggle input[type="checkbox"] {
 	display: none;
@@ -41,7 +48,7 @@
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	left: 50%;
+	left: 48%;
 	right: 0;
 	margin: 0;
 	border: 0;
@@ -50,8 +57,8 @@
 .toggle-handle {
 	position: relative;
 	margin: 0 auto;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
 	height: 100%;
 	width: 0px;
 	border-width: 0 1px;
@@ -74,4 +81,3 @@
 .toggle.btn-mini { min-width: 20px; }
 .toggle-on.btn-mini { padding-right: 12px; }
 .toggle-off.btn-mini { padding-left: 12px; }
-
