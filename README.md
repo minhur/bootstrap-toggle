@@ -6,7 +6,7 @@ Bootstrap Toggle is a lightweight Bootstrap plugin that allows toggle switches o
 http://minhur.github.io/bootstrap-toggle
 
 Example Usage:
-
+```c#
 <div class="toggle btn btn-primary" data-toggle="toggle">
     <input type="checkbox" checked>
     <div class="toggle-group">
@@ -15,3 +15,4 @@ Example Usage:
         <span class="toggle-handle btn btn-default"></span>			
     </div>
 </div>
+```
