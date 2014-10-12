@@ -1,5 +1,5 @@
 /* ========================================================================
- * Bootstrap Toggle: bootstrap-toggle.js v2.0.0
+ * Bootstrap Toggle: bootstrap2-toggle.js v2.0.0
  * http://www.bootstraptoggle.com
  * ========================================================================
  * Copyright 2014 Min Hur, The New York Times Company
@@ -44,9 +44,9 @@
 	Toggle.prototype.render = function () {
 		this._onstyle = 'btn-' + this.options.onstyle
 		this._offstyle = 'btn-' + this.options.offstyle
-		var size = this.options.size === 'large' ? 'btn-lg'
-			: this.options.size === 'small' ? 'btn-sm'
-			: this.options.size === 'mini' ? 'btn-xs'
+		var size = this.options.size === 'large' ? 'btn-large'
+			: this.options.size === 'small' ? 'btn-small'
+			: this.options.size === 'mini' ? 'btn-mini'
 			: ''
 		var $toggleOn = $('<label class="btn">').html(this.options.on)
 			.addClass(this._onstyle + ' ' + size)
@@ -69,8 +69,8 @@
 		})
 		this.$toggle.append($toggleGroup)
 
-		var width = Math.max($toggleOn.outerWidth(), $toggleOff.outerWidth())+($toggleHandle.outerWidth()/2)
-		var height = Math.max($toggleOn.outerHeight(), $toggleOff.outerHeight())
+		var width = Math.max($toggleOn.width(), $toggleOff.width())+($toggleHandle.outerWidth()/2)
+		var height = Math.max($toggleOn.height(), $toggleOff.height())
 		$toggleOn.addClass('toggle-on')
 		$toggleOff.addClass('toggle-off')
 		this.$toggle.css({ width: width, height: height })

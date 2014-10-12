@@ -1,8 +1,8 @@
 {
   "name": "bootstrap-toggle",
-  "version": "1.1.0",
-  "description": "Bootstrap Toggle is a lightweight Bootstrap plugin that allows toggle switches on your pages",
-  "main": "js/bootstrap-toggle.js",
+  "version": "2.0.0",
+  "description": "Bootstrap Toggle is a highly flexible Bootstrap plugin that can convert checkboxes into toggles",
+  "main": "js/bootstrap-toggle.min.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/minhur/bootstrap-toggle.git"
@@ -19,5 +19,5 @@
   "bugs": {
     "url": "https://github.com/minhur/bootstrap-toggle/issues"
   },
-  "homepage": "https://github.com/minhur/bootstrap-toggle"
+  "homepage": "http//www.bootstraptoggle.com"
 }

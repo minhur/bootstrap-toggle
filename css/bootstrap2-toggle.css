@@ -1,18 +1,19 @@
 /* ========================================================================
- * Bootstrap Toggle: bootstrap-toggle.css v2.0.0
+ * Bootstrap Toggle: bootstrap2-toggle.css v2.0.0
  * http://www.bootstraptoggle.com
  * ========================================================================
  * Copyright 2014 Min Hur, The New York Times Company
  * Licensed under MIT
  * ======================================================================== */
 
-.checkbox label .toggle,
-.checkbox-inline .toggle {
+label.checkbox .toggle,
+label.checkbox.inline .toggle {
 	margin-left: -20px;
 	margin-right: 5px;
 }
-
 .toggle {
+	min-width: 40px;
+	height: 20px;
 	position: relative;
 	overflow: hidden;
 }
@@ -62,21 +63,22 @@
 	width: 0px;
 	border-width: 0 1px;
 }
-
-.toggle.btn { min-width: 59px; min-height: 34px; }
+.toggle-handle.btn-mini {
+	top: -1px;
+}
+.toggle.btn { min-width: 30px; }
 .toggle-on.btn { padding-right: 24px; }
 .toggle-off.btn { padding-left: 24px; }
 
-.toggle.btn-lg { min-width: 79px; min-height: 45px; }
-.toggle-on.btn-lg { padding-right: 31px; }
-.toggle-off.btn-lg { padding-left: 31px; }
-.toggle-handle.btn-lg { width: 40px; }
+.toggle.btn-large { min-width: 40px; }
+.toggle-on.btn-large { padding-right: 35px; }
+.toggle-off.btn-large { padding-left: 35px; }
 
-.toggle.btn-sm { min-width: 50px; min-height: 30px;}
-.toggle-on.btn-sm { padding-right: 20px; }
-.toggle-off.btn-sm { padding-left: 20px; }
+.toggle.btn-small { min-width: 25px; }
+.toggle-on.btn-small { padding-right: 20px; }
+.toggle-off.btn-small { padding-left: 20px; }
 
-.toggle.btn-xs { min-width: 35px; min-height: 22px;}
-.toggle-on.btn-xs { padding-right: 12px; }
-.toggle-off.btn-xs { padding-left: 12px; }
+.toggle.btn-mini { min-width: 20px; }
+.toggle-on.btn-mini { padding-right: 12px; }
+.toggle-off.btn-mini { padding-left: 12px; }
 
