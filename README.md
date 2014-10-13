@@ -1,5 +1,5 @@
 # Bootstrap Toggle
-Bootstrap Toggle is a highly flexible Bootstrap plugin that can convert checkboxes into toggles.
+Bootstrap Toggle is a highly flexible Bootstrap plugin that converts checkboxes into toggles.
 
 Visit http://www.bootstraptoggle.com for demos.
 
