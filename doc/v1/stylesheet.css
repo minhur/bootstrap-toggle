@@ -1,0 +1,151 @@
+.jumbotron {
+	background-color: #222;
+	background-image: linear-gradient(45deg, #444 0%, #222 100%);
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.1);
+	color: #FFFFFF;
+	padding: 20px 30px;
+	margin-bottom: 30px;
+}
+.jumbotron .btn {
+	margin-right: 15px;
+}
+
+.sidenav {
+	margin-left: 0px;
+}
+.sidenav.affix {
+	top: 20px;
+}
+.sidenav li a {
+	border-radius: 3px;
+}
+.bs-docs-example .toggle {
+	margin-right: 10px;
+}
+
+h2 {
+	padding-top: 40px;
+}
+.main > div:first-child > h2 {
+	padding-top: 0px;
+}
+pre.prettyprint {
+	font-size: 12px;
+}
+/* Base class */
+.bs-docs-example {
+	position: relative;
+	margin: 15px 0;
+	padding: 39px 19px 14px;
+	*padding-top: 19px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/* Echo out a label for the example */
+.bs-docs-example:after {
+	content: "Example";
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	padding: 3px 7px;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #f5f5f5;
+	border: 1px solid #ddd;
+	color: #9da0a4;
+	-webkit-border-radius: 4px 0 4px 0;
+	-moz-border-radius: 4px 0 4px 0;
+	border-radius: 4px 0 4px 0;
+}
+
+/* Remove spacing between an example and it's code */
+.bs-docs-example + .prettyprint {
+	margin-top: -20px;
+	padding-top: 15px;
+}
+
+.com { color: #777; }
+.lit { color: #195f91; }
+.pun, .opn, .clo { color: #93a1a1; }
+.fun { color: #dc322f; }
+.str, .atv { color: #D14; }
+.kwd, .prettyprint .tag { color: #1e347b; }
+.typ, .atn, .dec, .var { color: teal; }
+.pln { color: #48484c; }
+
+.prettyprint {
+	padding: 15px !important;
+	background-color: #f7f7f9;
+	border: 1px solid #e1e1e8 !important;
+}
+.prettyprint.linenums {
+	-webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+	-moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+	box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+	margin: 0 0 0 33px; /* IE indents via margin-left */
+}
+ol.linenums li {
+	padding-left: 12px;
+	color: #bebec5;
+	line-height: 20px;
+	text-shadow: 0 1px 0 #fff;
+}
+.prettyprint .com {
+	color: #777;
+}
+
+@media (max-width: 480px) { 
+	h2 {
+	padding-top: 20px;
+	}
+	.main > div:first-child > h2 {
+		padding-top: 0px;
+	}
+	pre.prettyprint {
+		font-size: 11px;
+	}
+	.jumbotron {
+		border-radius: 0 0 0 0;
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.bs-docs-example .toggle {
+		margin-right: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 979px) { 
+	h2 {
+		padding-top: 20px;
+	}
+	.main > div:first-child > h2 {
+		padding-top: 0px;
+	}
+	.main {
+		width: 97%;
+	}
+	pre.prettyprint {
+		font-size: 11px;
+	}
+	.jumbotron {
+		border-radius: 0 0 0 0;
+		margin-left: -14px;
+		margin-right: -14px;
+	}
+	.bs-docs-example .toggle {
+		margin-right: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+}
