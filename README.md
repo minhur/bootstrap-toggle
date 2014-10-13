@@ -87,7 +87,7 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
 </script>
 ```
 Name|Type|Default|Description|
--|-|-|-
+---|---|---|---
 on|string/html|"On"|Text of the on toggle
 off|string/html|"Off"|Text of the off toggle
 size|string|"normal"|Size of the toggle. Possible values are `large`, `normal`, `small`, `mini`.
@@ -97,9 +97,8 @@ offstyle|string|"default"|Style of the off toggle. Possible values are `default`
 ### Methods
 Methods can be used to control toggles directly.
 
-
 Method|Example|Description
--|-|-
+---|---|---
 initialize|`$('#toggle-demo').bootstrapToggle()`|Initializes the toggle plugin with options
 destroy|`$('#toggle-demo').bootstrapToggle('destroy')`|Destroys the toggle
 on|`$('#toggle-demo').bootstrapToggle('on')`|Sets the toggle to 'On' state
