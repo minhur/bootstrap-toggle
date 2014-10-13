@@ -12,7 +12,7 @@
 		// other cleanup
 		code = code.replace(/=""/g,'')
 		// add code block to dom
-		$(this).after( $('<code class="highlight">').html(code) )
+		$(this).after( $('<code class="highlight html">').html(code) )
 	});
 
 	$('code.highlight').each(function() {
