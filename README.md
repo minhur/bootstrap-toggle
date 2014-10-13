@@ -103,15 +103,19 @@ offstyle|string|"default"|Style of the off toggle. Possible values are `default`
 ### Methods
 Methods can be used to control toggles directly.
 
+```html
+<input id="toggle-demo" type="checkbox" data-toggle="toggle">
+```
+
 Method|Example|Description
 ---|---|---
-initialize|`$('#toggle-demo').bootstrapToggle()`|Initializes the toggle plugin with options
-destroy|`$('#toggle-demo').bootstrapToggle('destroy')`|Destroys the toggle
-on|`$('#toggle-demo').bootstrapToggle('on')`|Sets the toggle to 'On' state
-off|`$('#toggle-demo').bootstrapToggle('off')`|Sets the toggle to 'Off' state
-toggle|`$('#toggle-demo').bootstrapToggle('toggle')`|Toggles the state of the toggle
-enable|`$('#toggle-demo').bootstrapToggle('enable')`|Enables the toggle
-disable|`$('#toggle-demo').bootstrapToggle('disable')`|Disables the toggle
+initialize|$('#toggle-demo').bootstrapToggle()|Initializes the toggle plugin with options
+destroy|$('#toggle-demo').bootstrapToggle('destroy')|Destroys the toggle
+on|$('#toggle-demo').bootstrapToggle('on')|Sets the toggle to 'On' state
+off|$('#toggle-demo').bootstrapToggle('off')|Sets the toggle to 'Off' state
+toggle|$('#toggle-demo').bootstrapToggle('toggle')|Toggles the state of the toggle
+enable|$('#toggle-demo').bootstrapToggle('enable')|Enables the toggle
+disable|$('#toggle-demo').bootstrapToggle('disable')|Disables the toggle
 
 ## Events
 
