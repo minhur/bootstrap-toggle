@@ -5,7 +5,8 @@ module.exports = function(grunt) {
 		clean: ['dist'],
 		uglify: {
 			options: {
-				preserveComments: 'some'
+				preserveComments: 'some',
+				sourceMap: true
 			},
 			build: {
 				expand: true,
