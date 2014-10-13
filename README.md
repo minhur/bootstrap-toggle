@@ -1,7 +1,7 @@
 # Bootstrap Toggle
-http://www.bootstraptoggle.com
+Bootstrap Toggle is a highly flexible Bootstrap plugin that can convert checkboxes into toggles.
 
-Bootstrap Toggle is a highly flexible Bootstrap plugin that can convert checkboxes into toggles
+Visit http://www.bootstraptoggle.com for demos.
 
 ## Getting Started
 
@@ -10,13 +10,13 @@ You can [download](https://github.com/minhur/bootstrap-toggle/archive/master.zip
 
 `Warning` If you are using Bootstrap v2.3.2, use `bootstrap2-toggle.min.js` and `bootstrap2-toggle.min.css` instead.
 
-```
+```html
 <link href="https://gitcdn.github.io/bootstrap-toggle/2.0.0/css/bootstrap-toggle.min.css" rel="stylesheet">
 <script src="https://gitcdn.github.io/bootstrap-toggle/2.0.0/js/bootstrap-toggle.min.js"></script>
 ```
 
 ### Bower Install
-```
+```bash
 bower install bootstrap-toggle
 ```
 
@@ -24,13 +24,15 @@ bower install bootstrap-toggle
 
 ### Basic example
 Simply add `data-toggle="toggle"` to convert checkboxes into toggles.
-``` html
+
+```html
 <input type="checkbox" checked data-toggle="toggle">
 ```
 
 ### Stacked checkboxes
 Refer to Bootstrap Form Controls documentation to create stacked checkboxes. Simply add `data-toggle="toggle"` to convert checkboxes into toggles.
-```
+
+```html
 <div class="checkbox">
   <label>
     <input type="checkbox" data-toggle="toggle">
@@ -47,7 +49,8 @@ Refer to Bootstrap Form Controls documentation to create stacked checkboxes. Sim
 
 ### Inline Checkboxes
 Refer to Bootstrap Form Controls documentation to create inline checkboxes. Simply add `data-toggle="toggle"` to a convert checkboxes into toggles.
-```
+
+```html
 <label class="checkbox-inline">
   <input type="checkbox" checked data-toggle="toggle"> First
 </label>
@@ -63,7 +66,8 @@ Refer to Bootstrap Form Controls documentation to create inline checkboxes. Simp
 
 ### Initialize by JavaScript
 Initialize toggles with id `toggle-one` with a single line of JavaScript.
-```
+
+```html
 <input id="toggle-one" checked type="checkbox">
 <script>
   $(function() {
@@ -74,7 +78,8 @@ Initialize toggles with id `toggle-one` with a single line of JavaScript.
 
 ### Options
 Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-on="Enabled"`.
-```
+
+```html
 <input type="checkbox" data-toggle="toggle" data-on="Enabled" data-off="Disabled">
 <input type="checkbox" id="toggle-two">
 <script>
@@ -86,6 +91,7 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
   })
 </script>
 ```
+
 Name|Type|Default|Description|
 ---|---|---|---
 on|string/html|"On"|Text of the on toggle
@@ -114,7 +120,7 @@ Note All events are propagated to and from input element to the toggle.
 
 You should listen to events from the `<input type="checkbox">` directly rather than look for custom events.
 
-```
+```html
 <input id="toggle-event" type="checkbox" data-toggle="toggle">
 <div id="console-event"></div>
 <script>
@@ -154,4 +160,3 @@ This also means that using the API or Input to trigger events will work both way
 ## Demos
 
 Visit http://www.bootstraptoggle.com for demos.
-
