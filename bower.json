@@ -1,19 +1,27 @@
 {
   "name": "bootstrap-toggle",
-  "version": "2.0.0",
-  "main": ["./js/bootstrap-toggle.min.js", "./css/bootstrap-toggle.min.css"],
-  "homepage": "http://www.bootstraptoggle.com",
-  "authors": [
-    "Min Hur <min.hur@nytimes.com>"
-  ],
   "description": "Bootstrap Toggle is a highly flexible Bootstrap plugin that can convert checkboxes into toggles",
+  "version": "2.0.0",
   "keywords": [
     "bootstrap",
     "toggle",
     "bootstrap-toggle",
-    "switch"
+    "switch",
+    "bootstrap-switch"
   ],
+  "homepage": "http://www.bootstraptoggle.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minhur/bootstrap-toggle.git"
+  },
   "license": "MIT",
+  "authors": [
+    "Min Hur <min.hur@gmail.com>"
+  ],
+  "main": [
+    "./dist/js/bootstrap-toggle.min.js",
+    "./dist/css/bootstrap-toggle.min.css"
+  ],
   "ignore": [
     "**/.*",
     "node_modules",
