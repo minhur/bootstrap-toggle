@@ -8,11 +8,11 @@ module.exports = function(grunt) {
 				preserveComments: 'some'
 			},
 			build: {
-				src: ['**/*.js'],
-				cwd: 'src',
-				dest: 'dist',
+				expand: true,
+				cwd: 'js',
+				src: ['**/*.js', ['!**/*.min.js']],
+				dest: 'js',
 				ext: '.min.js',
-				expand: true
 			}
 		},
 		cssmin: {
@@ -20,11 +20,11 @@ module.exports = function(grunt) {
 				keepBreaks: true
 			},
 			build: {
-				src: ['**/*.css'],
-				cwd: 'src',
-				dest: 'dist',
+				expand: true,
+				cwd: 'css',
+				src: ['**/*.css', ['!**/*.min.css']],
+				dest: 'css',
 				ext: '.min.css',
-				expand: true
 			}
 		}
 	});
