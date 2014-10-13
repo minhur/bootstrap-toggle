@@ -24,7 +24,7 @@ bower install bootstrap-toggle
 
 ### Basic example
 Simply add `data-toggle="toggle"` to convert checkboxes into toggles.
-```
+``` html
 <input type="checkbox" checked data-toggle="toggle">
 ```
 
@@ -129,7 +129,7 @@ You should listen to events from the `<input type="checkbox">` directly rather t
 ### API vs Input
 This also means that using the API or Input to trigger events will work both ways.
 
-```
+```html
 <input id="toggle-trigger" type="checkbox" data-toggle="toggle">
 <button class="btn btn-success" onclick="toggleOn()">On by API</button>
 <button class="btn btn-danger" onclick="toggleOff()">Off by API</button>
