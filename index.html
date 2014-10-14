@@ -145,117 +145,121 @@
 					})
 				</script>
 			</div>
-			<table class="table table-striped table-condensed">
-			<thead>
-			<tr>
-				<th>Name</th>
-				<th>Type</th>
-				<th>Default</th>
-				<th>Description</th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr>
-				<td>on</td>
-				<td>string | html</td>
-				<td><code>"On"</code></td>
-				<td>Text of the <em>on</em> toggle</td>
-			</tr>
-			<tr>
-				<td>off</td>
-				<td>string | html</td>
-				<td><code>"Off"</code></td>
-				<td>Text of the <em>off</em> toggle</td>
-			</tr>
-			<tr>
-				<td>size</td>
-				<td>string</td>
-				<td><code>"normal"</code></td>
-				<td>
-					Size of the toggle. Possible values are:<code>large</code>,<code>normal</code>,<code>small</code>,<code>mini</code><br>
-					Refer to Bootstrap <a href="http://getbootstrap.com/css/#buttons-sizes" target="_blank">Button Sizes</a> documentation for more information.
-				</td>
-			</tr>
-			<tr>
-				<td>onstyle</td>
-				<td>string</td>
-				<td><code>"primary"</code></td>
-				<td>
-					Style of the <em>on</em> toggle.<br>Possible values are:<code>default</code>,<code>primary</code>,<code>success</code>,<code>info</code>,<code>warning</code>,<code>danger</code><br>
-					Refer to Bootstrap <a href="http://getbootstrap.com/css/#buttons-options" target="_blank">Button Options</a> documentation for more information.
-				</td>
-			</tr>
-			<tr>
-				<td>offstyle</td>
-				<td>string</td>
-				<td><code>"default"</code></td>
-				<td>
-					Style of the <em>off</em> toggle.<br>Possible values are:<code>default</code>,<code>primary</code>,<code>success</code>,<code>info</code>,<code>warning</code>,<code>danger</code><br>
-					Refer to Bootstrap <a href="http://getbootstrap.com/css/#buttons-options" target="_blank">Button Options</a> documentation for more information.
-				</td>
-			</tr>
-			</tbody>
-			</table>
+			<div class="table-responsive">
+				<table class="table table-striped table-condensed">
+				<thead>
+				<tr>
+					<th>Name</th>
+					<th>Type</th>
+					<th>Default</th>
+					<th>Description</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>on</td>
+					<td>string | html</td>
+					<td><code>"On"</code></td>
+					<td>Text of the <em>on</em> toggle</td>
+				</tr>
+				<tr>
+					<td>off</td>
+					<td>string | html</td>
+					<td><code>"Off"</code></td>
+					<td>Text of the <em>off</em> toggle</td>
+				</tr>
+				<tr>
+					<td>size</td>
+					<td>string</td>
+					<td><code>"normal"</code></td>
+					<td>
+						Size of the toggle. Possible values are:<code>large</code>,<code>normal</code>,<code>small</code>,<code>mini</code><br>
+						Refer to Bootstrap <a href="http://getbootstrap.com/css/#buttons-sizes" target="_blank">Button Sizes</a> documentation for more information.
+					</td>
+				</tr>
+				<tr>
+					<td>onstyle</td>
+					<td>string</td>
+					<td><code>"primary"</code></td>
+					<td>
+						Style of the <em>on</em> toggle.<br>Possible values are:<code>default</code>,<code>primary</code>,<code>success</code>,<code>info</code>,<code>warning</code>,<code>danger</code><br>
+						Refer to Bootstrap <a href="http://getbootstrap.com/css/#buttons-options" target="_blank">Button Options</a> documentation for more information.
+					</td>
+				</tr>
+				<tr>
+					<td>offstyle</td>
+					<td>string</td>
+					<td><code>"default"</code></td>
+					<td>
+						Style of the <em>off</em> toggle.<br>Possible values are:<code>default</code>,<code>primary</code>,<code>success</code>,<code>info</code>,<code>warning</code>,<code>danger</code><br>
+						Refer to Bootstrap <a href="http://getbootstrap.com/css/#buttons-options" target="_blank">Button Options</a> documentation for more information.
+					</td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
 
 			<h3>Methods</h3>
 			<p>Methods can be used to control toggles directly.</p>
 			<div class="example">
 				<input id="toggle-demo" type="checkbox" data-toggle="toggle">
 			</div>
-			<table class="table table-striped table-condensed">
-			<thead>
-			<tr>
-				<th>Method</th>
-				<th>Example</th>
-				<th>Description</th>
-				<th>Demo</th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr>
-				<td><em>initialize</em></td>
-				<td><code>$('#toggle-demo').bootstrapToggle()</code></td>
-				<td>Initializes the toggle plugin with options</td>
-				<td><button class="btn btn-default btn-xs" onclick="demo.init('#toggle-demo')">Initialize</button></td>
-			</tr>
-			<tr>
-				<td>destroy</td>
-				<td><code>$('#toggle-demo').bootstrapToggle('destroy')</code></td>
-				<td>Destroys the toggle</td>
-				<td><button class="btn btn-default btn-xs" onclick="demo.destroy('#toggle-demo')">Destroy</button></td>
-			</tr>
-			<tr>
-				<td>on</td>
-				<td><code>$('#toggle-demo').bootstrapToggle('on')</code></td>
-				<td>Sets the toggle to 'On' state</td>
-				<td><button class="btn btn-default btn-xs" onclick="demo.on('#toggle-demo')">On</button></td>
-			</tr>
-			<tr>
-				<td>off</td>
-				<td><code>$('#toggle-demo').bootstrapToggle('off')</code></td>
-				<td>Sets the toggle to 'Off' state</td>
-				<td><button class="btn btn-default btn-xs" onclick="demo.off('#toggle-demo')">Off</button></td>
-			</tr>
-			<tr>
-				<td>toggle</td>
-				<td><code>$('#toggle-demo').bootstrapToggle('toggle')</code></td>
-				<td>Toggles the state of the toggle</td>
-				<td><button class="btn btn-default btn-xs" onclick="demo.toggle('#toggle-demo')">Toggle</button></td>
-			</tr>
-			<tr>
-				<td>enable</td>
-				<td><code>$('#toggle-demo').bootstrapToggle('enable')</code></td>
-				<td>Enables the toggle</td>
-				<td><button class="btn btn-default btn-xs" onclick="demo.enable('#toggle-demo')">Enable</button></td>
-			</tr>
-			<tr>
-				<td>disable</td>
-				<td><code>$('#toggle-demo').bootstrapToggle('disable')</code></td>
-				<td>Disables the toggle</td>
-				<td><button class="btn btn-default btn-xs" onclick="demo.disable('#toggle-demo')">Disable</button></td>
-			</tr>
-			</tbody>
-			</table>
+			<div class="table-responsive">
+				<table class="table table-striped table-condensed">
+				<thead>
+				<tr>
+					<th>Method</th>
+					<th>Example</th>
+					<th>Description</th>
+					<th>Demo</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td><em>initialize</em></td>
+					<td><code>$('#toggle-demo').bootstrapToggle()</code></td>
+					<td>Initializes the toggle plugin with options</td>
+					<td><button class="btn btn-default btn-xs" onclick="demo.init('#toggle-demo')">Initialize</button></td>
+				</tr>
+				<tr>
+					<td>destroy</td>
+					<td><code>$('#toggle-demo').bootstrapToggle('destroy')</code></td>
+					<td>Destroys the toggle</td>
+					<td><button class="btn btn-default btn-xs" onclick="demo.destroy('#toggle-demo')">Destroy</button></td>
+				</tr>
+				<tr>
+					<td>on</td>
+					<td><code>$('#toggle-demo').bootstrapToggle('on')</code></td>
+					<td>Sets the toggle to 'On' state</td>
+					<td><button class="btn btn-default btn-xs" onclick="demo.on('#toggle-demo')">On</button></td>
+				</tr>
+				<tr>
+					<td>off</td>
+					<td><code>$('#toggle-demo').bootstrapToggle('off')</code></td>
+					<td>Sets the toggle to 'Off' state</td>
+					<td><button class="btn btn-default btn-xs" onclick="demo.off('#toggle-demo')">Off</button></td>
+				</tr>
+				<tr>
+					<td>toggle</td>
+					<td><code>$('#toggle-demo').bootstrapToggle('toggle')</code></td>
+					<td>Toggles the state of the toggle</td>
+					<td><button class="btn btn-default btn-xs" onclick="demo.toggle('#toggle-demo')">Toggle</button></td>
+				</tr>
+				<tr>
+					<td>enable</td>
+					<td><code>$('#toggle-demo').bootstrapToggle('enable')</code></td>
+					<td>Enables the toggle</td>
+					<td><button class="btn btn-default btn-xs" onclick="demo.enable('#toggle-demo')">Enable</button></td>
+				</tr>
+				<tr>
+					<td>disable</td>
+					<td><code>$('#toggle-demo').bootstrapToggle('disable')</code></td>
+					<td>Disables the toggle</td>
+					<td><button class="btn btn-default btn-xs" onclick="demo.disable('#toggle-demo')">Disable</button></td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
 		</div>
 
 
