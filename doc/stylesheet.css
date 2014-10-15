@@ -7,9 +7,11 @@ footer {
 	text-align: center;
 }
 .nyt-logo {
-	max-height: 43px;
-	margin-right: 30px;
+	max-height: 40px;
+	margin-top: 5px;
+	margin-right: 5px;
 }
+
 nav.navbar {
 	margin-bottom: 10px;
 	background-color: #fff;
