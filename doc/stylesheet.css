@@ -1,6 +1,7 @@
 header, footer {
 	padding: 20px;
 	background-image: url('header.png');
+	background-size: 256px 256px;
 }
 footer {
 	color: #fff;
