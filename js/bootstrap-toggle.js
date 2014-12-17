@@ -74,7 +74,7 @@
 		$toggleOn.addClass('toggle-on')
 		$toggleOff.addClass('toggle-off')
 		this.$toggle.css({ width: width, height: height })
-		this.update()
+		this.update(true)
 		this.trigger(true)
 	}
 
@@ -83,18 +83,22 @@
 		else this.on()
 	}
 
-	Toggle.prototype.on = function () {
+	Toggle.prototype.on = function (noTrigger) {
 		if (this.$element.prop('disabled')) return false
 		this.$toggle.removeClass(this._offstyle + ' off').addClass(this._onstyle)
 		this.$element.prop('checked', true)
-		this.trigger()
+                if(!noTrigger){
+                  this.trigger()
+                }
 	}
 
-	Toggle.prototype.off = function () {
+	Toggle.prototype.off = function (noTrigger) {
 		if (this.$element.prop('disabled')) return false
 		this.$toggle.removeClass(this._onstyle).addClass(this._offstyle + ' off')
 		this.$element.prop('checked', false)
-		this.trigger()
+		if(!noTrigger){
+                  this.trigger()
+                }
 	}
 
 	Toggle.prototype.enable = function () {
@@ -107,11 +111,11 @@
 		this.$element.prop('disabled', true)
 	}
 
-	Toggle.prototype.update = function () {
+	Toggle.prototype.update = function (noTrigger) {
 		if (this.$element.prop('disabled')) this.disable()
 		else this.enable()
-		if (this.$element.prop('checked')) this.on()
-		else this.off()
+		if (this.$element.prop('checked')) this.on(noTrigger)
+		else this.off(noTrigger)
 	}
 
 	Toggle.prototype.trigger = function (silent) {
