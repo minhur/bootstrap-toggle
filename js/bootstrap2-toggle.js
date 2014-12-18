@@ -1,5 +1,5 @@
 /*! ========================================================================
- * Bootstrap Toggle: bootstrap2-toggle.js v2.0.0
+ * Bootstrap Toggle: bootstrap2-toggle.js v2.1.0
  * http://www.bootstraptoggle.com
  * ========================================================================
  * Copyright 2014 Min Hur, The New York Times Company
@@ -74,7 +74,7 @@
 		$toggleOn.addClass('toggle-on')
 		$toggleOff.addClass('toggle-off')
 		this.$toggle.css({ width: width, height: height })
-		this.update()
+		this.update(true)
 		this.trigger(true)
 	}
 
@@ -83,18 +83,18 @@
 		else this.on()
 	}
 
-	Toggle.prototype.on = function () {
+	Toggle.prototype.on = function (silent) {
 		if (this.$element.prop('disabled')) return false
 		this.$toggle.removeClass(this._offstyle + ' off').addClass(this._onstyle)
 		this.$element.prop('checked', true)
-		this.trigger()
+		if (!silent) this.trigger()
 	}
 
-	Toggle.prototype.off = function () {
+	Toggle.prototype.off = function (silent) {
 		if (this.$element.prop('disabled')) return false
 		this.$toggle.removeClass(this._onstyle).addClass(this._offstyle + ' off')
 		this.$element.prop('checked', false)
-		this.trigger()
+		if (!silent) this.trigger()
 	}
 
 	Toggle.prototype.enable = function () {
@@ -107,11 +107,11 @@
 		this.$element.prop('disabled', true)
 	}
 
-	Toggle.prototype.update = function () {
+	Toggle.prototype.update = function (silent) {
 		if (this.$element.prop('disabled')) this.disable()
 		else this.enable()
-		if (this.$element.prop('checked')) this.on()
-		else this.off()
+		if (this.$element.prop('checked')) this.on(silent)
+		else this.off(silent)
 	}
 
 	Toggle.prototype.trigger = function (silent) {
