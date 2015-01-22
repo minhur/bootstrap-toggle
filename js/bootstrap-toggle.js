@@ -1,5 +1,5 @@
 /*! ========================================================================
- * Bootstrap Toggle: bootstrap-toggle.js v2.1.0
+ * Bootstrap Toggle: bootstrap-toggle.js v2.2.0
  * http://www.bootstraptoggle.com
  * ========================================================================
  * Copyright 2014 Min Hur, The New York Times Company
@@ -19,7 +19,7 @@
 		this.render()
 	}
 
-	Toggle.VERSION  = '3.0.0'
+	Toggle.VERSION  = '2.2.0'
 
 	Toggle.DEFAULTS = {
 		on: 'On',
@@ -27,7 +27,9 @@
 		onstyle: 'primary',
 		offstyle: 'default',
 		size: 'normal',
-		style: ''
+		style: '',
+		width: null,
+		height: null
 	}
 
 	Toggle.prototype.defaults = function() {
@@ -37,7 +39,9 @@
 			onstyle: this.$element.attr('data-onstyle') || Toggle.DEFAULTS.onstyle,
 			offstyle: this.$element.attr('data-offstyle') || Toggle.DEFAULTS.offstyle,
 			size: this.$element.attr('data-size') || Toggle.DEFAULTS.size,
-			style: this.$element.attr('data-style') || Toggle.DEFAULTS.style
+			style: this.$element.attr('data-style') || Toggle.DEFAULTS.style,
+			width: this.$element.attr('data-width') || Toggle.DEFAULTS.width,
+			height: this.$element.attr('data-height') || Toggle.DEFAULTS.height
 		}
 	}
 
@@ -69,11 +73,15 @@
 		})
 		this.$toggle.append($toggleGroup)
 
-		var width = Math.max($toggleOn.outerWidth(), $toggleOff.outerWidth())+($toggleHandle.outerWidth()/2)
-		var height = Math.max($toggleOn.outerHeight(), $toggleOff.outerHeight())
+		var width = this.options.width || Math.max($toggleOn.outerWidth(), $toggleOff.outerWidth())+($toggleHandle.outerWidth()/2)
+		var height = this.options.height || Math.max($toggleOn.outerHeight(), $toggleOff.outerHeight())
 		$toggleOn.addClass('toggle-on')
 		$toggleOff.addClass('toggle-off')
 		this.$toggle.css({ width: width, height: height })
+		if (this.options.height) {
+			$toggleOn.css('line-height', $toggleOn.height() + 'px')
+			$toggleOff.css('line-height', $toggleOff.height() + 'px')
+		}
 		this.update(true)
 		this.trigger(true)
 	}

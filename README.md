@@ -99,6 +99,9 @@ off|string/html|"Off"|Text of the off toggle
 size|string|"normal"|Size of the toggle. Possible values are `large`, `normal`, `small`, `mini`.
 onstyle|string|"primary"|Style of the on toggle. Possible values are `default`, `primary`, `success`, `info`, `warning`, `danger`
 offstyle|string|"default"|Style of the off toggle. Possible values are `default`, `primary`, `success`, `info`, `warning`, `danger`
+style|string| |Appends the value to the class attribute of the toggle. This can be used to apply custom styles. Refer to Custom Styles for reference.
+width|integer|*null*|Sets the width of the toggle. if set to *null*, width will be calculated.
+height|integer|*null*|Sets the height of the toggle. if set to *null*, height will be calculated.
 
 ### Methods
 Methods can be used to control toggles directly.

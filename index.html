@@ -69,8 +69,8 @@
 			<h3>Installation</h3>
 			<p>You can <a href="https://github.com/minhur/bootstrap-toggle/archive/master.zip">download</a> the latest version of Bootstrap Toggle or use CDN to load the library.</p>
 			<p><span class="label label-warning">Warning</span> If you are using Bootstrap v2.3.2, use <code>bootstrap2-toggle.min.js</code> and <code>bootstrap2-toggle.min.css</code> instead.</p>
-			<code class="highlight">&lt;link href="https://gitcdn.github.io/bootstrap-toggle/2.1.0/css/bootstrap-toggle.min.css" rel="stylesheet"&gt;
-&lt;script src="https://gitcdn.github.io/bootstrap-toggle/2.1.0/js/bootstrap-toggle.min.js"&gt;&lt;/script&gt;</code>
+			<code class="highlight">&lt;link href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet"&gt;
+&lt;script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"&gt;&lt;/script&gt;</code>
 
 			<h3>Bower Install</h3>
 			<p></p>
@@ -197,6 +197,30 @@
 						Refer to Bootstrap <a href="http://getbootstrap.com/css/#buttons-options" target="_blank">Button Options</a> documentation for more information.
 					</td>
 				</tr>
+				<tr>
+					<td>style</td>
+					<td>string</td>
+					<td></td>
+					<td>
+						Appends the value to the class attribute of the toggle. This can be used to apply custom styles. Refer to Custom Styles for reference.
+					</td>
+				</tr>
+				<tr>
+					<td>width</td>
+					<td>integer</td>
+					<td><em>null</em></td>
+					<td>
+						Sets the width of the toggle. if set to <em>null</em>, width will be calculated.
+					</td>
+				</tr>
+				<tr>
+					<td>height</td>
+					<td>integer</td>
+					<td><em>null</em></td>
+					<td>
+						Sets the height of the toggle. if set to <em>null</em>, height will be calculated.
+					</td>
+				</tr>
 				</tbody>
 				</table>
 			</div>
@@ -321,6 +345,14 @@
 				<input type="checkbox" checked data-toggle="toggle" data-size="small">
 				<input type="checkbox" checked data-toggle="toggle" data-size="mini">
 			</div>
+			
+			<h3>Custom Sizes</h3>
+			<p>Bootstrap toggle can handle custom sizes by <code>data-width</code> and <code>data-height</code> options.</p>
+			<div class="example">
+				<input type="checkbox" checked data-toggle="toggle" data-width="100" data-height="75">
+				<input type="checkbox" checked data-toggle="toggle" data-height="75">
+				<input type="checkbox" checked data-toggle="toggle" data-width="100">
+			</div>
 
 			<h3>Colors</h3>
 			<p>Bootstrap Toggle supports various colors. Refer to Bootstrap <a href="http://getbootstrap.com/css/#buttons-options" target="_blank">Button Options</a> documentation for more information.</p>
@@ -394,7 +426,7 @@
 				<img class="nyt-logo" src="doc/nytdev.svg">
 			</p>
 			<p>Designed and built by <a href="https://github.com/minhur" target="_blank">Min Hur</a> for <a href="http://developers.nytimes.com" target="_blank">The New York Times Company</a></p>
-			<p>Latest Version: 2.1.0 | Code licensed under MIT</p>
+			<p>Latest Version: 2.2.0 | Code licensed under MIT</p>
 			<p>
 				<iframe src="https://mdo.github.io/github-buttons/github-btn.html?user=minhur&repo=bootstrap-toggle&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
 				<iframe src="https://mdo.github.io/github-buttons/github-btn.html?user=minhur&repo=bootstrap-toggle&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
