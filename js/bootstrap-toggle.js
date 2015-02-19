@@ -73,17 +73,22 @@
 		})
 		this.$toggle.append($toggleGroup)
 
-		var width = this.options.width || Math.max($toggleOn.outerWidth(), $toggleOff.outerWidth())+($toggleHandle.outerWidth()/2)
-		var height = this.options.height || Math.max($toggleOn.outerHeight(), $toggleOff.outerHeight())
-		$toggleOn.addClass('toggle-on')
-		$toggleOff.addClass('toggle-off')
-		this.$toggle.css({ width: width, height: height })
-		if (this.options.height) {
-			$toggleOn.css('line-height', $toggleOn.height() + 'px')
-			$toggleOff.css('line-height', $toggleOff.height() + 'px')
-		}
-		this.update(true)
-		this.trigger(true)
+		var setWidthHeight = function() {
+			var width = this.options.width || Math.max($toggleOn.outerWidth(), $toggleOff.outerWidth())+($toggleHandle.outerWidth()/2);
+			var height = this.options.height || Math.max($toggleOn.outerHeight(), $toggleOff.outerHeight());
+			if(width == 0) { setTimeout(setWidthHeight, 100); return; }
+			$toggleOn.addClass('toggle-on')
+			$toggleOff.addClass('toggle-off')
+			this.$toggle.css({ width: width, height: height })
+
+			if (this.options.height) {
+				$toggleOn.css('line-height', $toggleOn.height() + 'px')
+				$toggleOff.css('line-height', $toggleOff.height() + 'px')
+			}
+			this.update(true)
+			this.trigger(true)
+		}.bind(this);
+		setWidthHeight();
 	}
 
 	Toggle.prototype.toggle = function () {
