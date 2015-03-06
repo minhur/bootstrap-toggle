@@ -34,6 +34,9 @@
 .toggle.off .toggle-group {
 	left: -100%;
 }
+.toggle.indeterminate .toggle-group {
+	display: none;
+}
 .toggle-on {
 	position: absolute;
 	top: 0;
