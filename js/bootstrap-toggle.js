@@ -131,7 +131,7 @@
 		if (this.$element.prop('disabled')) this.disable()
 		else this.enable()
 		var checked = this.isChecked();
-		if (checked == true) this.on(silent)
+		if (checked === true) this.on(silent)
 		else if (checked === false) this.off(silent)
 	}
 
