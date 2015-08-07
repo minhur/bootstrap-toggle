@@ -2,6 +2,7 @@
   "name": "bootstrap-toggle",
   "description": "Bootstrap Toggle is a highly flexible Bootstrap plugin that converts checkboxes into toggles",
   "version": "2.2.1",
+  "main": "js/bootstrap-toggle.js",
   "keywords": [
     "bootstrap",
     "toggle",
