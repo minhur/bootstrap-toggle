@@ -29,7 +29,9 @@
 		size: 'normal',
 		style: '',
 		width: null,
-		height: null
+		height: null,
+		ontitle: '',
+		offtitle: ''
 	}
 
 	Toggle.prototype.defaults = function() {
@@ -42,6 +44,8 @@
 			style: this.$element.attr('data-style') || Toggle.DEFAULTS.style,
 			width: this.$element.attr('data-width') || Toggle.DEFAULTS.width,
 			height: this.$element.attr('data-height') || Toggle.DEFAULTS.height
+			ontitle: this.$element.attr('data-ontitle') || Toggle.DEFAULTS.ontitle,
+			offtitle: this.$element.attr('data-offtitle') || Toggle.DEFAULTS.offtitle
 		}
 	}
 
@@ -82,6 +86,8 @@
 			$toggleOn.css('line-height', $toggleOn.height() + 'px')
 			$toggleOff.css('line-height', $toggleOff.height() + 'px')
 		}
+		$toggleOn.attr("title", this.options.ontitle);
+		$toggleOff.attr("title", this.options.offtitle);
 		this.update(true)
 		this.trigger(true)
 	}
