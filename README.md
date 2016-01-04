@@ -164,6 +164,12 @@ This also means that using the API or Input to trigger events will work both way
 </script>
 ```
 
+### Integration
+
+#### [KnockoutJS](http://knockoutjs.com)
+
+A binding for knockout is available here: [aAXEe/knockout-bootstrap-toggle](https://github.com/aAXEe/knockout-bootstrap-toggle)
+
 ## Demos
 
 Visit http://www.bootstraptoggle.com for demos.
