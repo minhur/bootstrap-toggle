@@ -82,6 +82,18 @@
 			$toggleOn.css('line-height', $toggleOn.height() + 'px')
 			$toggleOff.css('line-height', $toggleOff.height() + 'px')
 		}
+
+		var clickHandler = function(e){
+			this.toggle();
+			e.preventDefault()
+		}.bind(this)
+
+		if (this.$toggle.parent().prop('tagName') == 'LABEL') {
+			this.$toggle.parent().click(clickHandler);
+		} else {
+			this.$toggle.click(clickHandler);
+		}
+
 		this.update(true)
 		this.trigger(true)
 	}
@@ -169,12 +181,6 @@
 
 	$(function() {
 		$('input[type=checkbox][data-toggle^=toggle]').bootstrapToggle()
-	})
-
-	$(document).on('click.bs.toggle', 'div[data-toggle^=toggle]', function(e) {
-		var $checkbox = $(this).find('input[type=checkbox]')
-		$checkbox.bootstrapToggle('toggle')
-		e.preventDefault()
 	})
 
 }(jQuery);
