@@ -26,6 +26,7 @@
 		off: 'Off',
 		onstyle: 'primary',
 		offstyle: 'default',
+		handlestyle: 'default',
 		size: 'normal',
 		style: '',
 		width: null,
@@ -38,6 +39,7 @@
 			off: this.$element.attr('data-off') || Toggle.DEFAULTS.off,
 			onstyle: this.$element.attr('data-onstyle') || Toggle.DEFAULTS.onstyle,
 			offstyle: this.$element.attr('data-offstyle') || Toggle.DEFAULTS.offstyle,
+			handlestyle: this.$element.attr('data-handlestyle') || Toggle.DEFAULTS.handlestyle,
 			size: this.$element.attr('data-size') || Toggle.DEFAULTS.size,
 			style: this.$element.attr('data-style') || Toggle.DEFAULTS.style,
 			width: this.$element.attr('data-width') || Toggle.DEFAULTS.width,
@@ -48,6 +50,7 @@
 	Toggle.prototype.render = function () {
 		this._onstyle = 'btn-' + this.options.onstyle
 		this._offstyle = 'btn-' + this.options.offstyle
+		this._handlestyle = 'btn-' + this.options.handlestyle
 		var size = this.options.size === 'large' ? 'btn-large'
 			: this.options.size === 'small' ? 'btn-small'
 			: this.options.size === 'mini' ? 'btn-mini'
@@ -56,7 +59,7 @@
 			.addClass(this._onstyle + ' ' + size)
 		var $toggleOff = $('<label class="btn">').html(this.options.off)
 			.addClass(this._offstyle + ' ' + size + ' active')
-		var $toggleHandle = $('<span class="toggle-handle btn btn-default">')
+		var $toggleHandle = $('<span class="toggle-handle btn ' + this._handlestyle + '">')
 			.addClass(size)
 		var $toggleGroup = $('<div class="toggle-group">')
 			.append($toggleOn, $toggleOff, $toggleHandle)
