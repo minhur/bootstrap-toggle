@@ -11,8 +11,8 @@ You can [download](https://github.com/minhur/bootstrap-toggle/archive/master.zip
 `Warning` If you are using Bootstrap v2.3.2, use `bootstrap2-toggle.min.js` and `bootstrap2-toggle.min.css` instead.
 
 ```html
-<link href="https://gitcdn.github.io/bootstrap-toggle/2.1.0/css/bootstrap-toggle.min.css" rel="stylesheet">
-<script src="https://gitcdn.github.io/bootstrap-toggle/2.1.0/js/bootstrap-toggle.min.js"></script>
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>
 ```
 
 ### Bower Install
@@ -163,6 +163,12 @@ This also means that using the API or Input to trigger events will work both way
   }
 </script>
 ```
+
+### Integration
+
+#### [KnockoutJS](http://knockoutjs.com)
+
+A binding for knockout is available here: [aAXEe/knockout-bootstrap-toggle](https://github.com/aAXEe/knockout-bootstrap-toggle)
 
 ## Demos
 
