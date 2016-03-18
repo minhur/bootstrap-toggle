@@ -52,15 +52,15 @@
 			: this.options.size === 'small' ? 'btn-sm'
 			: this.options.size === 'mini' ? 'btn-xs'
 			: ''
-		var $toggleOn = $('<label class="btn">').html(this.options.on)
+		var $toggleOn = $('<label class="btn"></label>').html(this.options.on)
 			.addClass(this._onstyle + ' ' + size)
-		var $toggleOff = $('<label class="btn">').html(this.options.off)
+		var $toggleOff = $('<label class="btn"></label>').html(this.options.off)
 			.addClass(this._offstyle + ' ' + size + ' active')
-		var $toggleHandle = $('<span class="toggle-handle btn btn-default">')
+		var $toggleHandle = $('<span class="toggle-handle btn btn-default"></span>')
 			.addClass(size)
-		var $toggleGroup = $('<div class="toggle-group">')
+		var $toggleGroup = $('<div class="toggle-group"></div>')
 			.append($toggleOn, $toggleOff, $toggleHandle)
-		var $toggle = $('<div class="toggle btn" data-toggle="toggle">')
+		var $toggle = $('<div class="toggle btn" data-toggle="toggle"></div>')
 			.addClass( this.$element.prop('checked') ? this._onstyle : this._offstyle+' off' )
 			.addClass(size).addClass(this.options.style)
 
