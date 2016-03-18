@@ -56,13 +56,14 @@
 			.addClass(this._onstyle + ' ' + size)
 		var $toggleOff = $('<label class="btn">').html(this.options.off)
 			.addClass(this._offstyle + ' ' + size + ' active')
-		var $toggleHandle = $('<span class="toggle-handle btn btn-default">')
+		var $toggleHandle = $('<button type="button" class="toggle-handle btn btn-default">')
 			.addClass(size)
 		var $toggleGroup = $('<div class="toggle-group">')
 			.append($toggleOn, $toggleOff, $toggleHandle)
 		var $toggle = $('<div class="toggle btn" data-toggle="toggle">')
 			.addClass( this.$element.prop('checked') ? this._onstyle : this._offstyle+' off' )
 			.addClass(size).addClass(this.options.style)
+			.attr('title', this.$element.prop('title'))
 
 		this.$element.wrap($toggle)
 		$.extend(this, {
