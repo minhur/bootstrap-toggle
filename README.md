@@ -20,6 +20,11 @@ You can [download](https://github.com/minhur/bootstrap-toggle/archive/master.zip
 bower install bootstrap-toggle
 ```
 
+### npm install
+```bash
+npm install bootstrap-toggle --save
+```
+
 ## Usage
 
 ### Basic example
