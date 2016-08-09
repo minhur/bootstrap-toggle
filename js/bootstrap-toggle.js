@@ -86,9 +86,9 @@
 		this.trigger(true)
 	}
 
-	Toggle.prototype.toggle = function () {
-		if (this.$element.prop('checked')) this.off()
-		else this.on()
+	Toggle.prototype.toggle = function (silent) {
+		if (this.$element.prop('checked')) this.off(silent)
+		else this.on(silent)
 	}
 
 	Toggle.prototype.on = function (silent) {
@@ -115,9 +115,21 @@
 		this.$element.prop('disabled', true)
 	}
 
+	Toggle.prototype.writable = function () {
+		this.$toggle.removeAttr('readonly')
+		this.$element.prop('readonly', false)
+	}
+
+	Toggle.prototype.readonly = function () {
+		this.$toggle.attr('readonly', 'readonly')
+		this.$element.prop('readonly', true)
+	}
+
 	Toggle.prototype.update = function (silent) {
 		if (this.$element.prop('disabled')) this.disable()
 		else this.enable()
+		if (this.$element.prop('readonly')) this.readonly()
+		else this.writable()
 		if (this.$element.prop('checked')) this.on(silent)
 		else this.off(silent)
 	}
@@ -140,14 +152,14 @@
 	// TOGGLE PLUGIN DEFINITION
 	// ========================
 
-	function Plugin(option) {
+	function Plugin(option, silent) {
 		return this.each(function () {
 			var $this   = $(this)
 			var data    = $this.data('bs.toggle')
 			var options = typeof option == 'object' && option
 
 			if (!data) $this.data('bs.toggle', (data = new Toggle(this, options)))
-			if (typeof option == 'string' && data[option]) data[option]()
+			if (typeof option == 'string' && data[option]) data[option](silent)
 		})
 	}
 
@@ -173,7 +185,7 @@
 
 	$(document).on('click.bs.toggle', 'div[data-toggle^=toggle]', function(e) {
 		var $checkbox = $(this).find('input[type=checkbox]')
-		$checkbox.bootstrapToggle('toggle')
+		$checkbox.bootstrapToggle('toggle', false)
 		e.preventDefault()
 	})
 

@@ -120,6 +120,8 @@ toggle|$('#toggle-demo').bootstrapToggle('toggle')|Toggles the state of the togg
 enable|$('#toggle-demo').bootstrapToggle('enable')|Enables the toggle
 disable|$('#toggle-demo').bootstrapToggle('disable')|Disables the toggle
 
+Each method also accepts a second `silent` boolean parameter (default is `false`) to perform the function **without** firing off a `change` event and its handling.
+
 ## Events
 
 ### Event Propagation
