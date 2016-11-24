@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bootstrap Toggle</title>
+	<link href="http://gitcdn.github.io/ajax/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://gitcdn.github.io/ajax/bootstrap/2.3.2/css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="http://gitcdn.github.io/ajax/prettify/r298/prettify.min.css" rel="stylesheet">
+	<link href="http://gitcdn.github.io/ajax/bootstrap-toggle/css/bootstrap-toggle.min.css" rel="stylesheet">
+	<link href="stylesheet.css" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target=".sidenav">
+	<div class="container">
+		<div class="masthead"> 
+			<h3 class="muted">Bootstrap Toggle</h3>
+		</div>
+
+		<div class="jumbotron">
+			<h1>Bootstrap Toggle</h1>
+			<p class="lead">Bootstrap Toggle is a lightweight Bootstrap plugin that allows toggle switches on your pages.</p>
+			<a class="btn btn-large btn-primary" href="http://gitcdn.github.io/ajax/bootstrap-toggle/bootstrap-toggle.zip">Download</a>
+			<a class="btn btn-large" href="https://github.com/minhur/bootstrap-toggle" target="_blank">Source Code</a>
+		</div>
+
+		<div class="row">
+			<div class="side span3 hidden-phone hidden-tablet">
+				<div class="sidenav span3" data-spy="affix" data-offset-top="250">
+					<div class="well well-small">
+						<ul class="nav nav-list">
+							<li class="nav-header">GETTING STARTED</li>
+							<li><a href="#require">Requirements</a></li>
+							<li><a href="#download">Download</a></li>
+							<li><a href="#setup">Setup</a></li>
+							<li class="nav-header">BASIC EXAMPLES</li>
+							<li><a href="#on">Default On</a></li>
+							<li><a href="#off">Default Off</a></li>
+							<li><a href="#sizes">Toggle Sizes</a></li>
+							<li class="nav-header">CUSTOMIZATION</li>
+							<li><a href="#colors">Colors</a></li>
+							<li><a href="#colormix">Color Mix</a></li>
+							<li><a href="#style">Style</a></li>
+							<li><a href="#text">Custom Text</a></li>							
+							<li><a href="#icons">Icons</a></li>
+							<li><a href="#font">Font Size</a></li>
+							<li><a href="#animation">Animation</a></li>
+							<li><a href="#modal">Modal</a></li>
+							<li class="nav-header">NOTES</li>
+							<li><a href="#issues">Known Issues</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="main span9">
+				<div id="require">
+					<h2 class="muted">Getting Started</h2>
+					<hr>
+
+					<h3>Requirements</h3>
+					<p>Bootstrap Toggle requires <a href="http://jquery.com" target="_blank">jQuery</a> and <a href="http://twitter.github.io/bootstrap" target="_blank">Bootstrap</a>.</p>
+				</div>
+
+				<div id="download">
+					<h3>Download</h3>
+					<p>Download the <a href="http://gitcdn.github.io/ajax/bootstrap-toggle/bootstrap-toggle.zip">zip file</a> or visit <a href="https://github.com/minhur/bootstrap-toggle">GitHub page</a> for the source code.</p>
+				</div>
+
+				<div id="setup">
+					<h3>Setup</h3>
+					<p>Include the css and js file on your page.</p>
+					<pre class="prettyprint">&lt;link href=&quot;http://gitcdn.github.io/ajax/bootstrap-toggle/css/bootstrap-toggle.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;script src=&quot;http://gitcdn.github.io/ajax/bootstrap-toggle/js/bootstrap-toggle.min.js&quot;&gt;&lt;/script&gt;</pre>
+				</div>
+
+				<div id="on">
+					<h2 class="muted">Examples</h2>
+					<hr>
+
+					<h3>Default On</h3>
+					<p>Here's an example of a toggle with default set to On. Make sure that <code>.toggle</code>'s classes match <code>.toggle-on</code>'s classes.</p>
+					<div class="bs-docs-example">
+						<div class="toggle btn btn-primary" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-primary">On</label>
+								<label class="toggle-off btn active">Off</label>
+								<span class="toggle-handle btn"></span>			
+							</div>
+						</div>
+					</div>
+					<pre class="prettyprint"></pre>
+				</div>
+				
+				<div id="off">
+					<h3>Default Off</h3>
+					<p>Here's an example of a toggle with default set to Off. Make sure that <code>.toggle</code> has a class of <code>.off</code>, and that <code>.toggle</code>'s classes match <code>.toggle-off</code>'s classes.</p>
+					<div class="bs-docs-example">
+						<div class="toggle off btn active" data-toggle="toggle">
+							<input type="checkbox">
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-primary">On</label>
+								<label class="toggle-off btn active">Off</label>
+								<span class="toggle-handle btn"></span>			
+							</div>
+						</div>
+					</div>
+					<pre class="prettyprint"></pre>
+				</div>
+
+				<div id="sizes">
+					<h3>Toggle Sizes</h3>
+					<p>Bootstrap toggle is available in different sizes. Make sure <code>.toggle</code>, <code>label</code>, and <code>span</code> have the same button size class.</p>
+					<div class="bs-docs-example">
+						<!-- Large button -->
+						<div class="toggle btn btn-large btn-primary" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-large btn-primary">On</label>
+								<label class="toggle-off btn btn-large active">Off</label>
+								<span class="toggle-handle btn btn-large"></span>			
+							</div>
+						</div>
+						<!-- Default button -->
+						<div class="toggle btn btn-primary" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-primary">On</label>
+								<label class="toggle-off btn active">Off</label>
+								<span class="toggle-handle btn"></span>			
+							</div>
+						</div>
+						<!-- Small button -->
+						<div class="toggle btn btn-small btn-primary" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-small btn-primary">On</label>
+								<label class="toggle-off btn btn-small active">Off</label>
+								<span class="toggle-handle btn btn-small"></span>			
+							</div>
+						</div>
+						<!-- Mini button -->
+						<div class="toggle btn btn-mini btn-primary" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-mini btn-primary">On</label>
+								<label class="toggle-off btn btn-mini active">Off</label>
+								<span class="toggle-handle btn btn-mini"></span>			
+							</div>
+						</div>
+					</div>
+					<pre class="prettyprint"></pre>
+				</div>
+
+				<div id="colors">
+					<h2 class="muted">Customization</h2>
+					<hr>
+
+					<h3>Colors</h3>
+					<p>Bootstrap Toggle supports various colors. Refer to <a href="http://twitter.github.io/bootstrap/base-css.html#buttons" target="_blank">Bootstrap Documentation</a> on color variations. As stated previously, <code>.toggle</code>'s classes needs to match the visible <code>label</code>'s classes. You can also create your own custom color with css and add it to <code>label</code> of your choice.
+					<div class="bs-docs-example">
+						<!-- Primary  -->
+						<div class="toggle btn btn-primary" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-primary">On</label>
+								<label class="toggle-off btn active">Off</label>
+								<span class="toggle-handle btn"></span>			
+							</div>
+						</div>
+						<!-- Info  -->
+						<div class="toggle btn btn-info" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-info">On</label>
+								<label class="toggle-off btn active">Off</label>
+								<span class="toggle-handle btn"></span>			
+							</div>
+						</div>
+						<!-- Success  -->
+						<div class="toggle btn btn-success" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-success">On</label>
+								<label class="toggle-off btn active">Off</label>
+								<span class="toggle-handle btn"></span>			
+							</div>
+						</div>
+						<!-- Warning  -->
+						<div class="toggle btn btn-warning" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-warning">On</label>
+								<label class="toggle-off btn active">Off</label>
+								<span class="toggle-handle btn"></span>			
+							</div>
+						</div>
+						<!-- Danger  -->
+						<div class="toggle btn btn-danger" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-danger">On</label>
+								<label class="toggle-off btn active">Off</label>
+								<span class="toggle-handle btn"></span>			
+							</div>
+						</div>
+						<!-- Inverse  -->
+						<div class="toggle btn btn-inverse" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-inverse">On</label>
+								<label class="toggle-off btn active">Off</label>
+								<span class="toggle-handle btn"></span>			
+							</div>
+						</div>
+					</div>
+					<pre class="prettyprint"></pre>
+				</div>
+
+				<div id="colormix">
+					<h3>Color Mix</h3>
+					<p>You can also mix & match different colors for on/off toggles. Refer to <a href="http://twitter.github.io/bootstrap/base-css.html#buttons" target="_blank">Bootstrap Documentation</a> on color variation. As stated previously, <code>.toggle</code>'s classes needs to match the visible <code>label</code>'s classes. You can also create your own custom color with css and add it to label of your choice.</p>
+					<div class="bs-docs-example">
+						<!-- Green to Red -->
+						<div class="toggle btn btn-success" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-success">On</label>
+								<label class="toggle-off btn btn-danger">Off</label>
+								<span class="toggle-handle btn"></span>			
+							</div>
+						</div>
+						<!-- Inset Yellow to Inset Red -->
+						<div class="toggle btn btn-warning active" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-warning active">On</label>
+								<label class="toggle-off btn btn-danger active">Off</label>
+								<span class="toggle-handle btn"></span>			
+							</div>
+						</div>
+						<!-- Black to Yellow -->
+						<div class="toggle btn btn-inverse" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-inverse">On</label>
+								<label class="toggle-off btn btn-warning">Off</label>
+								<span class="toggle-handle btn"></span>			
+							</div>
+						</div>
+						<!-- Light Blue to Inset blue -->
+						<div class="toggle btn btn-info" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-info">On</label>
+								<label class="toggle-off btn btn-primary active">Off</label>
+								<span class="toggle-handle btn"></span>			
+							</div>
+						</div>
+					</div>
+					<pre class="prettyprint"></pre>
+				</div>
+
+				<div id="style">
+					<h3>Style</h3>
+					<p>Feel free to style your toggles using css.<p>
+					<div class="bs-docs-example">
+						<style>
+							.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+							.toggle-handle.ios { border-radius: 20px; width: 10px; }
+						</style>
+						<div class="toggle ios btn btn-primary" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on ios btn btn-primary">On</label>
+								<label class="toggle-off ios btn active">Off</label>
+								<span class="toggle-handle ios btn"></span>			
+							</div>
+						</div>
+						<style>
+							.toggle.android { border-radius: 0px;}
+							.toggle-handle.android { border-radius: 0px; }
+						</style>
+						<div class="toggle android toggle-android btn btn-info" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on android btn btn-info">On</label>
+								<label class="toggle-off android btn btn-inverse">Off</label>
+								<span class="toggle-handle android btn"></span>			
+							</div>
+						</div>
+					</div>
+					<pre class="prettyprint"></pre>	
+				</div>
+
+				<div id="text">
+					<h3>Custom Text</h3>
+					<p>You can also have custom text inside <code>label</code> tag. Unfortunately, the width doesn't scale along with text so you'll need to <strong>specify the width</strong> of the toggle if you're going have custom labels.
+					</p>
+					<div class="bs-docs-example">
+						<style> #custom1 { width: 80px; } </style>
+						<div id="custom1" class="toggle btn btn-success" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-success">Ready</label>
+								<label class="toggle-off btn btn-danger">Not Ready</label>
+								<span class="toggle-handle btn"></span>			
+							</div>
+						</div>
+					</div>
+					<pre class="prettyprint"></pre>
+				</div>
+
+				<div id="icons">
+					<h3>Icons</h3>
+					<p>You can also have icons inside <code>label</code> tag. Unfortunately, the width doesn't scale along with text so you'll need to <strong>specify the width</strong> of the toggle if you're going have custom labels.
+					</p>
+					<div class="bs-docs-example">
+						<style> #custom2 { width: 70px; } </style>
+						<div id="custom2" class="toggle btn btn-primary" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-primary">
+									<i class="icon-play icon-white"></i>
+									Play
+								</label>
+								<label class="toggle-off btn active">
+									<i class="icon-pause"></i>
+									Pause
+								</label>
+								<span class="toggle-handle btn"></span>			
+							</div>
+						</div>
+					</div>
+					<pre class="prettyprint"></pre>
+				</div>
+
+				<div id="font">
+					<h3>Font Size</h3>
+					<p>The font size inside each label can be easily overridden with css.</p>
+					<div class="bs-docs-example">
+						<style>
+							#custom3 { width: 100px; } 
+							#custom3 .toggle-on { font-size: 28px; font-weight: bold; }
+							#custom3 .toggle-off { font-size: 12px; line-height: 15px; padding-top: 7px;}
+						</style>
+						<div id="custom3" class="toggle btn btn-large btn-danger" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-large btn-danger">STOP</label>
+								<label class="toggle-off btn btn-large active">Set the mode to stop</label>
+								<span class="toggle-handle btn btn-large"></span>			
+							</div>
+						</div>
+					</div>
+					<pre class="prettyprint"></pre>
+				</div>
+
+				<div id="animation">
+					<h3>Animation</h3>
+					<p>Animation speed can be easily controlled with css <code>transition</code> property on <code>.toggle-group</code>. You can also turn animation off completely.</p>
+					<div class="bs-docs-example">
+						<style> #custom4 .toggle-group { transition: left 0.6s; -webkit-transition: left 0.6s; } </style>
+						<div id="custom4" class="toggle btn btn-primary" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-primary">On</label>
+								<label class="toggle-off btn active">Off</label>
+								<span class="toggle-handle btn"></span>			
+							</div>
+						</div>
+						<style> #custom5 .toggle-group { transition: left 0.1s; -webkit-transition: left 0.1s; } </style>
+						<div id="custom5" class="toggle btn btn-primary" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-primary">On</label>
+								<label class="toggle-off btn active">Off</label>
+								<span class="toggle-handle btn"></span>			
+							</div>
+						</div>
+						<style> #custom6 .toggle-group { transition: none; -webkit-transition: none; } </style>
+						<div id="custom6" class="toggle btn btn-primary" data-toggle="toggle">
+							<input type="checkbox" checked>
+							<div class="toggle-group">
+								<label class="toggle-on btn btn-primary">On</label>
+								<label class="toggle-off btn active">Off</label>
+								<span class="toggle-handle btn"></span>			
+							</div>
+						</div>
+					</div>
+					<pre class="prettyprint"></pre>
+				</div>
+
+				<div id="modal">
+					<h3>Modal</h3>
+					<p>Bootstrap Toggle doesn't require initialization. This means you can have html added to the dom with bootstrap toggles and it will still work.</p>
+					<div class="bs-docs-example">
+						<a href="modal.html" data-target="#modal1" class="btn btn-primary" data-toggle="modal">Open Modal</a>
+						<div id="modal1" class="modal hide fade">
+							<div class="modal-header">
+								<h3>Bootstrap Toggle Modal</h3>
+							</div>
+							<div class="modal-body"></div>
+							<div class="modal-footer">
+								<a data-dismiss="modal" class="btn">Close</a>
+							</div>
+						</div>
+					</div>
+					<pre class="prettyprint"></pre>
+				</div>
+
+				<div id="issues">
+					<h2 class="muted">Notes</h2>
+					<hr>
+					<h3>Known Issues</h3>
+					<p>There exists a browser issue on webkit for MacOS where border-radius does not get respected on background images. This does not seem to be happening on Windows but only on webkit MacOS.</p>
+					<p>
+						<i class="label label-important">BUG</i>
+						<a href="https://bugs.webkit.org/show_bug.cgi?id=23166" target="_blank">Webkit Bug 23166</a>
+					</p>
+					<p>
+						<i class="label label-important">BUG</i>
+						<a href="http://code.google.com/p/chromium/issues/detail?id=72014" target="_blank">Chromium Issue 72014</a>
+					</p>
+					<p>Chrome Issue 72014 has been resolved on and will be available by Chrome 24 release. Testing on Canary channel has verified that it's been fixed. As for Safari on MacOS support, It's still waiting for a fix. Please raise the issue with browser developers to escalate the matter if you wish to see it fixed.</p>
+					<p>I did find some workarounds to this issues by resorting to not using <code>position</code> properties, but by solving the border clipping issues other limitations followed so the idea was abandonded.</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="http://gitcdn.github.io/ajax/jquery/2.0.2/jquery.min.js"></script>
+	<script src="http://gitcdn.github.io/ajax/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+	<script src="http://gitcdn.github.io/ajax/prettify/r298/prettify.min.js"></script>
+	<script src="http://gitcdn.github.io/ajax/bootstrap-toggle/js/bootstrap-toggle.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
