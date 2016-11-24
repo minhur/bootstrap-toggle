@@ -16,6 +16,7 @@
 .toggle {
 	position: relative;
 	overflow: hidden;
+	padding-left: 20px;
 }
 .toggle input[type="checkbox"] {
 	display: none;
@@ -33,6 +34,9 @@
 }
 .toggle.off .toggle-group {
 	left: -100%;
+}
+.toggle.indeterminate .toggle-off {
+	display: none;
 }
 .toggle-on {
 	position: absolute;

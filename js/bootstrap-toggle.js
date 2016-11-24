@@ -48,10 +48,12 @@
 	Toggle.prototype.render = function () {
 		this._onstyle = 'btn-' + this.options.onstyle
 		this._offstyle = 'btn-' + this.options.offstyle
+		this._indeterminatestyle = 'indeterminate'
 		var size = this.options.size === 'large' ? 'btn-lg'
 			: this.options.size === 'small' ? 'btn-sm'
 			: this.options.size === 'mini' ? 'btn-xs'
 			: ''
+		var checked = this.isChecked()
 		var $toggleOn = $('<label class="btn">').html(this.options.on)
 			.addClass(this._onstyle + ' ' + size)
 		var $toggleOff = $('<label class="btn">').html(this.options.off)
@@ -61,7 +63,8 @@
 		var $toggleGroup = $('<div class="toggle-group">')
 			.append($toggleOn, $toggleOff, $toggleHandle)
 		var $toggle = $('<div class="toggle btn" data-toggle="toggle">')
-			.addClass( this.$element.prop('checked') ? this._onstyle : this._offstyle+' off' )
+			.attr('tabindex', this.$element.attr('tabindex') || 0)
+			.addClass( checked ? this._onstyle : this._offstyle+' off' )
 			.addClass(size).addClass(this.options.style)
 
 		this.$element.wrap($toggle)
@@ -71,13 +74,13 @@
 			$toggleOff: $toggleOff,
 			$toggleGroup: $toggleGroup
 		})
-		this.$toggle.append($toggleGroup)
+		this.$toggle.append(this.$element.attr('placeholder'), $toggleGroup)
 
 		var width = this.options.width || Math.max($toggleOn.outerWidth(), $toggleOff.outerWidth())+($toggleHandle.outerWidth()/2)
 		var height = this.options.height || Math.max($toggleOn.outerHeight(), $toggleOff.outerHeight())
 		$toggleOn.addClass('toggle-on')
 		$toggleOff.addClass('toggle-off')
-		this.$toggle.css({ width: width, height: height })
+		this.$toggle.css({ width: width, height: height }).toggleClass(this._indeterminatestyle, checked === '')
 		if (this.options.height) {
 			$toggleOn.css('line-height', $toggleOn.height() + 'px')
 			$toggleOff.css('line-height', $toggleOff.height() + 'px')
@@ -86,22 +89,32 @@
 		this.trigger(true)
 	}
 
+	Toggle.prototype.isChecked = function () {
+		if (this.$element.is(':checkbox')) return this.$element.prop('checked')
+		var val = this.$element.val()
+		return val === '' ? val : val == 'true'
+	}
+
+	Toggle.prototype.setChecked = function (checked) {
+		return this.$element.is(':checkbox') ? this.$element.prop('checked', checked) : this.$element.val(checked)
+	}
+
 	Toggle.prototype.toggle = function () {
-		if (this.$element.prop('checked')) this.off()
-		else this.on()
+		this._toggle(!this.isChecked())
 	}
 
 	Toggle.prototype.on = function (silent) {
-		if (this.$element.prop('disabled')) return false
-		this.$toggle.removeClass(this._offstyle + ' off').addClass(this._onstyle)
-		this.$element.prop('checked', true)
-		if (!silent) this.trigger()
+		this._toggle(true, silent)
 	}
 
 	Toggle.prototype.off = function (silent) {
+		this._toggle(false, silent)
+	}
+	
+	Toggle.prototype._toggle = function (checked, silent) {
 		if (this.$element.prop('disabled')) return false
-		this.$toggle.removeClass(this._onstyle).addClass(this._offstyle + ' off')
-		this.$element.prop('checked', false)
+		this.$toggle.removeClass(this._indeterminatestyle).toggleClass(this._onstyle, checked).toggleClass(this._offstyle + ' off', !checked)
+		this.setChecked(checked)
 		if (!silent) this.trigger()
 	}
 
@@ -118,8 +131,9 @@
 	Toggle.prototype.update = function (silent) {
 		if (this.$element.prop('disabled')) this.disable()
 		else this.enable()
-		if (this.$element.prop('checked')) this.on(silent)
-		else this.off(silent)
+		var checked = this.isChecked();
+		if (checked === true) this.on(silent)
+		else if (checked === false) this.off(silent)
 	}
 
 	Toggle.prototype.trigger = function (silent) {
@@ -168,13 +182,15 @@
 	// ===============
 
 	$(function() {
-		$('input[type=checkbox][data-toggle^=toggle]').bootstrapToggle()
+		$('input[type=checkbox][data-toggle^=toggle],input[type=hidden][data-toggle^=toggle]').bootstrapToggle()
 	})
 
-	$(document).on('click.bs.toggle', 'div[data-toggle^=toggle]', function(e) {
-		var $checkbox = $(this).find('input[type=checkbox]')
-		$checkbox.bootstrapToggle('toggle')
-		e.preventDefault()
+	$(document).on('click.bs.toggle keydown.bs.toggle', 'div[data-toggle^=toggle]', function(e) {
+		if (e.type != 'keydown' || e.which === 13 || e.which === 32) { // 13 = Return, 32 = Space
+			var $checkbox = $(this).find('input[type=checkbox],input[type=hidden]')
+			$checkbox.bootstrapToggle('toggle')
+			e.preventDefault()
+		}
 	})
 
 }(jQuery);
