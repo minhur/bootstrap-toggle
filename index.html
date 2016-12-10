@@ -13,7 +13,7 @@
 	<title>Bootstrap Toggle</title>
 	<link rel="canonical" href="http://www.bootstraptoggle.com">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css" rel="stylesheet" >
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/bootstrap-toggle.css" rel="stylesheet">
 	<link href="doc/stylesheet.css" rel="stylesheet">
@@ -21,30 +21,27 @@
 </head>
 <body>
 	<header>
-		<nav class="navbar navbar-default container" role="navigation">
+		<nav class="navbar navbar-light bg-faded container" role="navigation">
 			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
+				<button class="navbar-toggler collapsed float-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"></button>
+				<div id="navbar" class="collapse navbar-toggleable-md">
 					<a class="navbar-brand" href="#">Bootstrap Toggle</a>
-				</div>
-				<div id="navbar" class="collapse navbar-collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#usage">Usage</a></li>
-						<li><a href="#api">API</a></li>
-						<li><a href="#events">Events</a></li>
-						<li><a href="#demos">Demos</a></li>
-						<li><a href="https://github.com/minhur/bootstrap-toggle/issues">Issues</a></li>
-						<li><a href="https://github.com/minhur/bootstrap-toggle/archive/master.zip">Download</a></li>
-						<li>
-							<iframe src="https://mdo.github.io/github-buttons/github-btn.html?user=minhur&repo=bootstrap-toggle&type=watch" allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
+					<ul class="nav navbar-nav float-lg-right">
+						<li class="nav-item"><a href="#usage" class="nav-link">Usage</a></li>
+						<li class="nav-item"><a href="#api" class="nav-link">API</a></li>
+						<li class="nav-item"><a href="#events" class="nav-link">Events</a></li>
+						<li class="nav-item"><a href="#demos" class="nav-link">Demos</a></li>
+						<li class="nav-item"><a href="https://github.com/minhur/bootstrap-toggle/issues" class="nav-link">Issues</a></li>
+						<li class="nav-item"><a href="https://github.com/minhur/bootstrap-toggle/archive/master.zip" class="nav-link">Download</a></li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">
+								<iframe src="https://mdo.github.io/github-buttons/github-btn.html?user=minhur&repo=bootstrap-toggle&type=watch" allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
+							</a>
 						</li>
-						<li>
-							<iframe src="https://mdo.github.io/github-buttons/github-btn.html?user=minhur&repo=bootstrap-toggle&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
+						<li class="nav-item">
+							<a href="#" class="nav-link">
+								<iframe src="https://mdo.github.io/github-buttons/github-btn.html?user=minhur&repo=bootstrap-toggle&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -68,7 +65,7 @@
 			<hr>
 			<h3>Installation</h3>
 			<p>You can <a href="https://github.com/minhur/bootstrap-toggle/archive/master.zip">download</a> the latest version of Bootstrap Toggle or use CDN to load the library.</p>
-			<p><span class="label label-warning">Warning</span> If you are using Bootstrap v2.3.2, use <code>bootstrap2-toggle.min.js</code> and <code>bootstrap2-toggle.min.css</code> instead.</p>
+			<p><span class="tag tag-warning">Warning</span> If you are using Bootstrap v2.3.2, use <code>bootstrap2-toggle.min.js</code> and <code>bootstrap2-toggle.min.css</code> instead.</p>
 			<code class="highlight">&lt;link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet"&gt;
 &lt;script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"&gt;&lt;/script&gt;</code>
 
@@ -184,16 +181,16 @@
 					<td>string</td>
 					<td><code>"primary"</code></td>
 					<td>
-						Style of the <em>on</em> toggle.<br>Possible values are:<code>default</code>,<code>primary</code>,<code>success</code>,<code>info</code>,<code>warning</code>,<code>danger</code><br>
+						Style of the <em>on</em> toggle.<br>Possible values are:<code>secondary</code>,<code>primary</code>,<code>success</code>,<code>info</code>,<code>warning</code>,<code>danger</code><br>
 						Refer to Bootstrap <a href="http://getbootstrap.com/css/#buttons-options" target="_blank">Button Options</a> documentation for more information.
 					</td>
 				</tr>
 				<tr>
 					<td>offstyle</td>
 					<td>string</td>
-					<td><code>"default"</code></td>
+					<td><code>"secondary"</code></td>
 					<td>
-						Style of the <em>off</em> toggle.<br>Possible values are:<code>default</code>,<code>primary</code>,<code>success</code>,<code>info</code>,<code>warning</code>,<code>danger</code><br>
+						Style of the <em>off</em> toggle.<br>Possible values are:<code>secondary</code>,<code>primary</code>,<code>success</code>,<code>info</code>,<code>warning</code>,<code>danger</code><br>
 						Refer to Bootstrap <a href="http://getbootstrap.com/css/#buttons-options" target="_blank">Button Options</a> documentation for more information.
 					</td>
 				</tr>
@@ -245,43 +242,43 @@
 					<td><em>initialize</em></td>
 					<td><code>$('#toggle-demo').bootstrapToggle()</code></td>
 					<td>Initializes the toggle plugin with options</td>
-					<td><button class="btn btn-default btn-xs" onclick="demo.init('#toggle-demo')">Initialize</button></td>
+					<td><button class="btn btn-secondary btn-xs" onclick="demo.init('#toggle-demo')">Initialize</button></td>
 				</tr>
 				<tr>
 					<td>destroy</td>
 					<td><code>$('#toggle-demo').bootstrapToggle('destroy')</code></td>
 					<td>Destroys the toggle</td>
-					<td><button class="btn btn-default btn-xs" onclick="demo.destroy('#toggle-demo')">Destroy</button></td>
+					<td><button class="btn btn-secondary btn-xs" onclick="demo.destroy('#toggle-demo')">Destroy</button></td>
 				</tr>
 				<tr>
 					<td>on</td>
 					<td><code>$('#toggle-demo').bootstrapToggle('on')</code></td>
 					<td>Sets the toggle to 'On' state</td>
-					<td><button class="btn btn-default btn-xs" onclick="demo.on('#toggle-demo')">On</button></td>
+					<td><button class="btn btn-secondary btn-xs" onclick="demo.on('#toggle-demo')">On</button></td>
 				</tr>
 				<tr>
 					<td>off</td>
 					<td><code>$('#toggle-demo').bootstrapToggle('off')</code></td>
 					<td>Sets the toggle to 'Off' state</td>
-					<td><button class="btn btn-default btn-xs" onclick="demo.off('#toggle-demo')">Off</button></td>
+					<td><button class="btn btn-secondary btn-xs" onclick="demo.off('#toggle-demo')">Off</button></td>
 				</tr>
 				<tr>
 					<td>toggle</td>
 					<td><code>$('#toggle-demo').bootstrapToggle('toggle')</code></td>
 					<td>Toggles the state of the toggle</td>
-					<td><button class="btn btn-default btn-xs" onclick="demo.toggle('#toggle-demo')">Toggle</button></td>
+					<td><button class="btn btn-secondary btn-xs" onclick="demo.toggle('#toggle-demo')">Toggle</button></td>
 				</tr>
 				<tr>
 					<td>enable</td>
 					<td><code>$('#toggle-demo').bootstrapToggle('enable')</code></td>
 					<td>Enables the toggle</td>
-					<td><button class="btn btn-default btn-xs" onclick="demo.enable('#toggle-demo')">Enable</button></td>
+					<td><button class="btn btn-secondary btn-xs" onclick="demo.enable('#toggle-demo')">Enable</button></td>
 				</tr>
 				<tr>
 					<td>disable</td>
 					<td><code>$('#toggle-demo').bootstrapToggle('disable')</code></td>
 					<td>Disables the toggle</td>
-					<td><button class="btn btn-default btn-xs" onclick="demo.disable('#toggle-demo')">Disable</button></td>
+					<td><button class="btn btn-secondary btn-xs" onclick="demo.disable('#toggle-demo')">Disable</button></td>
 				</tr>
 				</tbody>
 				</table>
@@ -321,7 +318,7 @@
 						$('#toggle-trigger').bootstrapToggle('on')
 					}
 					function toggleOff() {
-						$('#toggle-trigger').bootstrapToggle('off')	
+						$('#toggle-trigger').bootstrapToggle('off')
 					}
 					function toggleOnByInput() {
 						$('#toggle-trigger').prop('checked', true).change()
@@ -345,7 +342,7 @@
 				<input type="checkbox" checked data-toggle="toggle" data-size="small">
 				<input type="checkbox" checked data-toggle="toggle" data-size="mini">
 			</div>
-			
+
 			<h3>Custom Sizes</h3>
 			<p>Bootstrap toggle can handle custom sizes by <code>data-width</code> and <code>data-height</code> options.</p>
 			<div class="example">
@@ -362,7 +359,7 @@
 				<input type="checkbox" checked data-toggle="toggle" data-onstyle="info">
 				<input type="checkbox" checked data-toggle="toggle" data-onstyle="warning">
 				<input type="checkbox" checked data-toggle="toggle" data-onstyle="danger">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="default">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="secondary">
 			</div>
 
 			<h3>Colors Mix</h3>
@@ -435,7 +432,7 @@
 	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
 	<script src="doc/script.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
 	<script src="js/bootstrap-toggle.js"></script>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
