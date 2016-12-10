@@ -25,7 +25,7 @@
 		on: 'On',
 		off: 'Off',
 		onstyle: 'primary',
-		offstyle: 'default',
+		offstyle: 'secondary',
 		size: 'normal',
 		style: '',
 		width: null,
@@ -56,7 +56,7 @@
 			.addClass(this._onstyle + ' ' + size)
 		var $toggleOff = $('<label class="btn">').html(this.options.off)
 			.addClass(this._offstyle + ' ' + size + ' active')
-		var $toggleHandle = $('<span class="toggle-handle btn btn-default">')
+		var $toggleHandle = $('<span class="toggle-handle btn btn-secondary">')
 			.addClass(size)
 		var $toggleGroup = $('<div class="toggle-group">')
 			.append($toggleOn, $toggleOff, $toggleHandle)
@@ -106,11 +106,13 @@
 	}
 
 	Toggle.prototype.enable = function () {
+		this.$toggle.removeClass('disabled')
 		this.$toggle.removeAttr('disabled')
 		this.$element.prop('disabled', false)
 	}
 
 	Toggle.prototype.disable = function () {
+		this.$toggle.addClass('disabled')
 		this.$toggle.attr('disabled', 'disabled')
 		this.$element.prop('disabled', true)
 	}

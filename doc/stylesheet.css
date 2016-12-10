@@ -22,12 +22,6 @@ nav.navbar {
 #navbar {
 	margin: 0px;
 }
-#navbar .navbar-nav li iframe {
-	margin-top: 15px;
-}
-#navbar .navbar-nav li:last-child iframe {
-	margin-right: 15px;
-}
 
 @media screen and (max-width: 767px) {
 	#navbar .navbar-nav li iframe {
