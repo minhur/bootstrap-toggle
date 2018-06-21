@@ -29,7 +29,8 @@
 		size: 'normal',
 		style: '',
 		width: null,
-		height: null
+		height: null,
+		indeterminate: false
 	}
 
 	Toggle.prototype.defaults = function() {
@@ -41,7 +42,8 @@
 			size: this.$element.attr('data-size') || Toggle.DEFAULTS.size,
 			style: this.$element.attr('data-style') || Toggle.DEFAULTS.style,
 			width: this.$element.attr('data-width') || Toggle.DEFAULTS.width,
-			height: this.$element.attr('data-height') || Toggle.DEFAULTS.height
+			height: this.$element.attr('data-height') || Toggle.DEFAULTS.height,
+			indeterminate: this.$element.data('indeterminate') || Toggle.DEFAULTS.indeterminate
 		}
 	}
 
@@ -62,6 +64,7 @@
 			.append($toggleOn, $toggleOff, $toggleHandle)
 		var $toggle = $('<div class="toggle btn" data-toggle="toggle">')
 			.addClass( this.$element.prop('checked') ? this._onstyle : this._offstyle+' off' )
+			.addClass( this.$element.prop('indeterminate') ? 'indeterminate' : '' )
 			.addClass(size).addClass(this.options.style)
 
 		this.$element.wrap($toggle)
@@ -87,21 +90,57 @@
 	}
 
 	Toggle.prototype.toggle = function () {
-		if (this.$element.prop('checked')) this.off()
-		else this.on()
+		if (this.options.indeterminate)
+		{
+			if (this.$element.prop('checked'))
+			{
+				if (this.$element.prop('indeterminate'))
+				{
+					this.on();
+				}
+				else {
+					this.off();
+				}
+			}
+			else{
+				this.indeterminate();
+			}
+		}
+		else
+		{
+			if (this.$element.prop('checked')) this.off()
+			else this.on()
+		}
 	}
 
 	Toggle.prototype.on = function (silent) {
 		if (this.$element.prop('disabled')) return false
-		this.$toggle.removeClass(this._offstyle + ' off').addClass(this._onstyle)
-		this.$element.prop('checked', true)
+		this.$toggle.removeClass(this._offstyle + ' off')
+		.addClass(this._onstyle)
+		.removeClass('indeterminate');
+		this.$element.prop('checked', true);
+		this.$element.prop('indeterminate', false);
 		if (!silent) this.trigger()
 	}
 
 	Toggle.prototype.off = function (silent) {
 		if (this.$element.prop('disabled')) return false
-		this.$toggle.removeClass(this._onstyle).addClass(this._offstyle + ' off')
+		this.$toggle.removeClass(this._onstyle)
+		.addClass(this._offstyle + ' off')
+		.removeClass('indeterminate');
 		this.$element.prop('checked', false)
+		this.$element.prop('indeterminate', false);
+		if (!silent) this.trigger()
+	}
+
+	Toggle.prototype.indeterminate = function (silent) {
+		if (this.$element.prop('disabled')) return false
+		this.$toggle.addClass('indeterminate')
+		.removeClass('off')
+		.removeClass(this._onstyle)
+		.addClass(this._offstyle);
+		this.$element.prop('checked', true);
+		this.$element.prop('indeterminate', true);
 		if (!silent) this.trigger()
 	}
 
@@ -116,10 +155,28 @@
 	}
 
 	Toggle.prototype.update = function (silent) {
-		if (this.$element.prop('disabled')) this.disable()
-		else this.enable()
-		if (this.$element.prop('checked')) this.on(silent)
-		else this.off(silent)
+		if (this.options.indeterminate)
+		{
+			if (this.$element.prop('disabled')) this.disable()
+			else this.enable()
+			if (this.$element.prop('indeterminate'))
+			{
+				this.indeterminate(silent)
+			}
+			else
+			{
+				if (this.$element.prop('checked')) this.on(silent)
+				else this.off(silent)
+			}
+			
+		}
+		else
+		{
+			if (this.$element.prop('disabled')) this.disable()
+			else this.enable()
+			if (this.$element.prop('checked')) this.on(silent)
+			else this.off(silent)
+		}
 	}
 
 	Toggle.prototype.trigger = function (silent) {
