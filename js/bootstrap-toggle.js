@@ -27,7 +27,7 @@
 		on: 'On',
 		off: 'Off',
 		onstyle: 'primary',
-		offstyle: 'default',
+		offstyle: 'light',
 		size: 'normal',
 		style: '',
 		width: null,
