@@ -4,7 +4,10 @@
  * ========================================================================
  * Copyright 2014 Min Hur, The New York Times Company
  * Licensed under MIT
- * ======================================================================== */
+ * ========================================================================
+ * FORK: 20181017: https://github.com/gitbrent/bootstrap-toggle
+*/
+.btn-group-xs>.btn,.btn-xs{padding:.35rem .4rem .25rem;font-size:.875rem;line-height:.5;border-radius:.2rem}
 .checkbox label .toggle,.checkbox-inline .toggle{margin-left:-20px;margin-right:5px}
 .toggle{position:relative;overflow:hidden}
 .toggle input[type=checkbox]{display:none}
@@ -26,3 +29,6 @@
 .toggle.btn-xs{min-width:35px;min-height:22px}
 .toggle-on.btn-xs{padding-right:12px}
 .toggle-off.btn-xs{padding-left:12px}
+.toggle-off{box-shadow:none}
+.toggle.off{border-color:#ccc}
+.toggle-handle{background-color:#fff}
