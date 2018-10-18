@@ -4,7 +4,9 @@
  * ========================================================================
  * Copyright 2014 Min Hur, The New York Times Company
  * Licensed under MIT
- * ======================================================================== */
+ * ========================================================================
+ * FORK: 20181017: https://github.com/gitbrent/bootstrap-toggle
+ */
 
 
  +function ($) {
@@ -19,7 +21,7 @@
 		this.render()
 	}
 
-	Toggle.VERSION  = '2.2.0'
+	Toggle.VERSION  = '3.0.0'
 
 	Toggle.DEFAULTS = {
 		on: 'On',
@@ -171,7 +173,7 @@
 		$('input[type=checkbox][data-toggle^=toggle]').bootstrapToggle()
 	})
 
-	$(document).on('click.bs.toggle', 'div[data-toggle^=toggle]', function(e) {
+	$(document).on('touchstart.bs.toggle click.bs.toggle', 'div[data-toggle^=toggle]', function(e) {
 		var $checkbox = $(this).find('input[type=checkbox]')
 		$checkbox.bootstrapToggle('toggle')
 		e.preventDefault()
