@@ -1,10 +1,9 @@
-header, footer {
+header {
 	padding: 20px;
 	background-image: url('header.png');
 	background-size: 256px 256px;
 }
 footer {
-	color: #fff;
 	text-align: center;
 }
 .nyt-logo {
