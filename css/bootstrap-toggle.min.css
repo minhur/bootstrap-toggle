@@ -1,12 +1,12 @@
-/*! ========================================================================
- * Bootstrap Toggle: bootstrap-toggle.css v2.2.0
- * http://www.bootstraptoggle.com
- * ========================================================================
- * Copyright 2014 Min Hur, The New York Times Company
- * Licensed under MIT
- * ========================================================================
- * FORK: 20181017: https://github.com/gitbrent/bootstrap-toggle
-*/
+/*\
+|*| ========================================================================
+|*| Bootstrap Toggle: bootstrap-toggle.js v3.0.0
+|*| https://gitbrent.github.io/bootstrap-toggle/
+|*| ========================================================================
+|*| Copyright 2018 Brent Ely
+|*| Licensed under MIT
+|*| ========================================================================
+\*/
 .btn-group-xs>.btn,.btn-xs{padding:.35rem .4rem .25rem;font-size:.875rem;line-height:.5;border-radius:.2rem}
 .checkbox label .toggle,.checkbox-inline .toggle{margin-left:-20px;margin-right:5px}
 .toggle{position:relative;overflow:hidden}
