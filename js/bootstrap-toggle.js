@@ -1,15 +1,13 @@
-/*! ========================================================================
- * Bootstrap Toggle: bootstrap-toggle.js v2.2.0
- * http://www.bootstraptoggle.com
- * ========================================================================
- * Copyright 2014 Min Hur, The New York Times Company
- * Licensed under MIT
- * ========================================================================
- * FORK: 20181017: https://github.com/gitbrent/bootstrap-toggle
- */
+/*\ ========================================================================
+ *  Bootstrap Toggle: bootstrap-toggle.js v3.0.0
+ *  https://gitbrent.github.io/bootstrap-toggle/
+ *  ========================================================================
+ *  Copyright 2018 Brent Ely
+ *  Licensed under MIT
+ *  ========================================================================
+\*/
 
-
- +function ($) {
++function ($) {
  	'use strict';
 
 	// TOGGLE PUBLIC CLASS DEFINITION

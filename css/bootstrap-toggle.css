@@ -1,14 +1,14 @@
-/*! ========================================================================
- * Bootstrap Toggle: bootstrap-toggle.css v2.2.0
- * http://www.bootstraptoggle.com
- * ========================================================================
- * Copyright 2014 Min Hur, The New York Times Company
- * Licensed under MIT
- * ========================================================================
- * FORK: 20181017: https://github.com/gitbrent/bootstrap-toggle
-*/
+/*\ ========================================================================
+ *  Bootstrap Toggle: bootstrap-toggle.js v3.0.0
+ *  https://gitbrent.github.io/bootstrap-toggle/
+ *  ========================================================================
+ *  Copyright 2018 Brent Ely
+ *  Licensed under MIT
+ *  ========================================================================
+\*/
 
-/* Return support for "*-xs" removed in Bootstrap-4
+/*
+* @added 3.0.0: Return support for "*-xs" removed in Bootstrap-4
 * @see: [Comment](https://github.com/twbs/bootstrap/issues/21881#issuecomment-341972830)
 */
 .btn-group-xs > .btn, .btn-xs {
