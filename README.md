@@ -1,24 +1,24 @@
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/) [![MIT License](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
-# Bootstrap Toggle
+# Bootstrap4-Toggle
 
 Bootstrap Toggle is a Bootstrap 4 widget/plugin that converts checkboxes into toggles.
 
-Visit https://gitbrent.github.io/bootstrap-toggle/ for demos.
+Visit https://gitbrent.github.io/bootstrap4-toggle/ for demos.
 
 ## Getting Started
 
 ### Installation
-You can [download](https://github.com/gitbrent/bootstrap-toggle/archive/master.zip) the latest version of Bootstrap Toggle or use CDN to load the library.
+You can [download](https://github.com/gitbrent/bootstrap4-toggle/archive/master.zip) the latest version of Bootstrap Toggle or use CDN to load the library.
 
 ```html
-<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-toggle@3.0.0/css/bootstrap-toggle.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-toggle@3.0.0/js/bootstrap-toggle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.0.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.0.0/js/bootstrap4-toggle.min.js"></script>
 ```
 
 ### Bower Install
 ```bash
-bower install bootstrap-toggle-3
+bower install bootstrap4-toggle
 ```
 
 ## Usage
@@ -166,4 +166,4 @@ This also means that using the API or Input to trigger events will work both way
 ```
 
 ## Demos
-Visit https://gitbrent.github.io/bootstrap-toggle/ for demos.
+Visit https://gitbrent.github.io/bootstrap4-toggle/ for demos.
