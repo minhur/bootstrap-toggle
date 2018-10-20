@@ -1,23 +1,24 @@
-# Bootstrap Toggle
-Bootstrap Toggle is a highly flexible Bootstrap plugin that converts checkboxes into toggles.
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
-Visit http://www.bootstraptoggle.com for demos.
+# Bootstrap Toggle
+
+Bootstrap Toggle is a Bootstrap 4 widget/plugin that converts checkboxes into toggles.
+
+Visit https://gitbrent.github.io/bootstrap-toggle/ for demos.
 
 ## Getting Started
 
 ### Installation
-You can [download](https://github.com/minhur/bootstrap-toggle/archive/master.zip) the latest version of Bootstrap Toggle or use CDN to load the library.
-
-`Warning` If you are using Bootstrap v2.3.2, use `bootstrap2-toggle.min.js` and `bootstrap2-toggle.min.css` instead.
+You can [download](https://github.com/gitbrent/bootstrap-toggle/archive/master.zip) the latest version of Bootstrap Toggle or use CDN to load the library.
 
 ```html
-<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
-<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-toggle@3.0.0/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-toggle@3.0.0/js/bootstrap-toggle.min.js"></script>
 ```
 
 ### Bower Install
 ```bash
-bower install bootstrap-toggle
+bower install bootstrap-toggle-3
 ```
 
 ## Usage
@@ -33,13 +34,13 @@ Simply add `data-toggle="toggle"` to convert checkboxes into toggles.
 Refer to Bootstrap Form Controls documentation to create stacked checkboxes. Simply add `data-toggle="toggle"` to convert checkboxes into toggles.
 
 ```html
-<div class="checkbox">
+<div class="form-check form-check">
   <label>
     <input type="checkbox" data-toggle="toggle">
     Option one is enabled
   </label>
 </div>
-<div class="checkbox disabled">
+<div class="form-check form-check disabled">
   <label>
     <input type="checkbox" disabled data-toggle="toggle">
     Option two is disabled
@@ -51,13 +52,13 @@ Refer to Bootstrap Form Controls documentation to create stacked checkboxes. Sim
 Refer to Bootstrap Form Controls documentation to create inline checkboxes. Simply add `data-toggle="toggle"` to a convert checkboxes into toggles.
 
 ```html
-<label class="checkbox-inline">
+<label class="form-check form-check-inline">
   <input type="checkbox" checked data-toggle="toggle"> First
 </label>
-<label class="checkbox-inline">
+<label class="form-check form-check-inline">
   <input type="checkbox" data-toggle="toggle"> Second
 </label>
-<label class="checkbox-inline">
+<label class="form-check form-check-inline">
   <input type="checkbox" data-toggle="toggle"> Third
 </label>
 ```
@@ -94,14 +95,14 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
 
 Name|Type|Default|Description|
 ---|---|---|---
-on|string/html|"On"|Text of the on toggle
-off|string/html|"Off"|Text of the off toggle
-size|string|"normal"|Size of the toggle. Possible values are `large`, `normal`, `small`, `mini`.
-onstyle|string|"primary"|Style of the on toggle. Possible values are `default`, `primary`, `success`, `info`, `warning`, `danger`
-offstyle|string|"default"|Style of the off toggle. Possible values are `default`, `primary`, `success`, `info`, `warning`, `danger`
-style|string| |Appends the value to the class attribute of the toggle. This can be used to apply custom styles. Refer to Custom Styles for reference.
-width|integer|*null*|Sets the width of the toggle. if set to *null*, width will be calculated.
-height|integer|*null*|Sets the height of the toggle. if set to *null*, height will be calculated.
+`on`|string/html|"On"|Text of the on toggle
+`off`|string/html|"Off"|Text of the off toggle
+`size`|string|"normal"|Size of the toggle. Possible values are `large`, `normal`, `small`, `mini`.
+`onstyle`|string|"primary"|Style of the on toggle. Possible values are `default`, `primary`, `success`, `info`, `warning`, `danger`
+`offstyle`|string|"default"|Style of the off toggle. Possible values are `default`, `primary`, `success`, `info`, `warning`, `danger`
+`style`|string| |Appends the value to the class attribute of the toggle. This can be used to apply custom styles. Refer to Custom Styles for reference.
+`width`|integer|*null*|Sets the width of the toggle. if set to *null*, width will be calculated.
+`height`|integer|*null*|Sets the height of the toggle. if set to *null*, height will be calculated.
 
 ### Methods
 Methods can be used to control toggles directly.
@@ -110,15 +111,15 @@ Methods can be used to control toggles directly.
 <input id="toggle-demo" type="checkbox" data-toggle="toggle">
 ```
 
-Method|Example|Description
----|---|---
-initialize|$('#toggle-demo').bootstrapToggle()|Initializes the toggle plugin with options
-destroy|$('#toggle-demo').bootstrapToggle('destroy')|Destroys the toggle
-on|$('#toggle-demo').bootstrapToggle('on')|Sets the toggle to 'On' state
-off|$('#toggle-demo').bootstrapToggle('off')|Sets the toggle to 'Off' state
-toggle|$('#toggle-demo').bootstrapToggle('toggle')|Toggles the state of the toggle
-enable|$('#toggle-demo').bootstrapToggle('enable')|Enables the toggle
-disable|$('#toggle-demo').bootstrapToggle('disable')|Disables the toggle
+Method     |Example                                       |Description
+-----------|----------------------------------------------|------------------------------------------
+initialize | $('#toggle-demo').bootstrapToggle()          |Initializes the toggle plugin with options
+destroy    | $('#toggle-demo').bootstrapToggle('destroy') |Destroys the toggle
+on         | $('#toggle-demo').bootstrapToggle('on')      |Sets the toggle to 'On' state
+off        | $('#toggle-demo').bootstrapToggle('off')     |Sets the toggle to 'Off' state
+toggle     | $('#toggle-demo').bootstrapToggle('toggle')  |Toggles the state of the toggle
+enable     | $('#toggle-demo').bootstrapToggle('enable')  |Enables the toggle
+disable    | $('#toggle-demo').bootstrapToggle('disable') |Disables the toggle
 
 ## Events
 
@@ -164,12 +165,5 @@ This also means that using the API or Input to trigger events will work both way
 </script>
 ```
 
-### Integration
-
-#### [KnockoutJS](http://knockoutjs.com)
-
-A binding for knockout is available here: [aAXEe/knockout-bootstrap-toggle](https://github.com/aAXEe/knockout-bootstrap-toggle)
-
 ## Demos
-
-Visit http://www.bootstraptoggle.com for demos.
+Visit https://gitbrent.github.io/bootstrap-toggle/ for demos.
