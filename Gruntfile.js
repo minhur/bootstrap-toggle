@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function(grunt){
 	'use strict';
 
 	grunt.initConfig({
@@ -33,5 +33,4 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.registerTask('default', ['clean', 'uglify', 'cssmin']);
-
 };
