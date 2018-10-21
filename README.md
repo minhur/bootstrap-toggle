@@ -6,17 +6,18 @@ Bootstrap4 Toggle is a Bootstrap 4 widget/plugin that converts checkboxes into t
 
 Visit https://gitbrent.github.io/bootstrap4-toggle/ for demos.
 
-## Getting Started
+## Installation
 
-### Installation
-You can [download](https://github.com/gitbrent/bootstrap4-toggle/archive/master.zip) the latest version of Bootstrap Toggle or use CDN to load the library.
+### Download
+[Version 3.0.0](https://github.com/gitbrent/bootstrap4-toggle/archive/v3.0.0.zip) is the latest version of Bootstrap4 Toggle.
 
+### Use CDN
 ```html
-<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.0.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.0.0/css/bootstrap4-toggle.min.css" rel="stylesheet">  
 <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.0.0/js/bootstrap4-toggle.min.js"></script>
 ```
 
-## Node.js
+### Node.js
 ```bash
 npm install bootstrap4-toggle
 ```
