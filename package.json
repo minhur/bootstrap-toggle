@@ -11,12 +11,12 @@
   "main": "js/bootstrap-toggle.js",
   "keywords": [
     "bootstrap",
-	"bootstrap4",
-	"bootstrap-switch",
-	"bootstrap-toggle",
+    "bootstrap4",
+    "bootstrap-switch",
+    "bootstrap-toggle",
     "bootstrap4-toggle",
     "switch",
-	"toggle"
+    "toggle"
   ],
   "repository": {
     "type": "git",
