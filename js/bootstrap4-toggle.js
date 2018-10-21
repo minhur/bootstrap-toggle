@@ -57,7 +57,7 @@
 			.addClass(this._onstyle + ' ' + size)
 		var $toggleOff = $('<label class="btn">').html(this.options.off)
 			.addClass(this._offstyle + ' ' + size + ' active')
-		var $toggleHandle = $('<span class="toggle-handle btn btn-primary">')
+		var $toggleHandle = $('<span class="toggle-handle btn btn-light">')
 			.addClass(size)
 		var $toggleGroup = $('<div class="toggle-group">')
 			.append($toggleOn, $toggleOff, $toggleHandle)
