@@ -17,13 +17,8 @@ You can [download](https://github.com/gitbrent/bootstrap4-toggle/archive/master.
 ```
 
 ## Node.js
-```javascript
-npm install bootstrap4-toggle
-```
-
-### Bower Install
 ```bash
-bower install bootstrap4-toggle
+npm install bootstrap4-toggle
 ```
 
 ## Usage
