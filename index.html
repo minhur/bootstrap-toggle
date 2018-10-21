@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="description" content="Bootstrap Toggle is a Bootstrap 4 plugin that converts checkboxes into responsive toggles.">
-	<meta name="keywords" content="bootstrap, toggle, switch, bootstrap-toggle, bootstrap-switch">
+	<meta name="keywords" content="bootstrap, toggle, switch, bootstrap4-toggle, bootstrap-switch">
 	<meta name="author" content="metatags generator">
 	<meta name="robots" content="index, follow">
 	<meta name="revisit-after" content="1 month">
@@ -12,7 +12,7 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" rel="stylesheet">
-	<link href="css/bootstrap-toggle.css" rel="stylesheet">
+	<link href="css/bootstrap4-toggle.css" rel="stylesheet">
 	<link href="doc/stylesheet.css" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
@@ -32,25 +32,17 @@
 				<li class="nav-item"><a class="nav-link" href="#api">API</a></li>
 				<li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
 				<li class="nav-item"><a class="nav-link" href="#demos">Demos</a></li>
-				<li class="nav-item"><a class="nav-link" href="https://github.com/gitbrent/bootstrap-toggle/issues">Issues</a></li>
-				<li class="nav-item"><a class="nav-link" href="https://github.com/gitbrent/bootstrap-toggle/archive/master.zip">Download</a></li>
-				<!--
-				<li class="nav-item">
-					<iframe src="https://ghbtns.com/github-btn.html?user=gitbrent&repo=bootstrap-toggle&type=watch&count=true&v=2" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
-				</li>
-				<li>
-					<iframe src="https://ghbtns.com/github-btn.html?user=gitbrent&repo=bootstrap-toggle&type=star&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
-				</li>
-			-->
+				<li class="nav-item"><a class="nav-link" href="https://github.com/gitbrent/bootstrap4-toggle/issues">Issues</a></li>
+				<li class="nav-item"><a class="nav-link" href="https://github.com/gitbrent/bootstrap4-toggle/archive/master.zip">Download</a></li>
 			</div>
 		</nav>
 		<div class="mast-head">
 			<div class="container">
 				<h1>Bootstrap4 Toggle</h1>
-				<p>Bootstrap Toggle is a plugin/widget that converts plain checkboxes into responsive toggles</p>
+				<p><strong>Bootstrap4 Toggle</strong> is a plugin/widget that converts plain checkboxes into responsive toggles.</p>
 				<div class="mast-links">
-					<iframe src="https://ghbtns.com/github-btn.html?user=gitbrent&repo=bootstrap-toggle&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
-					<iframe src="https://ghbtns.com/github-btn.html?user=gitbrent&repo=bootstrap-toggle&type=star&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
+					<iframe src="https://ghbtns.com/github-btn.html?user=gitbrent&repo=bootstrap4-toggle&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
+					<iframe src="https://ghbtns.com/github-btn.html?user=gitbrent&repo=bootstrap4-toggle&type=star&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
 				</div>
 			</div>
 		</div>
@@ -65,13 +57,13 @@
 					<div class="col-1 text-center">
 						<i class="fas fa-check-circle text-success" style="font-size:48px"></i>
 					</div>
-					<div class="col pl-0">
+					<div class="col">
 						Implements modern Bootstrap
 					</div>
 					<div class="col-1 text-center">
 						<i class="fas fa-check-circle text-success" style="font-size:48px"></i>
 					</div>
-					<div class="col pl-0">
+					<div class="col">
 						Support for touch events
 					</div>
 					<div class="col-1 text-right">
@@ -87,9 +79,9 @@
 			<h2>Getting Started</h2>
 			<hr>
 			<h3 class="text-secondary mt-4">Installation</h3>
-			<p>You can <a href="https://github.com/gitbrent/bootstrap-toggle/archive/master.zip">download</a> the latest version of Bootstrap Toggle or use CDN to load the library.</p>
-			<code class="highlight">&lt;link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-toggle@3.0.0/css/bootstrap-toggle.min.css" rel="stylesheet"&gt;
-&lt;script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-toggle@3.0.0/dist/bootstrap-toggle.min.js"&gt;&lt;/script&gt;</code>
+			<p>You can <a href="https://github.com/gitbrent/bootstrap4-toggle/archive/master.zip">download</a> the latest version of Bootstrap Toggle or use CDN to load the library.</p>
+			<code class="highlight">&lt;link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.0.0/css/bootstrap4-toggle.min.css" rel="stylesheet"&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.0.0/dist/bootstrap4-toggle.min.js"&gt;&lt;/script&gt;</code>
 		</div>
 		<div id="usage" class="container my-5">
 			<h2>Usage</h2>
@@ -112,7 +104,7 @@
 				</div>
 				<div class="form-check form-check disabled">
 					<label>
-						<input type="checkbox" disabled data-toggle="toggle">
+						<input type="checkbox" data-toggle="toggle" disabled>
 						Option two is disabled
 					</label>
 				</div>
@@ -122,13 +114,13 @@
 			<p>Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.1/components/forms/" target="_blank">Form Controls</a> documentation to create inline checkboxes. Simply add <code>data-toggle="toggle"</code> to a convert checkboxes into toggles.</p>
 			<div class="example">
 				<label class="form-check form-check-inline">
-					<input type="checkbox" checked data-toggle="toggle"> First
+					<input type="checkbox" data-style="mr-1" data-toggle="toggle" checked>First
 				</label>
 				<label class="form-check form-check-inline">
-					<input type="checkbox" data-toggle="toggle"> Second
+					<input type="checkbox" data-style="mr-1" data-toggle="toggle">Second
 				</label>
 				<label class="form-check form-check-inline">
-					<input type="checkbox" data-toggle="toggle"> Third
+					<input type="checkbox" data-style="mr-1" data-toggle="toggle">Third
 				</label>
 			</div>
 		</div>
@@ -192,7 +184,7 @@
 					<td>
 						Size of the toggle. Possible values are:
 						<code>large</code>,<code>normal</code>,<code>small</code>,<code>mini</code><br>
-						Refer to Bootstrap <a href="http://getbootstrap.com/css/#buttons-sizes" target="_blank">Button Sizes</a> documentation for more information.
+						Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.1/components/buttons/#sizes" target="_blank">Button Sizes</a> documentation for more information.
 					</td>
 				</tr>
 				<tr>
@@ -201,18 +193,18 @@
 					<td><code class="text-nowrap">"primary"</code></td>
 					<td>
 						Style of the <em>on</em> toggle.<br>Possible values are:
-						<code>default</code>,<code>primary</code>,<code>success</code>,<code>info</code>,<code>warning</code>,<code>danger</code><br>
-						Refer to Bootstrap <a href="http://getbootstrap.com/css/#buttons-options" target="_blank">Button Options</a> documentation for more information.
+						<code>primary</code>,<code>secondary</code>,<code>success</code>,<code>danger</code>,<code>warning</code>,<code>info</code>,<code>light</code>,<code>dark</code><br>
+						Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.1/components/buttons/" target="_blank">Button Options</a> documentation for more information.
 					</td>
 				</tr>
 				<tr>
 					<td><code class="text-nowrap">offstyle</code></td>
 					<td>string</td>
-					<td><code class="text-nowrap">"default"</code></td>
+					<td><code class="text-nowrap">"secondary"</code></td>
 					<td>
 						Style of the <em>off</em> toggle.<br>Possible values are:
-						<code>default</code>,<code>primary</code>,<code>success</code>,<code>info</code>,<code>warning</code>,<code>danger</code><br>
-						Refer to Bootstrap <a href="http://getbootstrap.com/css/#buttons-options" target="_blank">Button Options</a> documentation for more information.
+						<code>primary</code>,<code>secondary</code>,<code>success</code>,<code>danger</code>,<code>warning</code>,<code>info</code>,<code>light</code>,<code>dark</code><br>
+						Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.1/components/buttons/#sizes" target="_blank">Button Options</a> documentation for more information.
 					</td>
 				</tr>
 				<tr>
@@ -356,7 +348,7 @@
 			<hr>
 
 			<h3 class="text-secondary mt-4">Sizes</h3>
-			<p>Bootstrap toggle is available in different sizes. Refer to Bootstrap <a href="http://getbootstrap.com/css/#buttons-sizes" target="_blank">Button Sizes</a> documentation for more information.</p>
+			<p>Bootstrap toggle is available in different sizes. Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.1/components/buttons/#sizes" target="_blank">Button Sizes</a> documentation for more information.</p>
 			<div class="example">
 				<input type="checkbox" checked data-toggle="toggle" data-size="large">
 				<input type="checkbox" checked data-toggle="toggle" data-size="normal">
@@ -373,14 +365,16 @@
 			</div>
 
 			<h3 class="text-secondary mt-4">Colors</h3>
-			<p>Bootstrap Toggle supports various colors. Refer to Bootstrap <a href="http://getbootstrap.com/css/#buttons-options" target="_blank">Button Options</a> documentation for more information.</p>
+			<p>Bootstrap Toggle supports various colors. Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.1/components/buttons/" target="_blank">Button Options</a> documentation for more information.</p>
 			<div class="example">
 				<input type="checkbox" checked data-toggle="toggle" data-onstyle="primary">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="secondary">
 				<input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="info">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="warning">
 				<input type="checkbox" checked data-toggle="toggle" data-onstyle="danger">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="default">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="warning">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="info">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="light" data-style="border">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="dark">
 			</div>
 
 			<h3 class="text-secondary mt-4">Colors Mix</h3>
@@ -440,14 +434,14 @@
 	<footer class="bg-light border-top p-4">
 		<div class="container">
 			<h4 class="font-weight-light">
-				Original updated by <a href="https://github.com/gitbrent" target="_blank">Brent Ely</a> |
-				Available on <a href="https://github.com/gitbrent/bootstrap-toggle" target_"blank">GitHub</a> |
-				Licensed <a href="https://github.com/gitbrent/bootstrap-toggle/blob/master/LICENSE" target_"blank">MIT</a>
+				Original by <a href="https://github.com/minhur" target="_blank">Min Hur</a> |
+				Updated by <a href="https://github.com/gitbrent" target="_blank">Brent Ely</a> |
+				Available on <a href="https://github.com/gitbrent/bootstrap4-toggle" target_"blank">GitHub</a> |
+				Licensed <a href="https://github.com/gitbrent/bootstrap4-toggle/blob/master/LICENSE" target_"blank">MIT</a>
 			</h4>
-			<h6 class="font-weight-light">Original designed and built by <a href="https://github.com/minhur" target="_blank">Min Hur</a> for <a href="http://developers.nytimes.com" target="_blank">The New York Times Company</a></h6>
 			<p class="mt-4 mb-0">
-				<iframe src="https://ghbtns.com/github-btn.html?user=gitbrent&repo=bootstrap-toggle&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
-				<iframe src="https://ghbtns.com/github-btn.html?user=gitbrent&repo=bootstrap-toggle&type=star&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
+				<iframe src="https://ghbtns.com/github-btn.html?user=gitbrent&repo=bootstrap4-toggle&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
+				<iframe src="https://ghbtns.com/github-btn.html?user=gitbrent&repo=bootstrap4-toggle&type=star&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
 			</p>
 		</div>
 	</footer>
@@ -456,6 +450,6 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
 	<script src="doc/script.js"></script>
-	<script src="js/bootstrap-toggle.js"></script>
+	<script src="js/bootstrap4-toggle.js"></script>
 </body>
 </html>
