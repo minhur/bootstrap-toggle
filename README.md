@@ -2,7 +2,7 @@
 
 # Bootstrap4 Toggle
 
-Bootstrap Toggle is a Bootstrap 4 widget/plugin that converts checkboxes into toggles.
+Bootstrap4 Toggle is a Bootstrap 4 widget/plugin that converts checkboxes into toggles.
 
 Visit https://gitbrent.github.io/bootstrap4-toggle/ for demos.
 
