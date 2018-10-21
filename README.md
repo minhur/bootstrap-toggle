@@ -22,6 +22,11 @@ Visit https://gitbrent.github.io/bootstrap4-toggle/ for demos.
 npm install bootstrap4-toggle
 ```
 
+### Yarn
+```bash
+yarn install
+```
+
 ## Usage
 
 ### Basic example
