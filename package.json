@@ -9,6 +9,10 @@
   "homepage": "https://gitbrent.github.io/bootstrap4-toggle/",
   "license": "MIT",
   "main": "js/bootstrap-toggle.js",
+  "files": [
+    "css/bootstrap4-toggle.css",
+    "js/bootstrap4-toggle.js"
+  ],
   "keywords": [
     "bootstrap",
     "bootstrap4",
