@@ -1,6 +1,6 @@
 /*\
 |*| ========================================================================
-|*| Bootstrap Toggle: bootstrap4-toggle.js v3.0.0
+|*| Bootstrap Toggle: bootstrap4-toggle.js v3.0.1
 |*| https://gitbrent.github.io/bootstrap-toggle/
 |*| ========================================================================
 |*| Copyright 2018 Brent Ely
