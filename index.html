@@ -322,22 +322,22 @@
 			<p>This also means that using the API or Input to trigger events will work both ways.</p>
 			<div class="example">
 				<input id="toggle-trigger" type="checkbox" data-toggle="toggle">
-				<button class="btn btn-success" onclick="toggleOn()">On by API</button>
-				<button class="btn btn-danger" onclick="toggleOff()">Off by API</button>
-				<button class="btn btn-success" onclick="toggleOnByInput()">On by Input</button>
-				<button class="btn btn-danger" onclick="toggleOffByInput()">Off by Input</button>
+				<button class="btn btn-success" onclick="toggleApiOn()" >On by API</button>
+				<button class="btn btn-danger"  onclick="toggleApiOff()">Off by API</button>
+				<button class="btn btn-success" onclick="toggleInpOn()" >On by Input</button>
+				<button class="btn btn-danger"  onclick="toggleInpOff()">Off by Input</button>
 				<script>
-					function toggleOn() {
-						$('#toggle-trigger').bootstrapToggle('on')
+					function toggleApiOn() {
+						$('#toggle-trigger').bootstrapToggle('on');
 					}
-					function toggleOff() {
-						$('#toggle-trigger').bootstrapToggle('off')
+					function toggleApiOff() {
+						$('#toggle-trigger').bootstrapToggle('off');
 					}
-					function toggleOnByInput() {
-						$('#toggle-trigger').prop('checked', true).change()
+					function toggleInpOn() {
+						$('#toggle-trigger').prop('checked', true).change();
 					}
-					function toggleOffByInput() {
-						$('#toggle-trigger').prop('checked', false).change()
+					function toggleInpOff() {
+						$('#toggle-trigger').prop('checked', false).change();
 					}
 				</script>
 			</div>
@@ -382,12 +382,12 @@
 			<div class="example bg-dark">
 				<input type="checkbox" checked data-toggle="toggle" data-onstyle="primary"   data-offstyle="secondary">
 				<input type="checkbox" checked data-toggle="toggle" data-onstyle="secondary" data-offstyle="success">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="danger" data-offstyle="warning">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="warning" data-offstyle="info">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="info" data-offstyle="light">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="light" data-offstyle="dark">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="dark" data-offstyle="primary">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="success"   data-offstyle="danger">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="danger"    data-offstyle="warning">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="warning"   data-offstyle="info">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="info"      data-offstyle="light">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="light"     data-offstyle="dark">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="dark"      data-offstyle="primary">
 			</div>
 
 			<h3 class="text-secondary mt-4">Colors Mix</h3>
@@ -434,9 +434,9 @@
 			<p>Transition speed can be easily controlled with css <code>transition</code> property on <code>.toggle-group</code>. You can also turn animation off completely.</p>
 			<div class="example">
 				<style>
-					.slow .toggle-group { transition: left 0.7s; -webkit-transition: left 0.7s; }
-					.fast .toggle-group { transition: left 0.1s; -webkit-transition: left 0.1s; }
-					.quick .toggle-group { transition: none; -webkit-transition: none; }
+					.slow  .toggle-group { transition: left 0.7s; -webkit-transition: left 0.7s; }
+					.fast  .toggle-group { transition: left 0.1s; -webkit-transition: left 0.1s; }
+					.quick .toggle-group { transition: none;      -webkit-transition: none; }
 				</style>
 				<input type="checkbox" checked data-toggle="toggle" data-style="slow">
 				<input type="checkbox" checked data-toggle="toggle" data-class="fast">
