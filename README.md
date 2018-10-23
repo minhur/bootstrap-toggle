@@ -1,10 +1,10 @@
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/) [![MIT License](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+[![Bootstrap 4.1.3](https://img.shields.io/badge/bootstrap-4.1.3-green.svg?style=flat-square)](https://getbootstrap.com/docs/4.1)  [![MIT License](https://badges.frapsoft.com/os/mit/mit.svg?style=flat-square)](https://opensource.org/licenses/mit-license.php)  
 
-# Bootstrap4 Toggle
+# Bootstrap 4 Toggle
 
-Bootstrap4 Toggle is a Bootstrap 4 widget/plugin that converts checkboxes into toggles.
+**Bootstrap 4 Toggle** is a bootstrap plugin/widget that converts checkboxes into toggles.
 
-Visit https://gitbrent.github.io/bootstrap4-toggle/ for demos.
+Visit https://gitbrent.github.io/bootstrap4-toggle/ for interactive demos.
 
 ## Installation
 
@@ -30,10 +30,10 @@ yarn install
 ## Usage
 
 ### Basic example
-Simply add `data-toggle="toggle"` to convert checkboxes into toggles.
+Simply add `data-toggle="toggle"` to automatically convert checkboxes into toggles.
 
 ```html
-<input type="checkbox" checked data-toggle="toggle">
+<input id="chkToggle" type="checkbox" data-toggle="toggle">
 ```
 
 ### Stacked checkboxes
@@ -84,7 +84,8 @@ Initialize toggles with id `toggle-one` with a single line of JavaScript.
 ```
 
 ### Options
-Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-on="Enabled"`.
+* Options can be passed via data attributes or JavaScript
+* For data attributes, append the option name to `data-` (ex: `data-on="Enabled"`)
 
 ```html
 <input type="checkbox" data-toggle="toggle" data-on="Enabled" data-off="Disabled">
@@ -99,16 +100,16 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
 </script>
 ```
 
-Name|Type|Default|Description|
----|---|---|---
-`on`|string/html|"On"|Text of the on toggle
-`off`|string/html|"Off"|Text of the off toggle
-`size`|string|"normal"|Size of the toggle. Possible values are `large`, `normal`, `small`, `mini`.
-`onstyle`|string|"primary"|Style of the on toggle. Possible values are: `primary`,`secondary`,`success`,`danger`,`warning`,`info`,`light`,`dark`
-`offstyle`|string|"secondary"|Style of the off toggle. Possible values are: `primary`,`secondary`,`success`,`danger`,`warning`,`info`,`light`,`dark`
-`style`|string| |Appends the value to the class attribute of the toggle. This can be used to apply custom styles. Refer to Custom Styles for reference.
-`width`|integer|*null*|Sets the width of the toggle. if set to *null*, width will be calculated.
-`height`|integer|*null*|Sets the height of the toggle. if set to *null*, height will be calculated.
+Name      |Type       |Default    |Description                 |
+----------|-----------|----------|----------------------------|
+`on`      |string/html|"On"      |Text of the on toggle
+`off`     |string/html|"Off"     |Text of the off toggle
+`size`    |string     |"normal"  |Size of the toggle. Possible values are: `large`, `normal`, `small`, `mini`.
+`onstyle` |string     |"primary" |Style of the on toggle. Possible values are: `primary`,`secondary`,`success`,`danger`,`warning`,`info`,`light`,`dark`
+`offstyle`|string     |"light"   |Style of the off toggle. Possible values are: `primary`,`secondary`,`success`,`danger`,`warning`,`info`,`light`,`dark`
+`style`   |string     |           |Appends the value to the class attribute of the toggle. This can be used to apply custom styles. Refer to Custom Styles for reference.
+`width`   |integer    |*null*     |Sets the width of the toggle. if set to *null*, width will be auto-calculated.
+`height`  |integer    |*null*     |Sets the height of the toggle. if set to *null*, height will be auto-calculated.
 
 ### Methods
 Methods can be used to control toggles directly.
@@ -117,15 +118,15 @@ Methods can be used to control toggles directly.
 <input id="toggle-demo" type="checkbox" data-toggle="toggle">
 ```
 
-Method     |Example                                       |Description
------------|----------------------------------------------|------------------------------------------
-initialize | $('#toggle-demo').bootstrapToggle()          |Initializes the toggle plugin with options
-destroy    | $('#toggle-demo').bootstrapToggle('destroy') |Destroys the toggle
-on         | $('#toggle-demo').bootstrapToggle('on')      |Sets the toggle to 'On' state
-off        | $('#toggle-demo').bootstrapToggle('off')     |Sets the toggle to 'Off' state
-toggle     | $('#toggle-demo').bootstrapToggle('toggle')  |Toggles the state of the toggle
-enable     | $('#toggle-demo').bootstrapToggle('enable')  |Enables the toggle
-disable    | $('#toggle-demo').bootstrapToggle('disable') |Disables the toggle
+Method     |Example                                         |Description
+-----------|------------------------------------------------|------------------------------------------
+initialize | `$('#toggle-demo').bootstrapToggle()`          |Initializes the toggle plugin with options
+destroy    | `$('#toggle-demo').bootstrapToggle('destroy')` |Destroys the toggle
+on         | `$('#toggle-demo').bootstrapToggle('on')`      |Sets the toggle to 'On' state
+off        | `$('#toggle-demo').bootstrapToggle('off')`     |Sets the toggle to 'Off' state
+toggle     | `$('#toggle-demo').bootstrapToggle('toggle')`  |Toggles the state of the toggle on/off
+enable     | `$('#toggle-demo').bootstrapToggle('enable')`  |Enables the toggle
+disable    | `$('#toggle-demo').bootstrapToggle('disable')` |Disables the toggle
 
 ## Events
 
@@ -151,21 +152,21 @@ This also means that using the API or Input to trigger events will work both way
 
 ```html
 <input id="toggle-trigger" type="checkbox" data-toggle="toggle">
-<button class="btn btn-success" onclick="toggleOn()">On by API</button>
-<button class="btn btn-danger" onclick="toggleOff()">Off by API</button>
-<button class="btn btn-success" onclick="toggleOnByInput()">On by Input</button>
-<button class="btn btn-danger" onclick="toggleOffByInput()">Off by Input</button>
+<button class="btn btn-success" onclick="toggleApiOn()" >On by API</button>
+<button class="btn btn-danger"  onclick="toggleApiOff()">Off by API</button>
+<button class="btn btn-success" onclick="toggleInpOn()" >On by Input</button>
+<button class="btn btn-danger"  onclick="toggleInpOff()">Off by Input</button>
 <script>
-  function toggleOn() {
+  function toggleApiOn() {
     $('#toggle-trigger').bootstrapToggle('on')
   }
-  function toggleOff() {
+  function toggleApiOff() {
     $('#toggle-trigger').bootstrapToggle('off')  
   }
-  function toggleOnByInput() {
+  function toggleInpOn() {
     $('#toggle-trigger').prop('checked', true).change()
   }
-  function toggleOffByInput() {
+  function toggleInpOff() {
     $('#toggle-trigger').prop('checked', false).change()
   }
 </script>
