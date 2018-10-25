@@ -29,12 +29,14 @@
 					<li class="nav-item active">
 						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 					</li>
-				<li class="nav-item"><a class="nav-link" href="#usage">Usage</a></li>
-				<li class="nav-item"><a class="nav-link" href="#api">API</a></li>
-				<li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
-				<li class="nav-item"><a class="nav-link" href="#demos">Demos</a></li>
-				<li class="nav-item"><a class="nav-link" href="https://github.com/gitbrent/bootstrap4-toggle/issues">Issues</a></li>
-				<li class="nav-item"><a class="nav-link" href="https://github.com/gitbrent/bootstrap4-toggle/archive/master.zip">Download</a></li>
+					<li class="nav-item"><a class="nav-link" href="#installation">Installation</a></li>
+					<li class="nav-item"><a class="nav-link d-none d-sm-none d-md-block" href="#usage">Usage</a></li>
+					<li class="nav-item"><a class="nav-link" href="#demos">Demos</a></li>
+					<li class="nav-item"><a class="nav-link d-none d-sm-none d-md-block" href="#api">API</a></li>
+					<li class="nav-item"><a class="nav-link d-none d-sm-none d-md-block" href="#events">Events</a></li>
+					<li class="nav-item"><a class="nav-link" href="https://github.com/gitbrent/bootstrap4-toggle/">GitHub</a></li>
+					<li class="nav-item"><a class="nav-link" href="https://github.com/gitbrent/bootstrap4-toggle/archive/master.zip">Download</a></li>
+				</ul>
 			</div>
 		</nav>
 		<div class="mast-head">
@@ -54,37 +56,57 @@
 				<h3 class="alert-heading">Made for Bootstrap 4!</h3>
 				<p>This page and all of the toggle widgets shown are running on Bootstrap 4.1</p>
 				<hr>
-				<div class="row align-items-center">
-					<div class="col-1 text-center">
-						<i class="fas fa-check-circle text-success" style="font-size:48px"></i>
+				<div class="row">
+					<div class="col-12 col-md-4 mb-1 mb-md-0">
+						<div class="row align-items-center">
+							<div class="col-2 p-0 p-md-2 text-right">
+								<i class="fas fa-check-circle text-success d-none  d-sm-none  d-md-none  d-lg-block" style="font-size:48px"></i>
+								<i class="fas fa-check-circle text-success d-block d-sm-block d-md-block d-lg-none " style="font-size:24px"></i>
+							</div>
+							<div class="col-10">
+								Implements modern Bootstrap
+							</div>
+						</div>
 					</div>
-					<div class="col">
-						Implements modern Bootstrap
+					<div class="col-12 col-md-4 mb-1 mb-md-0">
+						<div class="row align-items-center">
+							<div class="col-2 p-0 p-md-2 text-right">
+								<i class="fas fa-check-circle text-success d-none  d-sm-none  d-md-none  d-lg-block" style="font-size:48px"></i>
+								<i class="fas fa-check-circle text-success d-block d-sm-block d-md-block d-lg-none " style="font-size:24px"></i>
+							</div>
+							<div class="col-10">
+								Support for touch events
+							</div>
+						</div>
 					</div>
-					<div class="col-1 text-center">
-						<i class="fas fa-check-circle text-success" style="font-size:48px"></i>
-					</div>
-					<div class="col">
-						Support for touch events
-					</div>
-					<div class="col-1 text-right">
-						<i class="fas fa-check-circle text-success" style="font-size:48px"></i>
-					</div>
-					<div class="col">
-						Includes a <code>mini</code> size
+					<div class="col-12 col-md-4 mb-1 mb-md-0">
+						<div class="row align-items-center">
+							<div class="col-2 p-0 p-md-2 text-right">
+								<i class="fas fa-check-circle text-success d-none  d-sm-none  d-md-none  d-lg-block" style="font-size:48px"></i>
+								<i class="fas fa-check-circle text-success d-block d-sm-block d-md-block d-lg-none " style="font-size:24px"></i>
+							</div>
+							<div class="col-10">
+								Includes a <code>mini</code> size
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="container my-5">
-			<h2>Getting Started</h2>
+
+		<div id="installation" class="container my-5">
+			<h2>Installation</h2>
 			<hr>
-			<h3 class="text-secondary mt-4">Installation</h3>
-			<p>You can <a href="https://github.com/gitbrent/bootstrap4-toggle/archive/master.zip">download</a> the latest version of Bootstrap Toggle or use CDN to load the library.</p>
+
+			<h3 class="text-secondary mt-4">Download</h3>
+			<p><a href="https://github.com/gitbrent/bootstrap4-toggle/archive/v3.0.0.zip">Version 3.0.0</a> is the latest version of Bootstrap 4 Toggle.
+
+			<h3 class="text-secondary mt-4">CDN</h3>
 			<code class="highlight">&lt;link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.0.0/css/bootstrap4-toggle.min.css" rel="stylesheet"&gt;
 &lt;script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.0.0/dist/bootstrap4-toggle.min.js"&gt;&lt;/script&gt;</code>
 		</div>
-		<div id="usage" class="container my-5">
+
+		<div id="usage" class="container my-5 d-none d-sm-none d-md-block">
 			<h2>Usage</h2>
 			<hr>
 
@@ -126,7 +148,108 @@
 			</div>
 		</div>
 
-		<div id="api" class="container my-5">
+		<div id="demos" class="container my-5">
+			<h2>Demos</h2>
+			<hr>
+
+			<h3 class="text-secondary mt-4">Sizes</h3>
+			<p>Bootstrap toggle is available in different sizes. Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.1/components/buttons/#sizes" target="_blank">Button Sizes</a> documentation for more information.</p>
+			<div class="example">
+				<input type="checkbox" checked data-toggle="toggle" data-size="large">
+				<input type="checkbox" checked data-toggle="toggle" data-size="normal">
+				<input type="checkbox" checked data-toggle="toggle" data-size="small">
+				<input type="checkbox" checked data-toggle="toggle" data-size="mini">
+			</div>
+
+			<h3 class="text-secondary mt-4">Custom Sizes</h3>
+			<p>Bootstrap toggle can handle custom sizes by <code>data-width</code> and <code>data-height</code> options.</p>
+			<div class="example">
+				<input type="checkbox" checked data-toggle="toggle" data-width="100" data-height="75">
+				<input type="checkbox" checked data-toggle="toggle" data-height="75">
+				<input type="checkbox" checked data-toggle="toggle" data-width="100">
+			</div>
+
+			<h3 class="text-secondary mt-4">Colors</h3>
+			<p>Bootstrap Toggle supports various colors. Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.1/components/buttons/" target="_blank">Button Options</a> documentation for more information.</p>
+			<div class="example">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="primary">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="secondary">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="danger">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="warning">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="info">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="light">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="dark">
+			</div>
+
+			<h3 class="text-secondary mt-4">Dark Theme Colors</h3>
+			<p>Bootstrap Toggle colors also work great on dark backgrounds.</p>
+			<div class="example bg-dark">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="primary"   data-offstyle="secondary">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="secondary" data-offstyle="success">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="success"   data-offstyle="danger">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="danger"    data-offstyle="warning">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="warning"   data-offstyle="info">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="info"      data-offstyle="light">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="light"     data-offstyle="dark">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="dark"      data-offstyle="primary">
+			</div>
+
+			<h3 class="text-secondary mt-4">Colors Mix</h3>
+			<p>You can style on state as well as the off state.</p>
+			<div class="example">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="warning" data-offstyle="info">
+			</div>
+
+			<h3 class="text-secondary mt-4">Custom Style</h3>
+			<p>Customized styles can be applied as easily.</p>
+			<div class="example">
+				<style>
+					.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+					.toggle.ios .toggle-handle { border-radius: 20px; }
+				</style>
+				<input type="checkbox" checked data-toggle="toggle" data-style="ios">
+				<style>
+					.toggle.android { border-radius: 0px;}
+					.toggle.android .toggle-handle { border-radius: 0px; }
+				</style>
+				<input type="checkbox" checked data-toggle="toggle" data-style="android" data-onstyle="info">
+			</div>
+
+			<h3 class="text-secondary mt-4">Custom Text</h3>
+			<p>The text can be changed easily with attributes or options.</p>
+			<div class="example">
+				<input type="checkbox" checked data-toggle="toggle" data-on="Ready" data-off="Not Ready" data-onstyle="success" data-offstyle="danger">
+			</div>
+
+			<h3 class="text-secondary mt-4">Icons/Html Text</h3>
+			<p>You can easily add icons or images since html is supported for on/off text.</p>
+			<div class="example">
+				<input type="checkbox" checked data-toggle="toggle" data-on="<i class='fa fa-play'></i> Play" data-off="<i class='fa fa-pause'></i> Pause">
+			</div>
+
+			<h3 class="text-secondary mt-4">Multiple Lines of Text</h3>
+			<p>Toggles with multiple lines will adjust its heights.</p>
+			<div class="example">
+				<input type="checkbox" checked data-toggle="toggle" data-on="Hello<br>World" data-off="Goodbye<br>World">
+			</div>
+
+			<h3 class="text-secondary mt-4">Animation Speed</h3>
+			<p>Transition speed can be easily controlled with css <code>transition</code> property on <code>.toggle-group</code>. You can also turn animation off completely.</p>
+			<div class="example">
+				<style>
+					.slow  .toggle-group { transition: left 0.7s; -webkit-transition: left 0.7s; }
+					.fast  .toggle-group { transition: left 0.1s; -webkit-transition: left 0.1s; }
+					.quick .toggle-group { transition: none;      -webkit-transition: none; }
+				</style>
+				<input type="checkbox" checked data-toggle="toggle" data-style="slow">
+				<input type="checkbox" checked data-toggle="toggle" data-class="fast">
+				<input type="checkbox" checked data-toggle="toggle" data-style="quick">
+			</div>
+		<div>
+
+		<div id="api" class="container my-5 d-none d-sm-none d-md-block">
 			<h2>API</h2>
 			<hr>
 
@@ -300,7 +423,7 @@
 			</div>
 		</div>
 
-		<div id="events" class="container my-5">
+		<div id="events" class="container my-5 d-none d-sm-none d-md-block">
 			<h2>Events</h2>
 			<hr>
 
@@ -343,107 +466,6 @@
 				</script>
 			</div>
 		</div>
-
-		<div id="demos" class="container my-5">
-			<h2>Demos</h2>
-			<hr>
-
-			<h3 class="text-secondary mt-4">Sizes</h3>
-			<p>Bootstrap toggle is available in different sizes. Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.1/components/buttons/#sizes" target="_blank">Button Sizes</a> documentation for more information.</p>
-			<div class="example">
-				<input type="checkbox" checked data-toggle="toggle" data-size="large">
-				<input type="checkbox" checked data-toggle="toggle" data-size="normal">
-				<input type="checkbox" checked data-toggle="toggle" data-size="small">
-				<input type="checkbox" checked data-toggle="toggle" data-size="mini">
-			</div>
-
-			<h3 class="text-secondary mt-4">Custom Sizes</h3>
-			<p>Bootstrap toggle can handle custom sizes by <code>data-width</code> and <code>data-height</code> options.</p>
-			<div class="example">
-				<input type="checkbox" checked data-toggle="toggle" data-width="100" data-height="75">
-				<input type="checkbox" checked data-toggle="toggle" data-height="75">
-				<input type="checkbox" checked data-toggle="toggle" data-width="100">
-			</div>
-
-			<h3 class="text-secondary mt-4">Colors</h3>
-			<p>Bootstrap Toggle supports various colors. Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.1/components/buttons/" target="_blank">Button Options</a> documentation for more information.</p>
-			<div class="example">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="primary">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="secondary">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="danger">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="warning">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="info">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="light">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="dark">
-			</div>
-
-			<h3 class="text-secondary mt-4">Dark Theme Colors</h3>
-			<p>Bootstrap Toggle colors also work great on dark backgrounds.</p>
-			<div class="example bg-dark">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="primary"   data-offstyle="secondary">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="secondary" data-offstyle="success">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="success"   data-offstyle="danger">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="danger"    data-offstyle="warning">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="warning"   data-offstyle="info">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="info"      data-offstyle="light">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="light"     data-offstyle="dark">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="dark"      data-offstyle="primary">
-			</div>
-
-			<h3 class="text-secondary mt-4">Colors Mix</h3>
-			<p>You can style on state as well as the off state.</p>
-			<div class="example">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="warning" data-offstyle="info">
-			</div>
-
-			<h3 class="text-secondary mt-4">Custom Style</h3>
-			<p>Customized styles can be applied as easily.</p>
-			<div class="example">
-				<style>
-					.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
-					.toggle.ios .toggle-handle { border-radius: 20px; }
-				</style>
-				<input type="checkbox" checked data-toggle="toggle" data-style="ios">
-				<style>
-					.toggle.android { border-radius: 0px;}
-					.toggle.android .toggle-handle { border-radius: 0px; }
-				</style>
-				<input type="checkbox" checked data-toggle="toggle" data-style="android" data-onstyle="info">
-			</div>
-
-			<h3 class="text-secondary mt-4">Custom Text</h3>
-			<p>The text can be changed easily with attributes or options.</p>
-			<div class="example">
-				<input type="checkbox" checked data-toggle="toggle" data-on="Ready" data-off="Not Ready" data-onstyle="success" data-offstyle="danger">
-			</div>
-
-			<h3 class="text-secondary mt-4">Icons/Html Text</h3>
-			<p>You can easily add icons or images since html is supported for on/off text.</p>
-			<div class="example">
-				<input type="checkbox" checked data-toggle="toggle" data-on="<i class='fa fa-play'></i> Play" data-off="<i class='fa fa-pause'></i> Pause">
-			</div>
-
-			<h3 class="text-secondary mt-4">Multiple Lines of Text</h3>
-			<p>Toggles with multiple lines will adjust its heights.</p>
-			<div class="example">
-				<input type="checkbox" checked data-toggle="toggle" data-on="Hello<br>World" data-off="Goodbye<br>World">
-			</div>
-
-			<h3 class="text-secondary mt-4">Animation Speed</h3>
-			<p>Transition speed can be easily controlled with css <code>transition</code> property on <code>.toggle-group</code>. You can also turn animation off completely.</p>
-			<div class="example">
-				<style>
-					.slow  .toggle-group { transition: left 0.7s; -webkit-transition: left 0.7s; }
-					.fast  .toggle-group { transition: left 0.1s; -webkit-transition: left 0.1s; }
-					.quick .toggle-group { transition: none;      -webkit-transition: none; }
-				</style>
-				<input type="checkbox" checked data-toggle="toggle" data-style="slow">
-				<input type="checkbox" checked data-toggle="toggle" data-class="fast">
-				<input type="checkbox" checked data-toggle="toggle" data-style="quick">
-			</div>
-		<div>
 	</main>
 	<footer class="bg-light border-top p-4">
 		<div class="container">
