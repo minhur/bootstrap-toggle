@@ -9,7 +9,7 @@ Visit https://gitbrent.github.io/bootstrap4-toggle/ for interactive demos.
 ## Installation
 
 ### Download
-[Version 3.0.0](https://github.com/gitbrent/bootstrap4-toggle/archive/v3.1.0.zip) is the latest version of Bootstrap4 Toggle.
+[Version 3.1.0](https://github.com/gitbrent/bootstrap4-toggle/archive/v3.1.0.zip) is the latest version of Bootstrap4 Toggle.
 
 ### Use CDN
 ```html
