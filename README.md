@@ -6,6 +6,8 @@
 
 Visit https://gitbrent.github.io/bootstrap4-toggle/ for interactive demos.
 
+**************************************************************************************************
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
@@ -27,6 +29,8 @@ Visit https://gitbrent.github.io/bootstrap4-toggle/ for interactive demos.
 - [Demos](#demos)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+**************************************************************************************************
 
 # Installation
 
