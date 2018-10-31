@@ -14,8 +14,8 @@ Visit https://gitbrent.github.io/bootstrap4-toggle/ for interactive demos.
 
 - [Installation](#installation)
   - [Download](#download)
-  - [Use CDN](#use-cdn)
-  - [Node.js](#nodejs)
+  - [CDN](#cdn)
+  - [NPM](#npm)
   - [Yarn](#yarn)
 - [Usage](#usage)
   - [Initialize With HTML](#initialize-with-html)
