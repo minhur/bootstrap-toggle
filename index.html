@@ -94,6 +94,26 @@
 			</div>
 		</div>
 
+		<div id="usage" class="container my-5 d-none d-sm-none d-md-block">
+			<h2>Usage</h2>
+			<hr>
+
+			<h3 class="text-secondary mt-4">Initialize with HTML</h3>
+			<p>Simply add <code>data-toggle="toggle"</code> to convert checkboxes into toggles.</p>
+			<div class="example">
+				<input id="chkToggle1" type="checkbox" data-toggle="toggle" checked>
+			</div>
+
+			<h3 class="text-secondary mt-4">Initialize with JavaScript</h3>
+			<p>Simply call the <code>bootstrapToggle</code> method to convert checkboxes into toggles. See <a href="#api">Options</a> for additional colors, etc.</p>
+			<div class="example">
+				<input id="chkToggle2" type="checkbox" checked>
+				<script>
+				  $(function(){ $('#chkToggle2').bootstrapToggle() });
+				</script>
+			</div>
+		</div>
+
 		<div id="installation" class="container my-5">
 			<h2>Installation</h2>
 			<hr>
@@ -104,43 +124,12 @@
 			<h3 class="text-secondary mt-4">CDN</h3>
 			<code class="highlight">&lt;link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.1.0/css/bootstrap4-toggle.min.css" rel="stylesheet"&gt;
 &lt;script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.1.0/dist/bootstrap4-toggle.min.js"&gt;&lt;/script&gt;</code>
-		</div>
 
-		<div id="usage" class="container my-5 d-none d-sm-none d-md-block">
-			<h2>Usage</h2>
-			<hr>
+			<h3 class="text-secondary mt-4">NPM</h3>
+			<code class="highlight">npm install bootstrap4-toggle</code>
 
-			<h3 class="text-secondary mt-4">Basic example</h3>
-			<p>Simply add <code>data-toggle="toggle"</code> to convert checkboxes into toggles.</p>
-			<div class="example">
-				<input type="checkbox" checked data-toggle="toggle">
-			</div>
-
-			<h3 class="text-secondary mt-4">Stacked checkboxes</h3>
-			<p>Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.1/components/forms/" target="_blank">Form Controls</a> documentation to create stacked checkboxes. Simply add <code>data-toggle="toggle"</code> to convert checkboxes into toggles.</p>
-			<div class="example">
-				<div class="form-check pl-0">
-					<input id="stackedCheck1" class="form-check-input" type="checkbox" data-toggle="toggle" checked>
-					<label for="stackedCheck1" class="form-check-label">Enabled</label>
-				</div>
-				<div class="form-check pl-0">
-					<input id="stackedCheck2" class="form-check-input" type="checkbox" data-toggle="toggle" disabled>
-					<label for="stackedCheck2" class="form-check-label">Disabled</label>
-				</div>
-			</div>
-
-			<h3 class="text-secondary mt-4">Inline Checkboxes</h3>
-			<p>Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.1/components/forms/" target="_blank">Form Controls</a> documentation to create inline checkboxes. Simply add <code>data-toggle="toggle"</code> to a convert checkboxes into toggles.</p>
-			<div class="example">
-				<div class="form-check form-check-inline">
-					<input id="inlineCheckbox1" class="form-check-input" type="checkbox" data-toggle="toggle" data-style="mr-1" checked>
-					<label for="inlineCheckbox1" class="form-check-label">Enabled</label>
-				</div>
-				<div class="form-check form-check-inline">
-					<input id="inlineCheckbox2" class="form-check-input" type="checkbox" data-toggle="toggle" data-style="mr-1" disabled>
-					<label for="inlineCheckbox2" class="form-check-label">Disabled</label>
-				</div>
-			</div>
+			<h3 class="text-secondary mt-4">yarn</h3>
+			<code class="highlight">yarn install</code>
 		</div>
 
 		<div id="demos" class="container my-5">
@@ -242,22 +231,37 @@
 				<input type="checkbox" checked data-toggle="toggle" data-class="fast">
 				<input type="checkbox" checked data-toggle="toggle" data-style="quick">
 			</div>
+
+			<h3 class="text-secondary mt-4">Stacked checkboxes</h3>
+			<p>Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.1/components/forms/" target="_blank">Form Controls</a> documentation to create stacked checkboxes. Simply add <code>data-toggle="toggle"</code> to convert checkboxes into toggles.</p>
+			<div class="example">
+				<div class="form-check pl-0">
+					<input id="stackedCheck1" class="form-check-input" type="checkbox" data-toggle="toggle" checked>
+					<label for="stackedCheck1" class="form-check-label">Enabled</label>
+				</div>
+				<div class="form-check pl-0">
+					<input id="stackedCheck2" class="form-check-input" type="checkbox" data-toggle="toggle" disabled>
+					<label for="stackedCheck2" class="form-check-label">Disabled</label>
+				</div>
+			</div>
+
+			<h3 class="text-secondary mt-4">Inline Checkboxes</h3>
+			<p>Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.1/components/forms/" target="_blank">Form Controls</a> documentation to create inline checkboxes. Simply add <code>data-toggle="toggle"</code> to a convert checkboxes into toggles.</p>
+			<div class="example">
+				<div class="form-check form-check-inline">
+					<input id="inlineCheckbox1" class="form-check-input" type="checkbox" data-toggle="toggle" data-style="mr-1" checked>
+					<label for="inlineCheckbox1" class="form-check-label">Enabled</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input id="inlineCheckbox2" class="form-check-input" type="checkbox" data-toggle="toggle" data-style="mr-1" disabled>
+					<label for="inlineCheckbox2" class="form-check-label">Disabled</label>
+				</div>
+			</div>
 		<div>
 
 		<div id="api" class="container my-5 d-none d-sm-none d-md-block">
 			<h2>API</h2>
 			<hr>
-
-			<h3 class="text-secondary mt-4">Initialize by JavaScript</h3>
-			<p>Initialize toggles with id <code>toggle-one</code> with a single line of JavaScript.</p>
-			<div class="example">
-				<input id="toggle-one" checked type="checkbox">
-				<script>
-					$(function() {
-						$('#toggle-one').bootstrapToggle();
-					})
-				</script>
-			</div>
 
 			<h3 class="text-secondary mt-4">Options</h3>
 			<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-on="Enabled"</code>.</p>
