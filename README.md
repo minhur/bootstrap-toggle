@@ -6,74 +6,62 @@
 
 Visit https://gitbrent.github.io/bootstrap4-toggle/ for interactive demos.
 
-## Installation
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-### Download
+- [Installation](#installation)
+  - [Download](#download)
+  - [Use CDN](#use-cdn)
+  - [Node.js](#nodejs)
+  - [Yarn](#yarn)
+- [Usage](#usage)
+  - [Initialize With HTML](#initialize-with-html)
+  - [Initialize With Code](#initialize-with-code)
+- [API](#api)
+  - [Options](#options)
+  - [Methods](#methods)
+- [Events](#events)
+  - [Event Propagation](#event-propagation)
+  - [API vs Input](#api-vs-input)
+- [Demos](#demos)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+# Installation
+
+## Download
 [Version 3.1.0](https://github.com/gitbrent/bootstrap4-toggle/archive/v3.1.0.zip) is the latest version of Bootstrap4 Toggle.
 
-### Use CDN
+## Use CDN
 ```html
 <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.1.0/css/bootstrap4-toggle.min.css" rel="stylesheet">  
 <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.1.0/js/bootstrap4-toggle.min.js"></script>
 ```
 
-### Node.js
+## Node.js
 ```bash
 npm install bootstrap4-toggle
 ```
 
-### Yarn
+## Yarn
 ```bash
 yarn install
 ```
 
-## Usage
+# Usage
 
-### Basic example
-Simply add `data-toggle="toggle"` to automatically convert checkboxes into toggles.
+## Initialize With HTML
+Simply add `data-toggle="toggle"` to automatically convert a plain checkbox into a bootstrap 4 toggle.
 
 ```html
 <input id="chkToggle" type="checkbox" data-toggle="toggle">
 ```
 
-### Stacked checkboxes
-Refer to Bootstrap Form Controls documentation to create stacked checkboxes. Simply add `data-toggle="toggle"` to convert checkboxes into toggles.
+## Initialize With Code
+Toggles can also be initialized via JavaScript code.  
 
-```html
-<div class="form-check form-check">
-  <label>
-    <input type="checkbox" data-toggle="toggle">
-    Option one is enabled
-  </label>
-</div>
-<div class="form-check form-check disabled">
-  <label>
-    <input type="checkbox" disabled data-toggle="toggle">
-    Option two is disabled
-  </label>
-</div>
-```
-
-### Inline Checkboxes
-Refer to Bootstrap Form Controls documentation to create inline checkboxes. Simply add `data-toggle="toggle"` to a convert checkboxes into toggles.
-
-```html
-<label class="form-check form-check-inline">
-  <input type="checkbox" checked data-toggle="toggle"> First
-</label>
-<label class="form-check form-check-inline">
-  <input type="checkbox" data-toggle="toggle"> Second
-</label>
-<label class="form-check form-check-inline">
-  <input type="checkbox" data-toggle="toggle"> Third
-</label>
-```
-
-## API
-
-### Initialize by JavaScript
-Initialize toggles with id `toggle-one` with a single line of JavaScript.
-
+EX: Initialize id `toggle-one` with a single line of JavaScript.
 ```html
 <input id="toggle-one" checked type="checkbox">
 <script>
@@ -83,7 +71,9 @@ Initialize toggles with id `toggle-one` with a single line of JavaScript.
 </script>
 ```
 
-### Options
+# API
+
+## Options
 * Options can be passed via data attributes or JavaScript
 * For data attributes, append the option name to `data-` (ex: `data-on="Enabled"`)
 
@@ -111,7 +101,7 @@ Name      |Type       |Default    |Description                 |
 `width`   |integer    |*null*     |Sets the width of the toggle. if set to *null*, width will be auto-calculated.
 `height`  |integer    |*null*     |Sets the height of the toggle. if set to *null*, height will be auto-calculated.
 
-### Methods
+## Methods
 Methods can be used to control toggles directly.
 
 ```html
@@ -128,9 +118,9 @@ toggle     | `$('#toggle-demo').bootstrapToggle('toggle')`  |Toggles the state o
 enable     | `$('#toggle-demo').bootstrapToggle('enable')`  |Enables the toggle
 disable    | `$('#toggle-demo').bootstrapToggle('disable')` |Disables the toggle
 
-## Events
+# Events
 
-### Event Propagation
+## Event Propagation
 Note All events are propagated to and from input element to the toggle.
 
 You should listen to events from the `<input type="checkbox">` directly rather than look for custom events.
@@ -147,7 +137,7 @@ You should listen to events from the `<input type="checkbox">` directly rather t
 </script>
 ```
 
-### API vs Input
+## API vs Input
 This also means that using the API or Input to trigger events will work both ways.
 
 ```html
@@ -172,5 +162,5 @@ This also means that using the API or Input to trigger events will work both way
 </script>
 ```
 
-## Demos
+# Demos
 Visit https://gitbrent.github.io/bootstrap4-toggle/ for demos.
