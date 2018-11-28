@@ -1,6 +1,6 @@
 /*\
 |*| ========================================================================
-|*| Bootstrap Toggle: bootstrap4-toggle.css v3.1.0
+|*| Bootstrap Toggle: bootstrap4-toggle.css v3.1.1
 |*| https://gitbrent.github.io/bootstrap-toggle/
 |*| ========================================================================
 |*| Copyright 2018 Brent Ely
@@ -19,8 +19,7 @@
 	border-radius: .2rem;
 }
 
-.checkbox label .toggle,
-.checkbox-inline .toggle {
+.checkbox label .toggle, .checkbox-inline .toggle {
 	margin-left: -20px;
 	margin-right: 5px;
 }
@@ -66,8 +65,7 @@
 	margin: 0;
 	border: 0;
 	border-radius: 0;
-	/* Bootstrap 4.0 Support via (Issue #186)[https://github.com/minhur/bootstrap-toggle/issues/186]) */
-	box-shadow: none;
+	box-shadow: none; /* Bootstrap 4.0 Support via (Issue #186)[https://github.com/minhur/bootstrap-toggle/issues/186]) */
 }
 .toggle-handle {
 	position: relative;
