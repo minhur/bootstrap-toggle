@@ -1,6 +1,6 @@
 /*\
 |*| ========================================================================
-|*| Bootstrap Toggle: bootstrap4-toggle.js v3.1.1
+|*| Bootstrap Toggle: bootstrap4-toggle.js v3.2.0
 |*| https://gitbrent.github.io/bootstrap-toggle/
 |*| ========================================================================
 |*| Copyright 2018 Brent Ely
@@ -20,7 +20,7 @@
 		this.render()
 	}
 
-	Toggle.VERSION  = '3.1.1'
+	Toggle.VERSION  = '3.2.0'
 
 	Toggle.DEFAULTS = {
 		on: 'On',
