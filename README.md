@@ -12,6 +12,7 @@ Visit https://gitbrent.github.io/bootstrap4-toggle/ for interactive demos.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+- [Demos](#demos)
 - [Installation](#installation)
   - [Download](#download)
   - [CDN](#cdn)
@@ -26,11 +27,13 @@ Visit https://gitbrent.github.io/bootstrap4-toggle/ for interactive demos.
 - [Events](#events)
   - [Event Propagation](#event-propagation)
   - [API vs Input](#api-vs-input)
-- [Demos](#demos)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 **************************************************************************************************
+
+# Demos
+Visit https://gitbrent.github.io/bootstrap4-toggle/ for interactive checkbox toggle demos.
 
 # Installation
 
@@ -165,6 +168,3 @@ This also means that using the API or Input to trigger events will work both way
   }
 </script>
 ```
-
-# Demos
-Visit https://gitbrent.github.io/bootstrap4-toggle/ for demos.
