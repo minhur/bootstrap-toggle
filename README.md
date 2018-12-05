@@ -1,4 +1,4 @@
-[![Bootstrap 4.1.3](https://img.shields.io/badge/bootstrap-4.1.3-green.svg?style=flat-square)](https://getbootstrap.com/docs/4.1)  [![MIT License](https://badges.frapsoft.com/os/mit/mit.svg?style=flat-square)](https://opensource.org/licenses/mit-license.php)   [![Known Vulnerabilities](https://snyk.io/test/npm/bootstrap4-toggle/badge.svg)](https://snyk.io/test/npm/bootstrap4-toggle)
+[![Bootstrap 4.1.3](https://img.shields.io/badge/bootstrap-4.1.3-green.svg?style=flat-square)](https://getbootstrap.com/docs/4.1)  [![MIT License](https://badges.frapsoft.com/os/mit/mit.svg?style=flat-square)](https://opensource.org/licenses/mit-license.php)   [![Known Vulnerabilities](https://snyk.io/test/npm/bootstrap4-toggle/badge.svg)](https://snyk.io/test/npm/bootstrap4-toggle)   [![](https://data.jsdelivr.com/v1/package/gh/gitbrent/bootstrap4-toggle/badge)](https://www.jsdelivr.com/package/gh/gitbrent/bootstrap4-toggle)
 
 # Bootstrap 4 Toggle
 
