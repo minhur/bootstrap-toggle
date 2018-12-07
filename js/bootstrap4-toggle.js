@@ -1,6 +1,6 @@
 /*\
 |*| ========================================================================
-|*| Bootstrap Toggle: bootstrap4-toggle.js v3.2.0
+|*| Bootstrap Toggle: bootstrap4-toggle.js v3.3.0
 |*| https://gitbrent.github.io/bootstrap-toggle/
 |*| ========================================================================
 |*| Copyright 2018 Brent Ely
@@ -20,7 +20,7 @@
 		this.render()
 	}
 
-	Toggle.VERSION  = '3.2.0'
+	Toggle.VERSION  = '3.3.0'
 
 	Toggle.DEFAULTS = {
 		on: 'On',
@@ -49,9 +49,10 @@
 	Toggle.prototype.render = function () {
 		this._onstyle = 'btn-' + this.options.onstyle
 		this._offstyle = 'btn-' + this.options.offstyle
-		var size = this.options.size === 'large' ? 'btn-lg'
-			: this.options.size === 'small' ? 'btn-sm'
-			: this.options.size === 'mini' ? 'btn-xs'
+		var size
+			= this.options.size === 'large' || this.options.size === 'lg' ? 'btn-lg'
+			: this.options.size === 'small' || this.options.size === 'sm' ? 'btn-sm'
+			: this.options.size === 'mini'  || this.options.size === 'xs' ? 'btn-xs'
 			: ''
 		var $toggleOn = $('<label class="btn">').html(this.options.on)
 			.addClass(this._onstyle + ' ' + size)
