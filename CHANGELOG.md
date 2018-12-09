@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.3.0](https://github.com/gitbrent/bootstrap4-toggle/tree/v3.3.0) 2018-12-??
+### [Full Changelog](https://github.com/gitbrent/bootstrap4-toggle/compare/v3.2.0...v3.3.0)
+### Added
+- New test created to compare core bootstrap sizes to bootstrap4-toggle
+### Changed
+- Converted all "px" sizes to "rem".
+### Removed
+
+
+
 ## [3.2.0](https://github.com/gitbrent/bootstrap4-toggle/tree/v3.2.0) 2018-11-27
 ### [Full Changelog](https://github.com/gitbrent/bootstrap4-toggle/compare/v3.1.0...v3.2.0)
 ### Added
