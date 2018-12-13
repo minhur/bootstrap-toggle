@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - New test created to compare core bootstrap sizes to bootstrap4-toggle
 ### Changed
 - Converted all `px` sizes to `rem`.
+- Properly added border on `light` button (moved from .toggle class)
 ### Removed
 
 

@@ -1,6 +1,6 @@
 /*\
 |*| ========================================================================
-|*| Bootstrap Toggle: bootstrap4-toggle.css v3.2.0
+|*| Bootstrap Toggle: bootstrap4-toggle.css v3.3.0-beta
 |*| https://gitbrent.github.io/bootstrap-toggle/
 |*| ========================================================================
 |*| Copyright 2018 Brent Ely
@@ -27,7 +27,10 @@
 .toggle {
 	position: relative;
 	overflow: hidden;
-	border-color: rgba(0, 0, 0, .2); /* bootstrap-4 - add a border so toggle is delineated */
+}
+.toggle.btn.btn-light {
+	/* bootstrap-4 - add a border so toggle is delineated */
+	border-color: rgba(0, 0, 0, .15);
 }
 .toggle input[type="checkbox"] {
 	display: none;
