@@ -4,12 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Bootstrap 4 Toggle is a bootstrap plugin that converts checkboxes into responsive toggles.">
-	<meta name="keywords" content="bootstrap, toggle, switch, bootstrap-toggle, bootstrap-switch">
+	<meta name="keywords" content="bootstrap, toggle, switch, bootstrap-toggle, bootstrap-switch, bootstrap-checkbox">
 	<meta name="author" content="https://github.com/gitbrent">
 	<meta name="version" content="v3.3.0">
 	<meta name="robots" content="index, follow">
 	<meta name="revisit-after" content="1 month">
-	<title>Bootstrap 4 Checkbox Toggle</title>
+	<title>Bootstrap 4 Toggle Switch Checkbox</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -229,7 +229,7 @@
 					.quick .toggle-group { transition: none;      -webkit-transition: none; }
 				</style>
 				<input type="checkbox" checked data-toggle="toggle" data-style="slow">
-				<input type="checkbox" checked data-toggle="toggle" data-class="fast">
+				<input type="checkbox" checked data-toggle="toggle" data-style="fast">
 				<input type="checkbox" checked data-toggle="toggle" data-style="quick">
 			</div>
 
@@ -291,26 +291,15 @@
 					<tbody>
 						<tr>
 							<td><code>on</code></td>
-							<td>string | html</td>
+							<td class="text-nowrap">string | html</td>
 							<td><code>"On"</code></td>
-							<td>Text of the <em>on</em> toggle</td>
+							<td>Text of the <em>on</em> toggle label.</td>
 						</tr>
 						<tr>
 							<td><code>off</code></td>
 							<td>string | html</td>
 							<td><code>"Off"</code></td>
-							<td>Text of the <em>off</em> toggle</td>
-						</tr>
-						<tr>
-							<td><code>size<code></td>
-							<td>string</td>
-							<td><em>null</em></td>
-							<td>
-								Size of the toggle. If set to <em>null</em>, button is default/normal size.<br>
-								Possible values are:
-								<code>lg</code>, <code>sm</code>, <code>xs</code><br>
-								<small class="text-muted">Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.1/components/buttons/#sizes" target="_blank">Button Sizes</a> documentation for more information.</small>
-							</td>
+							<td>Text of the <em>off</em> toggle label.</td>
 						</tr>
 						<tr>
 							<td><code class="text-nowrap">onstyle</code></td>
@@ -333,12 +322,23 @@
 							</td>
 						</tr>
 						<tr>
+							<td><code>size<code></td>
+							<td>string</td>
+							<td><em>null</em></td>
+							<td>
+								Size of the toggle. If set to <em>null</em>, button is default/normal size.<br>
+								Possible values are:
+								<code>lg</code>, <code>sm</code>, <code>xs</code><br>
+								<small class="text-muted">Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.1/components/buttons/#sizes" target="_blank">Button Sizes</a> documentation for more information.</small>
+							</td>
+						</tr>
+						<tr>
 							<td><code>style</code></td>
 							<td>string</td>
 							<td></td>
 							<td>
-								Appends the value to the class attribute of the toggle.
-								This can be used to apply custom styles. Refer to Custom Styles for reference.
+								Appends the provided value to the toggle's class attribute.
+								Use this to apply custom styles to the toggle.
 							</td>
 						</tr>
 						<tr>
