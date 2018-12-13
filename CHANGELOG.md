@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - New test created to compare core bootstrap sizes to bootstrap4-toggle
 ### Changed
-- Converted all "px" sizes to "rem".
+- Converted all `px` sizes to `rem`.
 ### Removed
 
 
@@ -42,3 +42,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Implements Bootstrap 4 colors/styles
 ### Removed
 - Old Bootstrap 2 files
+
+[Unreleased]: https://github.com/gitbrent/bootstrap4-toggle/compare/v1.9.0...HEAD
+[3.2.0]: https://github.com/gitbrent/bootstrap4-toggle/compare/v3.1.0...v3.2.0
+[3.1.0]: https://github.com/gitbrent/bootstrap4-toggle/compare/v3.0.0...v3.1.0
+[3.0.0]: https://github.com/gitbrent/bootstrap4-toggle/compare/v2.2.2...v3.0.0
