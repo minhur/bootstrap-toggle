@@ -12,10 +12,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - New test created to compare core bootstrap sizes to bootstrap4-toggle
 ### Changed
-- Converted all css units from `px` to `rem`.
+- Introduced new `size` values that mirror bootstrap 4: (`lg`, `sm`, `xs`)
+- Converted all css units from `px` to `rem`
 - Properly added border on `light` button (moved from .toggle class)
 ### Removed
-
+**DEPRECATED** Classic `size` values (`large`, `small`, `mini`)
 
 
 ## [3.2.0](https://github.com/gitbrent/bootstrap4-toggle/tree/v3.2.0) 2018-11-27
