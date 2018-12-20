@@ -20,7 +20,7 @@
 		this.render()
 	}
 
-	Toggle.VERSION  = '3.3.0-beta'
+	Toggle.VERSION  = '3.3.0'
 
 	Toggle.DEFAULTS = {
 		on: 'On',

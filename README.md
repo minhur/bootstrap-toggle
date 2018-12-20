@@ -1,4 +1,4 @@
-[![Bootstrap 4.1.3](https://img.shields.io/badge/bootstrap-4.1.3-green.svg?style=flat-square)](https://getbootstrap.com/docs/4.1)  [![MIT License](https://badges.frapsoft.com/os/mit/mit.svg?style=flat-square)](https://opensource.org/licenses/mit-license.php)   [![Known Vulnerabilities](https://snyk.io/test/npm/bootstrap4-toggle/badge.svg)](https://snyk.io/test/npm/bootstrap4-toggle)   [![JSDelivr Badge](https://data.jsdelivr.com/v1/package/gh/gitbrent/bootstrap4-toggle/badge)](https://www.jsdelivr.com/package/gh/gitbrent/bootstrap4-toggle)
+[![Bootstrap 4.1.3](https://img.shields.io/badge/bootstrap-4.1.3-green.svg?style=flat-square)](https://getbootstrap.com/docs/4.1)  [![MIT Licence](https://img.shields.io/github/license/gitbrent/pptxgenjs.svg)](https://opensource.org/licenses/mit-license.php)   [![Known Vulnerabilities](https://snyk.io/test/npm/bootstrap4-toggle/badge.svg)](https://snyk.io/test/npm/bootstrap4-toggle)   [![JSDelivr Badge](https://data.jsdelivr.com/v1/package/gh/gitbrent/bootstrap4-toggle/badge)](https://www.jsdelivr.com/package/gh/gitbrent/bootstrap4-toggle)
 
 # Bootstrap 4 Toggle
 
@@ -38,12 +38,12 @@ Visit https://gitbrent.github.io/bootstrap4-toggle/ for interactive checkbox tog
 # Installation
 
 ## Download
-[Version 3.2.0](https://github.com/gitbrent/bootstrap4-toggle/archive/v3.2.0.zip) is the latest version of Bootstrap4 Toggle.
+[Version 3.3.0](https://github.com/gitbrent/bootstrap4-toggle/archive/v3.3.0.zip) is the latest version of Bootstrap4 Toggle.
 
 ## CDN
 ```html
-<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.2.0/css/bootstrap4-toggle.min.css" rel="stylesheet">  
-<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.2.0/js/bootstrap4-toggle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.3.0/css/bootstrap4-toggle.min.css" rel="stylesheet">  
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.3.0/js/bootstrap4-toggle.min.js"></script>
 ```
 
 ## NPM

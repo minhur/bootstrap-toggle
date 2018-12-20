@@ -7,12 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 - Outline button support [3.4.0]
 
-## [3.3.0](https://github.com/gitbrent/bootstrap4-toggle/tree/v3.3.0) 2018-12-??
+## [3.3.0](https://github.com/gitbrent/bootstrap4-toggle/tree/v3.3.0) 2018-12-19
 ### [Full Changelog](https://github.com/gitbrent/bootstrap4-toggle/compare/v3.2.0...v3.3.0)
 ### Added
 - New test created to compare core bootstrap sizes to bootstrap4-toggle
 ### Changed
-- Converted all `px` sizes to `rem`.
+- Converted all css units from `px` to `rem`.
 - Properly added border on `light` button (moved from .toggle class)
 ### Removed
 
