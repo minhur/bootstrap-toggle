@@ -1,7 +1,7 @@
 {
   "name": "bootstrap4-toggle",
   "description": "Bootstrap 4 Toggle is a Bootstrap plugin/widget that converts checkboxes into toggles",
-  "version": "3.3.0",
+  "version": "3.4.0-beta",
   "keywords": [
     "bootstrap",
   	"bootstrap4",

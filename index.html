@@ -6,10 +6,10 @@
 	<meta name="description" content="Bootstrap 4 Toggle is a bootstrap plugin that converts checkboxes into responsive toggles.">
 	<meta name="keywords" content="bootstrap, toggle, switch, bootstrap-toggle, bootstrap-switch, bootstrap-checkbox">
 	<meta name="author" content="https://github.com/gitbrent">
-	<meta name="version" content="v3.3.0">
+	<meta name="version" content="v3.4.0">
 	<meta name="robots" content="index, follow">
 	<meta name="revisit-after" content="1 month">
-	<title>Bootstrap 4 Toggle Switch Checkbox</title>
+	<title>Bootstrap 4 Toggle Switch Button Checkbox</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -31,8 +31,8 @@
 						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item"><a class="nav-link" href="#installation">Installation</a></li>
-					<li class="nav-item"><a class="nav-link d-none d-sm-none d-md-block" href="#usage">Usage</a></li>
 					<li class="nav-item"><a class="nav-link" href="#demos">Demos</a></li>
+					<li class="nav-item"><a class="nav-link d-none d-sm-none d-md-block" href="#usage">Usage</a></li>
 					<li class="nav-item"><a class="nav-link d-none d-sm-none d-md-block" href="#api">API</a></li>
 					<li class="nav-item"><a class="nav-link d-none d-sm-none d-md-block" href="#events">Events</a></li>
 					<li class="nav-item"><a class="nav-link" href="https://github.com/gitbrent/bootstrap4-toggle/">GitHub</a></li>
@@ -42,8 +42,8 @@
 		</nav>
 		<div class="mast-head">
 			<div class="container">
-				<h1>Bootstrap Toggle Switch</h1>
-				<p><strong>Bootstrap Toggle</strong> is a plugin/widget that converts plain checkboxes into responsive toggles.</p>
+				<h1>Bootstrap Switch Button</h1>
+				<p><strong>Bootstrap Toggle</strong> is a jQuery plugin/widget that converts plain checkboxes into responsive toggle switch buttons.</p>
 				<!--<div class="mast-links">
 					<iframe src="https://ghbtns.com/github-btn.html?user=gitbrent&repo=bootstrap4-toggle&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
 					<iframe src="https://ghbtns.com/github-btn.html?user=gitbrent&repo=bootstrap4-toggle&type=star&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
@@ -55,20 +55,9 @@
 		<section id="updated" class="container my-5">
 			<div class="alert alert-success" role="alert">
 				<h3 class="alert-heading">Made for Bootstrap 4!</h3>
-				<p>This page and all of the toggle widgets shown are running on Bootstrap 4.1</p>
+				<h6 class="font-weight-light">This page and all of the switch buttons shown are running on Bootstrap 4.1</h6>
 				<hr>
 				<div class="row">
-					<div class="col-12 col-md-4 mb-1 mb-md-0">
-						<div class="row align-items-center">
-							<div class="col-2 p-0 p-md-2 text-right">
-								<i class="fas fa-check-circle text-success d-none  d-sm-none  d-md-none  d-lg-block" style="font-size:48px"></i>
-								<i class="fas fa-check-circle text-success d-block d-sm-block d-md-block d-lg-none " style="font-size:24px"></i>
-							</div>
-							<div class="col-10">
-								Implements modern Bootstrap
-							</div>
-						</div>
-					</div>
 					<div class="col-12 col-md-4 mb-1 mb-md-0">
 						<div class="row align-items-center">
 							<div class="col-2 p-0 p-md-2 text-right">
@@ -87,6 +76,17 @@
 								<i class="fas fa-check-circle text-success d-block d-sm-block d-md-block d-lg-none " style="font-size:24px"></i>
 							</div>
 							<div class="col-10">
+								Supports outline colors
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 mb-1 mb-md-0">
+						<div class="row align-items-center">
+							<div class="col-2 p-0 p-md-2 text-right">
+								<i class="fas fa-check-circle text-success d-none  d-sm-none  d-md-none  d-lg-block" style="font-size:48px"></i>
+								<i class="fas fa-check-circle text-success d-block d-sm-block d-md-block d-lg-none " style="font-size:24px"></i>
+							</div>
+							<div class="col-10">
 								Includes a mini (-xs) size
 							</div>
 						</div>
@@ -95,32 +95,12 @@
 			</div>
 		</section>
 
-		<section id="usage" class="container my-5 d-none d-sm-none d-md-block">
-			<h2>Usage</h2>
-			<hr>
-
-			<h3 class="text-secondary mt-4">Initialize with HTML</h3>
-			<p>Simply add <code>data-toggle="toggle"</code> to convert checkboxes into toggles.</p>
-			<div class="example">
-				<input id="chkToggle1" type="checkbox" data-toggle="toggle" checked>
-			</div>
-
-			<h3 class="text-secondary mt-4">Initialize with JavaScript</h3>
-			<p>Simply call the <code>bootstrapToggle</code> method to convert checkboxes into toggles. See <a href="#api">Options</a> for additional colors, etc.</p>
-			<div class="example">
-				<input id="chkToggle2" type="checkbox" checked>
-				<script>
-				  $(function(){ $('#chkToggle2').bootstrapToggle() });
-				</script>
-			</div>
-		</section>
-
 		<section id="installation" class="container my-5">
 			<h2>Installation</h2>
 			<hr>
 
 			<h3 class="text-secondary mt-4">CDN</h3>
-			<code class="highlight">&lt;link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.3.0/css/bootstrap4-toggle.min.css" rel="stylesheet"&gt;
+			<code class="highlight">&lt;link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/css/bootstrap4-toggle.min.css" rel="stylesheet"&gt;
 &lt;script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.3.0/js/bootstrap4-toggle.min.js"&gt;&lt;/script&gt;</code>
 
 			<h3 class="text-secondary mt-4">Download</h3>
@@ -129,7 +109,7 @@
 			<h3 class="text-secondary mt-4">NPM</h3>
 			<code class="highlight">npm install bootstrap4-toggle</code>
 
-			<h3 class="text-secondary mt-4">yarn</h3>
+			<h3 class="text-secondary mt-4">Yarn</h3>
 			<code class="highlight">yarn install bootstrap4-toggle</code>
 		</section>
 
@@ -149,13 +129,13 @@
 			<h3 class="text-secondary mt-4">Custom Sizes</h3>
 			<p>Bootstrap toggle can handle custom sizes by <code>data-width</code> and <code>data-height</code> options.</p>
 			<div class="example">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="primary"   data-width="100" data-height="75">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="secondary" data-height="75">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="success"   data-width="100">
+				<input type="checkbox" checked data-toggle="toggle" data-width="100" data-height="75">
+				<input type="checkbox" checked data-toggle="toggle" data-height="75">
+				<input type="checkbox" checked data-toggle="toggle" data-width="100">
 			</div>
 
 			<h3 class="text-secondary mt-4">Colors</h3>
-			<p>Bootstrap Toggle supports various colors. Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.1/components/buttons/" target="_blank">Button Options</a> documentation for more information.</p>
+			<p>Bootstrap Toggle implements all standard bootstrap 4 button colors.</p>
 			<div class="example">
 				<input type="checkbox" checked data-toggle="toggle" data-onstyle="primary">
 				<input type="checkbox" checked data-toggle="toggle" data-onstyle="secondary">
@@ -167,9 +147,8 @@
 				<input type="checkbox" checked data-toggle="toggle" data-onstyle="dark">
 			</div>
 
-			<!-- TODO: FUTURE: v3.5.0
 			<h3 class="text-secondary mt-4">Outline Colors</h3>
-			<p>Bootstrap Toggle supports native outline colors.</p>
+			<p>Bootstrap Toggle implements all standard bootstrap 4 button outline colors.</p>
 			<div class="example">
 				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-primary"   data-offstyle="outline-secondary">
 				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-secondary" data-offstyle="outline-success">
@@ -180,10 +159,9 @@
 				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-light"     data-offstyle="outline-dark">
 				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-dark"      data-offstyle="outline-primary">
 			</div>
-			-->
 
 			<h3 class="text-secondary mt-4">Dark Theme Colors</h3>
-			<p>Bootstrap Toggle colors also work great on dark backgrounds.</p>
+			<p>Bootstrap Toggle colors look great on dark backgrounds.</p>
 			<div class="example bg-dark">
 				<input type="checkbox" checked data-toggle="toggle" data-onstyle="primary"   data-offstyle="secondary">
 				<input type="checkbox" checked data-toggle="toggle" data-onstyle="secondary" data-offstyle="success">
@@ -191,25 +169,33 @@
 				<input type="checkbox" checked data-toggle="toggle" data-onstyle="danger"    data-offstyle="warning">
 				<input type="checkbox" checked data-toggle="toggle" data-onstyle="warning"   data-offstyle="info">
 				<input type="checkbox" checked data-toggle="toggle" data-onstyle="info"      data-offstyle="light">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="light"     data-offstyle="dark">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="dark"      data-offstyle="primary">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="light"     data-offstyle="dark" data-style="border">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="dark"      data-offstyle="light" data-style="border">
 			</div>
 
-			<h3 class="text-secondary mt-4">Colors Mix</h3>
-			<p>You can style on state as well as the off state.</p>
-			<div class="example">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="warning" data-offstyle="info">
+			<h3 class="text-secondary mt-4">Dark Theme Outline Colors</h3>
+			<p>Bootstrap Toggle outline colors look great on dark backgrounds.</p>
+			<div class="example bg-dark">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-primary"   data-offstyle="outline-secondary">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-secondary" data-offstyle="outline-success">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-success"   data-offstyle="outline-danger">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-danger"    data-offstyle="outline-warning">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-warning"   data-offstyle="outline-info">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-info"      data-offstyle="outline-light">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-light"     data-offstyle="outline-dark" data-style="border">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-dark"      data-offstyle="outline-light" data-style="border">
 			</div>
 
 			<h3 class="text-secondary mt-4">Custom Style</h3>
-			<p>Customized styles can be applied as easily.</p>
+			<p>Style the buttons to fit an existing UX.</p>
 			<div class="example">
+				<!-- iOS Style: Rounded -->
 				<style>
-					.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
-					.toggle.ios .toggle-handle { border-radius: 20px; }
+					.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20rem; }
+					.toggle.ios .toggle-handle { border-radius: 20rem; }
 				</style>
 				<input type="checkbox" checked data-toggle="toggle" data-style="ios">
+				<!-- Android Style: No radius -->
 				<style>
 					.toggle.android { border-radius: 0px;}
 					.toggle.android .toggle-handle { border-radius: 0px; }
@@ -223,7 +209,7 @@
 				<input type="checkbox" checked data-toggle="toggle" data-on="Ready" data-off="Not Ready" data-onstyle="success" data-offstyle="danger">
 			</div>
 
-			<h3 class="text-secondary mt-4">Icons/Html Text</h3>
+			<h3 class="text-secondary mt-4">HTML/Icons</h3>
 			<p>You can easily add icons or images since html is supported for on/off text.</p>
 			<div class="example">
 				<input type="checkbox" checked data-toggle="toggle" data-on="<i class='fa fa-play'></i> Play" data-off="<i class='fa fa-pause'></i> Pause">
@@ -274,6 +260,26 @@
 				</div>
 			</div>
 		<section>
+
+		<section id="usage" class="container my-5 d-none d-sm-none d-md-block">
+			<h2>Usage</h2>
+			<hr>
+
+			<h3 class="text-secondary mt-4">Initialize with HTML</h3>
+			<p>Simply add <code>data-toggle="toggle"</code> to convert checkboxes into toggles.</p>
+			<div class="example">
+				<input id="chkToggle1" type="checkbox" data-toggle="toggle" checked>
+			</div>
+
+			<h3 class="text-secondary mt-4">Initialize with JavaScript</h3>
+			<p>Simply call the <code>bootstrapToggle</code> method to convert checkboxes into toggles. See <a href="#api">Options</a> for additional colors, etc.</p>
+			<div class="example">
+				<input id="chkToggle2" type="checkbox" checked>
+				<script>
+				  $(function(){ $('#chkToggle2').bootstrapToggle() });
+				</script>
+			</div>
+		</section>
 
 		<section id="api" class="container my-5 d-none d-sm-none d-md-block">
 			<h2>API</h2>

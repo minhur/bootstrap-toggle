@@ -1,9 +1,9 @@
 /*\
 |*| ========================================================================
-|*| Bootstrap Toggle: bootstrap4-toggle.css v3.3.0
+|*| Bootstrap Toggle: bootstrap4-toggle.css v3.4.0-beta
 |*| https://gitbrent.github.io/bootstrap-toggle/
 |*| ========================================================================
-|*| Copyright 2018 Brent Ely
+|*| Copyright 2018-2019 Brent Ely
 |*| Licensed under MIT
 |*| ========================================================================
 \*/
@@ -28,7 +28,7 @@
 	position: relative;
 	overflow: hidden;
 }
-.toggle.btn.btn-light {
+.toggle.btn.btn-light, .toggle.btn.btn-outline-light {
 	/* bootstrap-4 - add a border so toggle is delineated */
 	border-color: rgba(0, 0, 0, .15);
 }
@@ -79,6 +79,43 @@
 	width: 0px;
 	border-width: 0 1px;
 	background-color: #fff;
+}
+
+.toggle.btn-outline-primary .toggle-handle {
+	background-color: var(--primary);
+	border-color: var(--primary);
+}
+.toggle.btn-outline-secondary .toggle-handle {
+	background-color: var(--secondary);
+	border-color: var(--secondary);
+}
+.toggle.btn-outline-success .toggle-handle {
+	background-color: var(--success);
+	border-color: var(--success);
+}
+.toggle.btn-outline-danger .toggle-handle {
+	background-color: var(--danger);
+	border-color: var(--danger);
+}
+.toggle.btn-outline-warning .toggle-handle {
+	background-color: var(--warning);
+	border-color: var(--warning);
+}
+.toggle.btn-outline-info .toggle-handle {
+	background-color: var(--info);
+	border-color: var(--info);
+}
+.toggle.btn-outline-light .toggle-handle {
+	background-color: var(--light);
+	border-color: var(--light);
+}
+.toggle.btn-outline-dark .toggle-handle {
+	background-color: var(--dark);
+	border-color: var(--dark);
+}
+.toggle[class*="btn-outline"]:hover .toggle-handle {
+	background-color: var(--light);
+	opacity: 0.5;
 }
 
 /* NOTE: Must come first, so classes below override as needed */
