@@ -3,7 +3,7 @@
 |*| Bootstrap Toggle: bootstrap4-toggle.js v3.4.0
 |*| https://gitbrent.github.io/bootstrap-toggle/
 |*| ========================================================================
-|*| Copyright 2018 Brent Ely
+|*| Copyright 2018-2019 Brent Ely
 |*| Licensed under MIT
 |*| ========================================================================
 \*/

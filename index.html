@@ -11,12 +11,12 @@
 	<meta name="revisit-after" content="1 month">
 	<title>Bootstrap 4 Toggle Switch Button Checkbox</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/bootstrap4-toggle.css">
 	<link rel="stylesheet" href="doc/stylesheet.css">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
@@ -55,7 +55,7 @@
 		<section id="updated" class="container my-5">
 			<div class="alert alert-success" role="alert">
 				<h3 class="alert-heading">Made for Bootstrap 4!</h3>
-				<h6 class="font-weight-light">This page and all of the switch buttons shown are running on Bootstrap 4.1</h6>
+				<h6 class="font-weight-light">This page and all of the switch buttons shown are running on Bootstrap 4.2</h6>
 				<hr>
 				<div class="row">
 					<div class="col-12 col-md-4 mb-1 mb-md-0">
@@ -101,10 +101,10 @@
 
 			<h3 class="text-secondary mt-4">CDN</h3>
 			<code class="highlight">&lt;link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/css/bootstrap4-toggle.min.css" rel="stylesheet"&gt;
-&lt;script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.3.0/js/bootstrap4-toggle.min.js"&gt;&lt;/script&gt;</code>
+&lt;script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/js/bootstrap4-toggle.min.js"&gt;&lt;/script&gt;</code>
 
 			<h3 class="text-secondary mt-4">Download</h3>
-			<p><a href="https://github.com/gitbrent/bootstrap4-toggle/releases/latest">Latest release</a> of Bootstrap 4 Toggle.
+			<a href="https://github.com/gitbrent/bootstrap4-toggle/releases/latest">GitHub Latest release</a>
 
 			<h3 class="text-secondary mt-4">NPM</h3>
 			<code class="highlight">npm install bootstrap4-toggle</code>
@@ -118,7 +118,7 @@
 			<hr>
 
 			<h3 class="text-secondary mt-4">Sizes</h3>
-			<p>Bootstrap toggle is available in different sizes. Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.1/components/buttons/#sizes" target="_blank">Button Sizes</a> documentation for more information.</p>
+			<p>Bootstrap toggle is available in different sizes.</p>
 			<div class="example">
 				<input type="checkbox" checked data-toggle="toggle" data-size="lg">
 				<input type="checkbox" checked data-toggle="toggle">
@@ -209,7 +209,7 @@
 				<input type="checkbox" checked data-toggle="toggle" data-on="Ready" data-off="Not Ready" data-onstyle="success" data-offstyle="danger">
 			</div>
 
-			<h3 class="text-secondary mt-4">HTML/Icons</h3>
+			<h3 class="text-secondary mt-4">HTML, Icons, Images</h3>
 			<p>You can easily add icons or images since html is supported for on/off text.</p>
 			<div class="example">
 				<input type="checkbox" checked data-toggle="toggle" data-on="<i class='fa fa-play'></i> Play" data-off="<i class='fa fa-pause'></i> Pause">
@@ -235,7 +235,7 @@
 			</div>
 
 			<h3 class="text-secondary mt-4">Stacked checkboxes</h3>
-			<p>Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.1/components/forms/" target="_blank">Form Controls</a> documentation to create stacked checkboxes. Simply add <code>data-toggle="toggle"</code> to convert checkboxes into toggles.</p>
+			<p>Simply add <code>data-toggle="toggle"</code> to convert checkboxes into toggles.</p>
 			<div class="example">
 				<div class="form-check pl-0">
 					<input id="stackedCheck1" class="form-check-input" type="checkbox" data-toggle="toggle" checked>
@@ -248,7 +248,7 @@
 			</div>
 
 			<h3 class="text-secondary mt-4">Inline Checkboxes</h3>
-			<p>Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.1/components/forms/" target="_blank">Form Controls</a> documentation to create inline checkboxes. Simply add <code>data-toggle="toggle"</code> to a convert checkboxes into toggles.</p>
+			<p>Simply add <code>data-toggle="toggle"</code> to a convert checkboxes into toggles.</p>
 			<div class="example">
 				<div class="form-check form-check-inline">
 					<input id="inlineCheckbox1" class="form-check-input" type="checkbox" data-toggle="toggle" data-style="mr-1" checked>
@@ -329,7 +329,7 @@
 							<td>
 								Style of the <em>on</em> toggle.<br>Possible values are:
 								<code>primary</code>, <code>secondary</code>, <code>success</code>, <code>danger</code>, <code>warning</code>, <code>info</code>, <code>light</code>, <code>dark</code><br>
-								<small class="text-muted">Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.1/components/buttons/" target="_blank">Button Options</a> documentation for more information.</small>
+								<small class="text-muted">Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.2/components/buttons/" target="_blank">Button Options</a> documentation for more information.</small>
 							</td>
 						</tr>
 						<tr>
@@ -339,7 +339,7 @@
 							<td>
 								Style of the <em>off</em> toggle.<br>Possible values are:
 								<code>primary</code>, <code>secondary</code>, <code>success</code>, <code>danger</code>, <code>warning</code>, <code>info</code>, <code>light</code>, <code>dark</code><br>
-								<small class="text-muted">Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.1/components/buttons/" target="_blank">Button Options</a> documentation for more information.</small>
+								<small class="text-muted">Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.2/components/buttons/" target="_blank">Button Options</a> documentation for more information.</small>
 							</td>
 						</tr>
 						<tr>
@@ -350,7 +350,7 @@
 								Size of the toggle. If set to <em>null</em>, button is default/normal size.<br>
 								Possible values are:
 								<code>lg</code>, <code>sm</code>, <code>xs</code><br>
-								<small class="text-muted">Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.1/components/buttons/#sizes" target="_blank">Button Sizes</a> documentation for more information.</small>
+								<small class="text-muted">Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.2/components/buttons/#sizes" target="_blank">Button Sizes</a> documentation for more information.</small>
 							</td>
 						</tr>
 						<tr>
@@ -507,7 +507,7 @@
 	</footer>
 
 	<!-- vvv scripts vvv -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
 	<script src="doc/script.js"></script>
 	<script src="js/bootstrap4-toggle.js"></script>
