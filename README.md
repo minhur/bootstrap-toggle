@@ -6,6 +6,8 @@
 
 Visit https://gitbrent.github.io/bootstrap4-toggle/ for interactive demos.
 
+![Demo GIF](https://github.com/gitbrent/bootstrap4-toggle/blob/master/doc/bootstrap4-toggle-demo.gif?raw=true)
+
 **************************************************************************************************
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
