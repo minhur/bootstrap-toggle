@@ -4,7 +4,9 @@
 
 **Bootstrap 4 Toggle** is a bootstrap plugin/widget that converts checkboxes into toggles.
 
-Visit https://gitbrent.github.io/bootstrap4-toggle/ for interactive demos.
+**************************************************************************************************
+
+Visit https://gitbrent.github.io/bootstrap4-toggle/ for interactive feature demos.
 
 ![Demo GIF](https://github.com/gitbrent/bootstrap4-toggle/blob/master/doc/bootstrap4-toggle-demo.gif?raw=true)
 
@@ -15,9 +17,10 @@ Visit https://gitbrent.github.io/bootstrap4-toggle/ for interactive demos.
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Demos](#demos)
+- [ReactJS](#reactjs)
 - [Installation](#installation)
-  - [Download](#download)
   - [CDN](#cdn)
+  - [Download](#download)
   - [NPM](#npm)
   - [Yarn](#yarn)
 - [Usage](#usage)
@@ -36,6 +39,9 @@ Visit https://gitbrent.github.io/bootstrap4-toggle/ for interactive demos.
 
 # Demos
 Visit https://gitbrent.github.io/bootstrap4-toggle/ for interactive checkbox toggle demos.
+
+# ReactJS
+React component available: [bootstrap-switch-button-react](https://github.com/gitbrent/bootstrap-switch-button-react)
 
 # Installation
 
