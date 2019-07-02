@@ -1,6 +1,6 @@
 {
   "name": "bootstrap4-toggle",
-  "version": "3.5.0-beta",
+  "version": "3.5.0-beta1",
   "author": {
     "name": "Brent Ely",
     "url": "https://github.com/gitbrent/"
@@ -8,10 +8,10 @@
   "description": "Bootstrap 4 Toggle is a bootstrap 4 plugin that converts checkboxes into toggles.",
   "homepage": "https://gitbrent.github.io/bootstrap4-toggle/",
   "license": "MIT",
-  "main": "js/bootstrap4-toggle.js",
+  "main": "js/bootstrap4-toggle.min.js",
   "files": [
-    "css/bootstrap4-toggle.css",
-    "js/bootstrap4-toggle.js"
+    "css/bootstrap4-toggle.min.css",
+    "js/bootstrap4-toggle.min.js"
   ],
   "keywords": [
     "bootstrap",
