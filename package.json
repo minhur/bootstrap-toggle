@@ -1,6 +1,6 @@
 {
   "name": "bootstrap4-toggle",
-  "version": "3.5.0-beta1",
+  "version": "3.5.0",
   "author": {
     "name": "Brent Ely",
     "url": "https://github.com/gitbrent/"
@@ -13,16 +13,20 @@
     "css/bootstrap4-toggle.min.css",
     "js/bootstrap4-toggle.min.js"
   ],
+  "scripts": {
+    "build": "grunt"
+  },
   "keywords": [
     "bootstrap",
     "bootstrap4",
-	"bootstrap-4",
-	"bootstrap 4",
-	"bootstrap 4 checkbox",
-	"bootstrap 4 switch",
-	"bootstrap 4 toggle",
-	"bootstrap-checkbox",
+    "bootstrap-4",
+    "bootstrap 4",
+    "bootstrap 4 checkbox",
+    "bootstrap 4 switch",
+    "bootstrap 4 toggle",
+    "bootstrap-checkbox",
     "bootstrap-switch",
+    "bootstrap-switch-button",
     "bootstrap-toggle"
   ],
   "repository": {
@@ -33,7 +37,7 @@
     "url": "https://github.com/gitbrent/bootstrap4-toggle/issues"
   },
   "devDependencies": {
-    "grunt": "^1.0.3",
+    "grunt": "^1.0.4",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-cssmin": "^0.10.0",
     "grunt-contrib-uglify": "^0.6.0"
