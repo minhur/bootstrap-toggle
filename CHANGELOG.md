@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [3.5.0](https://github.com/gitbrent/bootstrap4-toggle/tree/v3.5.0) 2019-07-02
+### [Full Changelog](https://github.com/gitbrent/bootstrap4-toggle/compare/v3.4.0...v3.5.0)
+### Added
+- Added ARIA `role="button"` tag to toggle
+- Added `cursor: pointer;` style to toggle
+### Changed
+- Fixed: Touch not working on mobile [\#2](https://github.com/gitbrent/bootstrap4-toggle/issue/2) ([wilecoyte78](https://github.com/wilecoyte78))
+- Updated to Bootstrap version 4.3.1
+- Updated README with better Yarn instructions
+
 ## [3.4.0](https://github.com/gitbrent/bootstrap4-toggle/tree/v3.4.0) 2019-01-03
 ### [Full Changelog](https://github.com/gitbrent/bootstrap4-toggle/compare/v3.3.0...v3.4.0)
 ### Added
