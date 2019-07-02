@@ -20,7 +20,7 @@
 		this.render()
 	}
 
-	Toggle.VERSION  = '3.5.0-beta1'
+	Toggle.VERSION  = '3.5.0'
 
 	Toggle.DEFAULTS = {
 		on: 'On',
@@ -173,10 +173,9 @@
 		$('input[type=checkbox][data-toggle^=toggle]').bootstrapToggle()
 	})
 
-	$(document).on('touchstart.bs.toggle click.bs.toggle', 'div[data-toggle^=toggle]', function(e) {
+	$(document).on('click.bs.toggle', 'div[data-toggle^=toggle]', function(e) {
 		var $checkbox = $(this).find('input[type=checkbox]')
 		$checkbox.bootstrapToggle('toggle')
 		e.preventDefault()
 	})
-
 }(jQuery);
