@@ -1,7 +1,7 @@
 /*\
 |*| ========================================================================
 |*| Bootstrap Toggle: bootstrap4-toggle.js v3.6.0
-|*| https://gitbrent.github.io/bootstrap-toggle/
+|*| https://gitbrent.github.io/bootstrap4-toggle/
 |*| ========================================================================
 |*| Copyright 2018-2019 Brent Ely
 |*| Licensed under MIT
