@@ -108,11 +108,13 @@
 	}
 
 	Toggle.prototype.enable = function () {
+		this.$toggle.removeClass('disabled')
 		this.$toggle.removeAttr('disabled')
 		this.$element.prop('disabled', false)
 	}
 
 	Toggle.prototype.disable = function () {
+		this.$toggle.addClass('disabled')
 		this.$toggle.attr('disabled', 'disabled')
 		this.$element.prop('disabled', true)
 	}
