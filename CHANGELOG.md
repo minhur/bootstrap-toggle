@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [3.6.0](https://github.com/gitbrent/bootstrap4-toggle/tree/v3.6.0) 2019-??-??
 ### [Full Changelog](https://github.com/gitbrent/bootstrap4-toggle/compare/v3.5.0...v3.6.0)
+### Added
+- Added accessibility properties to labels [\#11](https://github.com/gitbrent/bootstrap4-toggle/issue/11) ([aproquot](https://github.com/aproquot))
 ### Changed
 - Fixed URLs in js and css file top comment [\#5](https://github.com/gitbrent/bootstrap4-toggle/issue/5) ([wilecoyte78](https://github.com/wilecoyte78))
 - Disable style is not working [\#18](https://github.com/gitbrent/bootstrap4-toggle/issue/18) ([rychlym](https://github.com/rychlym))
