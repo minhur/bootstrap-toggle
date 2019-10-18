@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [3.7.0](https://github.com/gitbrent/bootstrap4-toggle/tree/v3.7.0) 2019-??-??
+### [Full Changelog](https://github.com/gitbrent/bootstrap4-toggle/compare/v3.6.0...v3.7.0)
+
 ## [3.6.0](https://github.com/gitbrent/bootstrap4-toggle/tree/v3.6.0) 2019-10-17
 ### [Full Changelog](https://github.com/gitbrent/bootstrap4-toggle/compare/v3.5.0...v3.6.0)
 ### Added
