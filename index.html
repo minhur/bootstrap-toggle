@@ -6,7 +6,7 @@
 	<meta name="description" content="Bootstrap 4 Toggle is a bootstrap plugin that converts checkboxes into responsive toggles.">
 	<meta name="keywords" content="bootstrap, toggle, switch, bootstrap-toggle, bootstrap-switch, bootstrap-checkbox">
 	<meta name="author" content="https://github.com/gitbrent">
-	<meta name="version" content="v3.5.0">
+	<meta name="version" content="v3.6.0">
 	<meta name="robots" content="index, follow">
 	<meta name="revisit-after" content="1 month">
 	<title>Bootstrap 4 Toggle Switch Button Checkbox</title>
@@ -452,8 +452,11 @@
 			<hr>
 
 			<h3 class="text-secondary mt-4">Event Propagation</h3>
-			<p><span class="label label-primary">Note</span> All events are propagated to and from input element to the toggle. </p>
-			<p>You should listen to events from the <code>&lt;input type="checkbox"></code> directly rather than look for custom events.</p>
+			<p>
+				<div class="label label-primary">Notes</div>
+				&bull;&nbsp;All events are propagated to and from input element to the toggle.<br>
+				&bull;&nbsp;Listen for events on the <code>&lt;input type="checkbox"></code> directly as the toggle stays synced with the input.
+			</p>
 			<div class="example">
 				<input id="toggle-event" type="checkbox" data-toggle="toggle">
 				<div id="console-event"></div>
@@ -464,6 +467,33 @@
 						})
 					})
 				</script>
+			</div>
+			<h3 class="text-secondary mt-4">Stopping Event Propagation</h3>
+			<p>
+				Passing <code>true</code> to the on/off methods will enable the silent option to prevent the control from propagating the change event in
+				cases where you want to update the controls on/off state, but do not want to fire the onChange event.
+			</p>
+			<div class="example">
+				<input id="toggle-silent" type="checkbox" data-toggle="toggle" onchange="$('#chgConsole').text(new Date().toISOString()+' ... change event fired!')">
+				<button class="btn btn-success" onclick="toggleApiOnSilent()" >On by API (silent)</button>
+				<button class="btn btn-success"  onclick="toggleApiOffSilent()">Off by API (silent)</button>
+				<button class="btn btn-warning" onclick="toggleApiOnNotSilent()">On by API (not silent)</button>
+				<button class="btn btn-warning" onclick="toggleApiOffNotSilent()">On by API (not silent)</button>
+				<script>
+					function toggleApiOnSilent() {
+						$('#toggle-silent').bootstrapToggle('on', true);
+					}
+					function toggleApiOffSilent() {
+						$('#toggle-silent').bootstrapToggle('off', true);
+					}
+					function toggleApiOnNotSilent() {
+						$('#toggle-silent').bootstrapToggle('on');
+					}
+					function toggleApiOffNotSilent() {
+						$('#toggle-silent').bootstrapToggle('off');
+					}
+				</script>
+				<pre class="mb-0"><code id="chgConsole" class="text-info"></code></pre>
 			</div>
 
 			<h3 class="text-secondary mt-4">API vs Input</h3>

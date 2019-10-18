@@ -145,13 +145,17 @@
 	// ========================
 
 	function Plugin(option) {
+		var optArg = Array.prototype.slice.call( arguments, 1 )[0]
+
 		return this.each(function () {
 			var $this   = $(this)
 			var data    = $this.data('bs.toggle')
 			var options = typeof option == 'object' && option
 
 			if (!data) $this.data('bs.toggle', (data = new Toggle(this, options)))
-			if (typeof option == 'string' && data[option]) data[option]()
+			if (typeof option === 'string' && data[option] && typeof optArg === 'boolean') data[option](optArg)
+			else if (typeof option === 'string' && data[option]) data[option]()
+			//else if (option && !data[option]) console.log('bootstrap-toggle: error: method `'+ option +'` does not exist!');
 		})
 	}
 
