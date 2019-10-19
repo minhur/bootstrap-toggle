@@ -1,6 +1,6 @@
 {
   "name": "bootstrap4-toggle",
-  "version": "3.6.1",
+  "version": "3.7.0-beta",
   "author": {
     "name": "Brent Ely",
     "url": "https://github.com/gitbrent/"
@@ -37,6 +37,7 @@
     "url": "https://github.com/gitbrent/bootstrap4-toggle/issues"
   },
   "devDependencies": {
+    "doctoc": "^1.4.0",
     "grunt": "^1.0.4",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-cssmin": "^3.0.0",
