@@ -35,6 +35,7 @@ Project                                                                         
   - [Methods](#methods)
 - [Events](#events)
   - [Event Propagation](#event-propagation)
+  - [Stopping Event Propagation](#stopping-event-propagation)
   - [API vs Input](#api-vs-input)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -147,6 +148,32 @@ You should listen to events from the `<input type="checkbox">` directly rather t
       $('#console-event').html('Toggle: ' + $(this).prop('checked'))
     })
   })
+</script>
+```
+
+## Stopping Event Propagation
+Passing `true` to the on/off methods will enable the silent option to prevent the control from propagating the change event in
+cases where you want to update the controls on/off state, but do not want to fire the onChange event.
+
+```html
+<input id="toggle-silent" type="checkbox" data-toggle="toggle">
+<button class="btn btn-success" onclick="toggleApiOnSilent()" >On by API (silent)</button>
+<button class="btn btn-success" onclick="toggleApiOffSilent()">Off by API (silent)</button>
+<button class="btn btn-warning" onclick="toggleApiOnNotSilent()">On by API (not silent)</button>
+<button class="btn btn-warning" onclick="toggleApiOffNotSilent()">On by API (not silent)</button>
+<script>
+  function toggleApiOnSilent() {
+    $('#toggle-silent').bootstrapToggle('on', true);
+  }
+  function toggleApiOffSilent() {
+    $('#toggle-silent').bootstrapToggle('off', true);
+  }
+  function toggleApiOnNotSilent() {
+    $('#toggle-silent').bootstrapToggle('on');
+  }
+  function toggleApiOffNotSilent() {
+    $('#toggle-silent').bootstrapToggle('off');
+  }
 </script>
 ```
 
