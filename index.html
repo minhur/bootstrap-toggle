@@ -1,139 +1,291 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<script> if (window.location.href.indexOf('minhur.github.io') > 0) window.location.replace('http://www.bootstraptoggle.com') </script>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="msvalidate.01" content="3638AEFC99423BA5CB586805286C39AA" />
-	<meta name="description" content="Bootstrap Toggle is a highly flexible Bootstrap plugin that converts checkboxes into toggles." />
-	<meta name="keywords" content="bootstrap, toggle, switch, bootstrap-toggle, bootstrap-switch" />
-	<meta name="author" content="metatags generator">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Bootstrap 4 Toggle is a bootstrap plugin that converts checkboxes into responsive toggles.">
+	<meta name="keywords" content="bootstrap, toggle, switch, bootstrap-toggle, bootstrap-switch, bootstrap-checkbox">
+	<meta name="author" content="https://github.com/gitbrent">
+	<meta name="version" content="v3.7.0">
 	<meta name="robots" content="index, follow">
 	<meta name="revisit-after" content="1 month">
-	<title>Bootstrap Toggle</title>
-	<link rel="canonical" href="http://www.bootstraptoggle.com">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css" rel="stylesheet" >
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/bootstrap-toggle.css" rel="stylesheet">
-	<link href="doc/stylesheet.css" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<title>Bootstrap 4 Toggle Switch Button Checkbox</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap4-toggle.css">
+	<link rel="stylesheet" href="doc/stylesheet.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
-		<nav class="navbar navbar-default container" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Bootstrap Toggle</a>
-				</div>
-				<div id="navbar" class="collapse navbar-collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#usage">Usage</a></li>
-						<li><a href="#api">API</a></li>
-						<li><a href="#events">Events</a></li>
-						<li><a href="#demos">Demos</a></li>
-						<li><a href="https://github.com/minhur/bootstrap-toggle/issues">Issues</a></li>
-						<li><a href="https://github.com/minhur/bootstrap-toggle/archive/master.zip">Download</a></li>
-						<li>
-							<iframe src="https://mdo.github.io/github-buttons/github-btn.html?user=minhur&repo=bootstrap-toggle&type=watch" allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
-						</li>
-						<li>
-							<iframe src="https://mdo.github.io/github-buttons/github-btn.html?user=minhur&repo=bootstrap-toggle&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
-						</li>
-					</ul>
-				</div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light container mb-3" role="navigation">
+			<a class="navbar-brand" href="#">Bootstrap 4 Toggle</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto align-items-center">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="#installation">Installation</a></li>
+					<li class="nav-item"><a class="nav-link" href="#demos">Demos</a></li>
+					<li class="nav-item"><a class="nav-link d-none d-sm-none d-md-block" href="#usage">Usage</a></li>
+					<li class="nav-item"><a class="nav-link d-none d-sm-none d-md-block" href="#api">API</a></li>
+					<li class="nav-item"><a class="nav-link d-none d-sm-none d-md-block" href="#events">Events</a></li>
+					<li class="nav-item"><a class="nav-link" href="https://github.com/gitbrent/bootstrap4-toggle/">GitHub</a></li>
+					<li class="nav-item"><a class="nav-link" href="https://github.com/gitbrent/bootstrap4-toggle/archive/master.zip">Download</a></li>
+				</ul>
 			</div>
 		</nav>
 		<div class="mast-head">
 			<div class="container">
-				<h1>Bootstrap Toggle</h1>
-				<p>Bootstrap Toggle is a highly flexible Bootstrap plugin that converts checkboxes into toggles</p>
-				<div class="mast-links">
-					<iframe src="https://mdo.github.io/github-buttons/github-btn.html?user=minhur&repo=bootstrap-toggle&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="150" height="30"></iframe>
-					<iframe src="https://mdo.github.io/github-buttons/github-btn.html?user=minhur&repo=bootstrap-toggle&type=fork&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="150" height="30"></iframe>
-				</div>
+				<h1>Bootstrap Switch Button</h1>
+				<p><strong>Bootstrap Toggle</strong> is a jQuery plugin/widget that converts plain checkboxes into responsive toggle switch buttons.</p>
+				<!--<div class="mast-links">
+					<iframe src="https://ghbtns.com/github-btn.html?user=gitbrent&repo=bootstrap4-toggle&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
+					<iframe src="https://ghbtns.com/github-btn.html?user=gitbrent&repo=bootstrap4-toggle&type=star&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
+				</div>-->
 			</div>
 		</div>
 	</header>
-
 	<main>
-		<div class="container">
-			<h2>Getting Started</h2>
-			<hr>
-			<h3>Installation</h3>
-			<p>You can <a href="https://github.com/minhur/bootstrap-toggle/archive/master.zip">download</a> the latest version of Bootstrap Toggle or use CDN to load the library.</p>
-			<p><span class="label label-warning">Warning</span> If you are using Bootstrap v2.3.2, use <code>bootstrap2-toggle.min.js</code> and <code>bootstrap2-toggle.min.css</code> instead.</p>
-			<code class="highlight">&lt;link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet"&gt;
-&lt;script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"&gt;&lt;/script&gt;</code>
+		<section id="updated" class="container my-5">
+			<div class="alert alert-success" role="alert">
+				<h3 class="alert-heading">Made for Bootstrap 4!</h3>
+				<h6 class="font-weight-light">This page and all of the switch buttons shown are running on Bootstrap 4.3</h6>
+				<hr>
+				<div class="row">
+					<div class="col-12 col-md-4 mb-1 mb-md-0">
+						<div class="row align-items-center">
+							<div class="col-2 p-0 p-md-2 text-right">
+								<i class="fas fa-check-circle text-success d-none  d-sm-none  d-md-none  d-lg-block" style="font-size:48px"></i>
+								<i class="fas fa-check-circle text-success d-block d-sm-block d-md-block d-lg-none " style="font-size:24px"></i>
+							</div>
+							<div class="col-10">
+								Supports touch events
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 mb-1 mb-md-0">
+						<div class="row align-items-center">
+							<div class="col-2 p-0 p-md-2 text-right">
+								<i class="fas fa-check-circle text-success d-none  d-sm-none  d-md-none  d-lg-block" style="font-size:48px"></i>
+								<i class="fas fa-check-circle text-success d-block d-sm-block d-md-block d-lg-none " style="font-size:24px"></i>
+							</div>
+							<div class="col-10">
+								Supports outline colors
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 mb-1 mb-md-0">
+						<div class="row align-items-center">
+							<div class="col-2 p-0 p-md-2 text-right">
+								<i class="fas fa-check-circle text-success d-none  d-sm-none  d-md-none  d-lg-block" style="font-size:48px"></i>
+								<i class="fas fa-check-circle text-success d-block d-sm-block d-md-block d-lg-none " style="font-size:24px"></i>
+							</div>
+							<div class="col-10">
+								Includes a mini (-xs) size
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-			<h3>Bower Install</h3>
-			<p></p>
-			<code class="highlight bash">bower install bootstrap-toggle</code>
-		</div>
-		<div id="usage" class="container">
+		<section id="installation" class="container my-5">
+			<h2>Installation</h2>
+			<hr>
+
+			<h3 class="text-secondary mt-4">CDN</h3>
+			<code class="highlight">&lt;link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet"&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"&gt;&lt;/script&gt;</code>
+
+			<h3 class="text-secondary mt-4">Download</h3>
+			<a href="https://github.com/gitbrent/bootstrap4-toggle/releases/latest">GitHub Latest release</a>
+
+			<h3 class="text-secondary mt-4">NPM</h3>
+			<code class="highlight">npm install bootstrap4-toggle</code>
+
+			<h3 class="text-secondary mt-4">Yarn</h3>
+			<code class="highlight">yarn add bootstrap4-toggle</code>
+		</section>
+
+		<section id="demos" class="container my-5">
+			<h2>Demos</h2>
+			<hr>
+
+			<h3 class="text-secondary mt-4">Sizes</h3>
+			<p>Bootstrap toggle is available in different sizes.</p>
+			<div class="example">
+				<input type="checkbox" checked data-toggle="toggle" data-size="lg">
+				<input type="checkbox" checked data-toggle="toggle">
+				<input type="checkbox" checked data-toggle="toggle" data-size="sm">
+				<input type="checkbox" checked data-toggle="toggle" data-size="xs">
+			</div>
+
+			<h3 class="text-secondary mt-4">Custom Sizes</h3>
+			<p>Bootstrap toggle can handle custom sizes by <code>data-width</code> and <code>data-height</code> options.</p>
+			<div class="example">
+				<input type="checkbox" checked data-toggle="toggle" data-width="100" data-height="75">
+				<input type="checkbox" checked data-toggle="toggle" data-height="75">
+				<input type="checkbox" checked data-toggle="toggle" data-width="100">
+			</div>
+
+			<h3 class="text-secondary mt-4">Colors</h3>
+			<p>Bootstrap Toggle implements all standard bootstrap 4 button colors.</p>
+			<div class="example">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="primary">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="secondary">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="danger">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="warning">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="info">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="light">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="dark">
+			</div>
+
+			<h3 class="text-secondary mt-4">Outline Colors</h3>
+			<p>Bootstrap Toggle implements all standard bootstrap 4 button outline colors.</p>
+			<div class="example">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-primary"   data-offstyle="outline-secondary">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-secondary" data-offstyle="outline-success">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-success"   data-offstyle="outline-danger">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-danger"    data-offstyle="outline-warning">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-warning"   data-offstyle="outline-info">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-info"      data-offstyle="outline-light">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-light"     data-offstyle="outline-dark">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-dark"      data-offstyle="outline-primary">
+			</div>
+
+			<h3 class="text-secondary mt-4">Dark Theme Colors</h3>
+			<p>Bootstrap Toggle colors look great on dark backgrounds.</p>
+			<div class="example bg-dark">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="primary"   data-offstyle="secondary">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="secondary" data-offstyle="success">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="success"   data-offstyle="danger">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="danger"    data-offstyle="warning">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="warning"   data-offstyle="info">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="info"      data-offstyle="light">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="light"     data-offstyle="dark" data-style="border">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="dark"      data-offstyle="light" data-style="border">
+			</div>
+
+			<h3 class="text-secondary mt-4">Dark Theme Outline Colors</h3>
+			<p>Bootstrap Toggle outline colors look great on dark backgrounds.</p>
+			<div class="example bg-dark">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-primary"   data-offstyle="outline-secondary">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-secondary" data-offstyle="outline-success">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-success"   data-offstyle="outline-danger">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-danger"    data-offstyle="outline-warning">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-warning"   data-offstyle="outline-info">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-info"      data-offstyle="outline-light">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-light"     data-offstyle="outline-dark" data-style="border">
+				<input type="checkbox" checked data-toggle="toggle" data-onstyle="outline-dark"      data-offstyle="outline-light" data-style="border">
+			</div>
+
+			<h3 class="text-secondary mt-4">Custom Style</h3>
+			<p>Style the buttons to fit an existing UX.</p>
+			<div class="example">
+				<!-- iOS Style: Rounded -->
+				<style>
+					.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20rem; }
+					.toggle.ios .toggle-handle { border-radius: 20rem; }
+				</style>
+				<input type="checkbox" checked data-toggle="toggle" data-style="ios">
+				<!-- Android Style: No radius -->
+				<style>
+					.toggle.android { border-radius: 0px;}
+					.toggle.android .toggle-handle { border-radius: 0px; }
+				</style>
+				<input type="checkbox" checked data-toggle="toggle" data-style="android" data-onstyle="info">
+			</div>
+
+			<h3 class="text-secondary mt-4">Custom Text</h3>
+			<p>The text can be changed easily with attributes or options.</p>
+			<div class="example">
+				<input type="checkbox" checked data-toggle="toggle" data-on="Ready" data-off="Not Ready" data-onstyle="success" data-offstyle="danger">
+			</div>
+
+			<h3 class="text-secondary mt-4">HTML, Icons, Images</h3>
+			<p>You can easily add icons or images since html is supported for on/off text.</p>
+			<div class="example">
+				<input type="checkbox" checked data-toggle="toggle" data-on="<i class='fa fa-play'></i> Play" data-off="<i class='fa fa-pause'></i> Pause">
+			</div>
+
+			<h3 class="text-secondary mt-4">Multiple Lines of Text</h3>
+			<p>Toggles with multiple lines will adjust its heights.</p>
+			<div class="example">
+				<input type="checkbox" checked data-toggle="toggle" data-on="Hello<br>World" data-off="Goodbye<br>World">
+			</div>
+
+			<h3 class="text-secondary mt-4">Animation Speed</h3>
+			<p>Transition speed can be easily controlled with css <code>transition</code> property on <code>.toggle-group</code>. You can also turn animation off completely.</p>
+			<div class="example">
+				<style>
+					.slow  .toggle-group { transition: left 0.7s; -webkit-transition: left 0.7s; }
+					.fast  .toggle-group { transition: left 0.1s; -webkit-transition: left 0.1s; }
+					.quick .toggle-group { transition: none;      -webkit-transition: none; }
+				</style>
+				<input type="checkbox" checked data-toggle="toggle" data-style="slow">
+				<input type="checkbox" checked data-toggle="toggle" data-style="fast">
+				<input type="checkbox" checked data-toggle="toggle" data-style="quick">
+			</div>
+
+			<h3 class="text-secondary mt-4">Stacked checkboxes</h3>
+			<p>Simply add <code>data-toggle="toggle"</code> to convert checkboxes into toggles.</p>
+			<div class="example">
+				<div class="form-check pl-0">
+					<input id="stackedCheck1" class="form-check-input" type="checkbox" data-toggle="toggle" checked>
+					<label for="stackedCheck1" class="form-check-label">Enabled</label>
+				</div>
+				<div class="form-check pl-0">
+					<input id="stackedCheck2" class="form-check-input" type="checkbox" data-toggle="toggle" disabled>
+					<label for="stackedCheck2" class="form-check-label">Disabled</label>
+				</div>
+			</div>
+
+			<h3 class="text-secondary mt-4">Inline Checkboxes</h3>
+			<p>Simply add <code>data-toggle="toggle"</code> to a convert checkboxes into toggles.</p>
+			<div class="example">
+				<div class="form-check form-check-inline">
+					<input id="inlineCheckbox1" class="form-check-input" type="checkbox" data-toggle="toggle" data-style="mr-1" checked>
+					<label for="inlineCheckbox1" class="form-check-label">Enabled</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input id="inlineCheckbox2" class="form-check-input" type="checkbox" data-toggle="toggle" data-style="mr-1" disabled>
+					<label for="inlineCheckbox2" class="form-check-label">Disabled</label>
+				</div>
+			</div>
+		<section>
+
+		<section id="usage" class="container my-5 d-none d-sm-none d-md-block">
 			<h2>Usage</h2>
 			<hr>
 
-			<h3>Basic example</h3>
+			<h3 class="text-secondary mt-4">Initialize with HTML</h3>
 			<p>Simply add <code>data-toggle="toggle"</code> to convert checkboxes into toggles.</p>
 			<div class="example">
-				<input type="checkbox" checked data-toggle="toggle">
+				<input id="chkToggle1" type="checkbox" data-toggle="toggle" checked>
 			</div>
 
-			<h3>Stacked checkboxes</h3>
-			<p>Refer to Bootstrap <a href="http://getbootstrap.com/css/#forms-controls" target="_blank">Form Controls</a> documentation to create stacked checkboxes. Simply add <code>data-toggle="toggle"</code> to convert checkboxes into toggles.</p>
+			<h3 class="text-secondary mt-4">Initialize with JavaScript</h3>
+			<p>Simply call the <code>bootstrapToggle</code> method to convert checkboxes into toggles. See <a href="#api">Options</a> for additional colors, etc.</p>
 			<div class="example">
-				<div class="checkbox">
-					<label>
-						<input type="checkbox" data-toggle="toggle">
-						Option one is enabled
-					</label>
-				</div>
-				<div class="checkbox disabled">
-					<label>
-						<input type="checkbox" disabled data-toggle="toggle">
-						Option two is disabled
-					</label>
-				</div>
+				<input id="chkToggle2" type="checkbox" checked>
+				<script>
+				  $(function(){ $('#chkToggle2').bootstrapToggle() });
+				</script>
 			</div>
+		</section>
 
-			<h3>Inline Checkboxes</h3>
-			<p>Refer to Bootstrap <a href="http://getbootstrap.com/css/#forms-controls" target="_blank">Form Controls</a> documentation to create inline checkboxes. Simply add <code>data-toggle="toggle"</code> to a convert checkboxes into toggles.</p>
-			<div class="example">
-				<label class="checkbox-inline">
-					<input type="checkbox" checked data-toggle="toggle"> First
-				</label>
-				<label class="checkbox-inline">
-					<input type="checkbox" data-toggle="toggle"> Second
-				</label>
-				<label class="checkbox-inline">
-					<input type="checkbox" data-toggle="toggle"> Third
-				</label>
-			</div>
-		</div>
-
-		<div id="api" class="container">
+		<section id="api" class="container my-5 d-none d-sm-none d-md-block">
 			<h2>API</h2>
 			<hr>
 
-			<h3>Initialize by JavaScript</h3>
-			<p>Initialize toggles with id <code>toggle-one</code> with a single line of JavaScript.</p>
-			<div class="example">
-				<input id="toggle-one" checked type="checkbox">
-				<script>
-					$(function() {
-						$('#toggle-one').bootstrapToggle();
-					})
-				</script>
-			</div>
-
-			<h3>Options</h3>
+			<h3 class="text-secondary mt-4">Options</h3>
 			<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-on="Enabled"</code>.</p>
 			<div class="example">
 				<input type="checkbox" data-toggle="toggle" data-on="Enabled" data-off="Disabled">
@@ -149,83 +301,90 @@
 			</div>
 			<div class="table-responsive">
 				<table class="table table-striped table-condensed">
-				<thead>
-				<tr>
-					<th>Name</th>
-					<th>Type</th>
-					<th>Default</th>
-					<th>Description</th>
-				</tr>
-				</thead>
-				<tbody>
-				<tr>
-					<td>on</td>
-					<td>string | html</td>
-					<td><code>"On"</code></td>
-					<td>Text of the <em>on</em> toggle</td>
-				</tr>
-				<tr>
-					<td>off</td>
-					<td>string | html</td>
-					<td><code>"Off"</code></td>
-					<td>Text of the <em>off</em> toggle</td>
-				</tr>
-				<tr>
-					<td>size</td>
-					<td>string</td>
-					<td><code>"normal"</code></td>
-					<td>
-						Size of the toggle. Possible values are:<code>large</code>,<code>normal</code>,<code>small</code>,<code>mini</code><br>
-						Refer to Bootstrap <a href="http://getbootstrap.com/css/#buttons-sizes" target="_blank">Button Sizes</a> documentation for more information.
-					</td>
-				</tr>
-				<tr>
-					<td>onstyle</td>
-					<td>string</td>
-					<td><code>"primary"</code></td>
-					<td>
-						Style of the <em>on</em> toggle.<br>Possible values are:<code>default</code>,<code>primary</code>,<code>success</code>,<code>info</code>,<code>warning</code>,<code>danger</code><br>
-						Refer to Bootstrap <a href="http://getbootstrap.com/css/#buttons-options" target="_blank">Button Options</a> documentation for more information.
-					</td>
-				</tr>
-				<tr>
-					<td>offstyle</td>
-					<td>string</td>
-					<td><code>"default"</code></td>
-					<td>
-						Style of the <em>off</em> toggle.<br>Possible values are:<code>default</code>,<code>primary</code>,<code>success</code>,<code>info</code>,<code>warning</code>,<code>danger</code><br>
-						Refer to Bootstrap <a href="http://getbootstrap.com/css/#buttons-options" target="_blank">Button Options</a> documentation for more information.
-					</td>
-				</tr>
-				<tr>
-					<td>style</td>
-					<td>string</td>
-					<td></td>
-					<td>
-						Appends the value to the class attribute of the toggle. This can be used to apply custom styles. Refer to Custom Styles for reference.
-					</td>
-				</tr>
-				<tr>
-					<td>width</td>
-					<td>integer</td>
-					<td><em>null</em></td>
-					<td>
-						Sets the width of the toggle. if set to <em>null</em>, width will be calculated.
-					</td>
-				</tr>
-				<tr>
-					<td>height</td>
-					<td>integer</td>
-					<td><em>null</em></td>
-					<td>
-						Sets the height of the toggle. if set to <em>null</em>, height will be calculated.
-					</td>
-				</tr>
-				</tbody>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Type</th>
+							<th>Default</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>on</code></td>
+							<td class="text-nowrap">string | html</td>
+							<td><code>"On"</code></td>
+							<td>Text of the <em>on</em> toggle label.</td>
+						</tr>
+						<tr>
+							<td><code>off</code></td>
+							<td>string | html</td>
+							<td><code>"Off"</code></td>
+							<td>Text of the <em>off</em> toggle label.</td>
+						</tr>
+						<tr>
+							<td><code class="text-nowrap">onstyle</code></td>
+							<td>string</td>
+							<td><code class="text-nowrap">"primary"</code></td>
+							<td>
+								Style of the <em>on</em> toggle.<br>Possible values are:
+								<code>primary</code>, <code>secondary</code>, <code>success</code>, <code>danger</code>, <code>warning</code>, <code>info</code>, <code>light</code>, <code>dark</code><br>
+								<small class="text-muted">Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.3/components/buttons/" target="_blank">Button Options</a> documentation for more information.</small>
+							</td>
+						</tr>
+						<tr>
+							<td><code class="text-nowrap">offstyle</code></td>
+							<td>string</td>
+							<td><code class="text-nowrap">"light"</code></td>
+							<td>
+								Style of the <em>off</em> toggle.<br>Possible values are:
+								<code>primary</code>, <code>secondary</code>, <code>success</code>, <code>danger</code>, <code>warning</code>, <code>info</code>, <code>light</code>, <code>dark</code><br>
+								<small class="text-muted">Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.3/components/buttons/" target="_blank">Button Options</a> documentation for more information.</small>
+							</td>
+						</tr>
+						<tr>
+							<td><code>size<code></td>
+							<td>string</td>
+							<td><em>null</em></td>
+							<td>
+								Size of the toggle. If set to <em>null</em>, button is default/normal size.<br>
+								Possible values are:
+								<code>lg</code>, <code>sm</code>, <code>xs</code><br>
+								<small class="text-muted">Refer to Bootstrap <a href="https://getbootstrap.com/docs/4.3/components/buttons/#sizes" target="_blank">Button Sizes</a> documentation for more information.</small>
+							</td>
+						</tr>
+						<tr>
+							<td><code>style</code></td>
+							<td>string</td>
+							<td><em>null</em></td>
+							<td>
+								Appends the provided value to the toggle's class attribute.
+								Use this to apply custom styles to the toggle.
+							</td>
+						</tr>
+						<tr>
+							<td><code>width</code></td>
+							<td>integer</td>
+							<td><em>null</em></td>
+							<td>
+								Sets the width of the toggle.<br>
+								If set to <em>null</em>, width will be calculated.
+							</td>
+						</tr>
+						<tr>
+							<td><code>height</code></td>
+							<td>integer</td>
+							<td><em>null</em></td>
+							<td>
+								Sets the height of the toggle.<br>
+								If set to <em>null</em>, height will be calculated.
+							</td>
+						</tr>
+					</tbody>
 				</table>
 			</div>
 
-			<h3>Methods</h3>
+			<h3 class="text-secondary mt-4">Methods</h3>
 			<p>Methods can be used to control toggles directly.</p>
 			<div class="example">
 				<input id="toggle-demo" type="checkbox" data-toggle="toggle">
@@ -233,69 +392,85 @@
 			<div class="table-responsive">
 				<table class="table table-striped table-condensed">
 				<thead>
-				<tr>
-					<th>Method</th>
-					<th>Example</th>
-					<th>Description</th>
-					<th>Demo</th>
-				</tr>
+					<tr>
+						<th>Method</th>
+						<th>Example</th>
+						<th>Description</th>
+						<th>Demo</th>
+					</tr>
 				</thead>
 				<tbody>
-				<tr>
-					<td><em>initialize</em></td>
-					<td><code>$('#toggle-demo').bootstrapToggle()</code></td>
-					<td>Initializes the toggle plugin with options</td>
-					<td><button class="btn btn-default btn-xs" onclick="demo.init('#toggle-demo')">Initialize</button></td>
-				</tr>
-				<tr>
-					<td>destroy</td>
-					<td><code>$('#toggle-demo').bootstrapToggle('destroy')</code></td>
-					<td>Destroys the toggle</td>
-					<td><button class="btn btn-default btn-xs" onclick="demo.destroy('#toggle-demo')">Destroy</button></td>
-				</tr>
-				<tr>
-					<td>on</td>
-					<td><code>$('#toggle-demo').bootstrapToggle('on')</code></td>
-					<td>Sets the toggle to 'On' state</td>
-					<td><button class="btn btn-default btn-xs" onclick="demo.on('#toggle-demo')">On</button></td>
-				</tr>
-				<tr>
-					<td>off</td>
-					<td><code>$('#toggle-demo').bootstrapToggle('off')</code></td>
-					<td>Sets the toggle to 'Off' state</td>
-					<td><button class="btn btn-default btn-xs" onclick="demo.off('#toggle-demo')">Off</button></td>
-				</tr>
-				<tr>
-					<td>toggle</td>
-					<td><code>$('#toggle-demo').bootstrapToggle('toggle')</code></td>
-					<td>Toggles the state of the toggle</td>
-					<td><button class="btn btn-default btn-xs" onclick="demo.toggle('#toggle-demo')">Toggle</button></td>
-				</tr>
-				<tr>
-					<td>enable</td>
-					<td><code>$('#toggle-demo').bootstrapToggle('enable')</code></td>
-					<td>Enables the toggle</td>
-					<td><button class="btn btn-default btn-xs" onclick="demo.enable('#toggle-demo')">Enable</button></td>
-				</tr>
-				<tr>
-					<td>disable</td>
-					<td><code>$('#toggle-demo').bootstrapToggle('disable')</code></td>
-					<td>Disables the toggle</td>
-					<td><button class="btn btn-default btn-xs" onclick="demo.disable('#toggle-demo')">Disable</button></td>
-				</tr>
+					<tr>
+						<td><em>initialize</em></td>
+						<td><code>$('#toggle-demo').bootstrapToggle()</code></td>
+						<td>Initializes the toggle plugin with options</td>
+						<td><button class="btn btn-outline-dark btn-sm w-100" onclick="demo.init('#toggle-demo')">Initialize</button></td>
+					</tr>
+					<tr>
+						<td>destroy</td>
+						<td><code>$('#toggle-demo').bootstrapToggle('destroy')</code></td>
+						<td>Destroys the toggle</td>
+						<td><button class="btn btn-outline-dark btn-sm w-100" onclick="demo.destroy('#toggle-demo')">Destroy</button></td>
+					</tr>
+					<tr>
+						<td>on</td>
+						<td><code>$('#toggle-demo').bootstrapToggle('on')</code></td>
+						<td>Sets the toggle to 'On' state</td>
+						<td><button class="btn btn-outline-dark btn-sm w-100" onclick="demo.on('#toggle-demo')">On</button></td>
+					</tr>
+					<tr>
+						<td>off</td>
+						<td><code>$('#toggle-demo').bootstrapToggle('off')</code></td>
+						<td>Sets the toggle to 'Off' state</td>
+						<td><button class="btn btn-outline-dark btn-sm w-100" onclick="demo.off('#toggle-demo')">Off</button></td>
+					</tr>
+					<tr>
+						<td>toggle</td>
+						<td><code>$('#toggle-demo').bootstrapToggle('toggle')</code></td>
+						<td>Toggles the state of the toggle</td>
+						<td><button class="btn btn-outline-dark btn-sm w-100" onclick="demo.toggle('#toggle-demo')">Toggle</button></td>
+					</tr>
+					<tr>
+						<td>enable</td>
+						<td><code>$('#toggle-demo').bootstrapToggle('enable')</code></td>
+						<td>Enables the toggle</td>
+						<td><button class="btn btn-outline-dark btn-sm w-100" onclick="demo.enable('#toggle-demo')">Enable</button></td>
+					</tr>
+					<tr>
+						<td>disable</td>
+						<td><code>$('#toggle-demo').bootstrapToggle('disable')</code></td>
+						<td>Disables the toggle</td>
+						<td><button class="btn btn-outline-dark btn-sm w-100" onclick="demo.disable('#toggle-demo')">Disable</button></td>
+					</tr>
 				</tbody>
 				</table>
 			</div>
-		</div>
 
+			<h3 class="text-secondary mt-4">Checked State</h3>
+			<p>You can determine the checked state of a toggle using the `checked` property.</p>
+			<div class="example">
+				<input id="toggle-state" type="checkbox" data-toggle="toggle">
+			</div>
+			<div id="chkState" class="example">
+				<button type="button" class="btn btn-outline-primary" onClick="showChkState()">Show Toggle State</button>
+			</div>
+			<p>
+				<div>Use the element property for checked state</div>
+				<code>document.getElementById('toggle-state').checked</code>
+				<div>Returns true/false</div>
+			</p>
+		</section>
 
-		<div id="events" class="container">
+		<section id="events" class="container my-5 d-none d-sm-none d-md-block">
 			<h2>Events</h2>
 			<hr>
 
-			<h3>Event Propagation</h3>
-			<p><span class="label label-primary">Note</span> All events are propagated to and from input element to the toggle. </p>
-			<p>You should listen to events from the <code>&lt;input type="checkbox"></code> directly rather than look for custom events.</p>
+			<h3 class="text-secondary mt-4">Event Propagation</h3>
+			<p>
+				<div class="label label-primary">Notes</div>
+				&bull;&nbsp;All events are propagated to and from input element to the toggle.<br>
+				&bull;&nbsp;Listen for events on the <code>&lt;input type="checkbox"></code> directly as the toggle stays synced with the input.
+			</p>
 			<div class="example">
 				<input id="toggle-event" type="checkbox" data-toggle="toggle">
 				<div id="console-event"></div>
@@ -307,143 +482,95 @@
 					})
 				</script>
 			</div>
+			<h3 class="text-secondary mt-4">Stopping Event Propagation</h3>
+			<p>
+				Passing <code>true</code> to the on/off methods will enable the silent option to prevent the control from propagating the change event in
+				cases where you want to update the controls on/off state, but do not want to fire the onChange event.
+			</p>
+			<div class="example">
+				<input id="toggle-silent" type="checkbox" data-toggle="toggle" onchange="$('#chgConsole').text(new Date().toISOString()+' ... change event fired!')">
+				<button class="btn btn-success" onclick="toggleApiOnSilent()" >On by API (silent)</button>
+				<button class="btn btn-success"  onclick="toggleApiOffSilent()">Off by API (silent)</button>
+				<button class="btn btn-warning" onclick="toggleApiOnNotSilent()">On by API (not silent)</button>
+				<button class="btn btn-warning" onclick="toggleApiOffNotSilent()">On by API (not silent)</button>
+				<script>
+					function toggleApiOnSilent() {
+						$('#toggle-silent').bootstrapToggle('on', true);
+					}
+					function toggleApiOffSilent() {
+						$('#toggle-silent').bootstrapToggle('off', true);
+					}
+					function toggleApiOnNotSilent() {
+						$('#toggle-silent').bootstrapToggle('on');
+					}
+					function toggleApiOffNotSilent() {
+						$('#toggle-silent').bootstrapToggle('off');
+					}
+				</script>
+				<pre class="mb-0"><code id="chgConsole" class="text-info"></code></pre>
+			</div>
 
-			<h3>API vs Input</h3>
+			<h3 class="text-secondary mt-4">API vs Input</h3>
 			<p>This also means that using the API or Input to trigger events will work both ways.</p>
 			<div class="example">
 				<input id="toggle-trigger" type="checkbox" data-toggle="toggle">
-				<button class="btn btn-success" onclick="toggleOn()">On by API</button>
-				<button class="btn btn-danger" onclick="toggleOff()">Off by API</button>
-				<button class="btn btn-success" onclick="toggleOnByInput()">On by Input</button>
-				<button class="btn btn-danger" onclick="toggleOffByInput()">Off by Input</button>
+				<button class="btn btn-success" onclick="toggleApiOn()" >On by API</button>
+				<button class="btn btn-danger"  onclick="toggleApiOff()">Off by API</button>
+				<button class="btn btn-success" onclick="toggleInpOn()" >On by Input</button>
+				<button class="btn btn-danger"  onclick="toggleInpOff()">Off by Input</button>
 				<script>
-					function toggleOn() {
-						$('#toggle-trigger').bootstrapToggle('on')
+					function toggleApiOn() {
+						$('#toggle-trigger').bootstrapToggle('on');
 					}
-					function toggleOff() {
-						$('#toggle-trigger').bootstrapToggle('off')	
+					function toggleApiOff() {
+						$('#toggle-trigger').bootstrapToggle('off');
 					}
-					function toggleOnByInput() {
-						$('#toggle-trigger').prop('checked', true).change()
+					function toggleInpOn() {
+						$('#toggle-trigger').prop('checked', true).change();
 					}
-					function toggleOffByInput() {
-						$('#toggle-trigger').prop('checked', false).change()
+					function toggleInpOff() {
+						$('#toggle-trigger').prop('checked', false).change();
 					}
 				</script>
 			</div>
-		</div>
-
-		<div id="demos" class="container">
-			<h2>Demos</h2>
-			<hr>
-
-			<h3>Sizes</h3>
-			<p>Bootstrap toggle is available in different sizes. Refer to Bootstrap <a href="http://getbootstrap.com/css/#buttons-sizes" target="_blank">Button Sizes</a> documentation for more information.</p>
-			<div class="example">
-				<input type="checkbox" checked data-toggle="toggle" data-size="large">
-				<input type="checkbox" checked data-toggle="toggle" data-size="normal">
-				<input type="checkbox" checked data-toggle="toggle" data-size="small">
-				<input type="checkbox" checked data-toggle="toggle" data-size="mini">
-			</div>
-			
-			<h3>Custom Sizes</h3>
-			<p>Bootstrap toggle can handle custom sizes by <code>data-width</code> and <code>data-height</code> options.</p>
-			<div class="example">
-				<input type="checkbox" checked data-toggle="toggle" data-width="100" data-height="75">
-				<input type="checkbox" checked data-toggle="toggle" data-height="75">
-				<input type="checkbox" checked data-toggle="toggle" data-width="100">
-			</div>
-
-			<h3>Colors</h3>
-			<p>Bootstrap Toggle supports various colors. Refer to Bootstrap <a href="http://getbootstrap.com/css/#buttons-options" target="_blank">Button Options</a> documentation for more information.</p>
-			<div class="example">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="primary">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="info">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="warning">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="danger">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="default">
-			</div>
-
-			<h3>Colors Mix</h3>
-			<p>You can style on state as well as the off state.</p>
-			<div class="example">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
-				<input type="checkbox" checked data-toggle="toggle" data-onstyle="warning" data-offstyle="info">
-			</div>
-
-			<h3>Custom Style</h3>
-			<p>Customized styles can be applied as easily.</p>
-			<div class="example">
-				<style>
-					.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
-					.toggle.ios .toggle-handle { border-radius: 20px; }
-				</style>
-				<input type="checkbox" checked data-toggle="toggle" data-style="ios">
-				<style>
-					.toggle.android { border-radius: 0px;}
-					.toggle.android .toggle-handle { border-radius: 0px; }
-				</style>
-				<input type="checkbox" checked data-toggle="toggle" data-style="android" data-onstyle="info">
-			</div>
-
-			<h3>Custom Text</h3>
-			<p>The text can be changed easily with attributes or options.</p>
-			<div class="example">
-				<input type="checkbox" checked data-toggle="toggle" data-on="Ready" data-off="Not Ready" data-onstyle="success" data-offstyle="danger">
-			</div>
-
-			<h3>Icons/Html Text</h3>
-			<p>You can easily add icons or images since html is supported for on/off text.</p>
-			<div class="example">
-				<input type="checkbox" checked data-toggle="toggle" data-on="<i class='fa fa-play'></i> Play" data-off="<i class='fa fa-pause'></i> Pause">
-			</div>
-
-			<h3>Multiple Lines of Text</h3>
-			<p>Toggles with multiple lines will adjust its heights.</p>
-			<div class="example">
-				<input type="checkbox" checked data-toggle="toggle" data-on="Hello<br>World" data-off="Goodbye<br>World">
-			</div>
-
-			<h3>Animation Speed</h3>
-			<p>Transition speed can be easily controlled with css <code>transition</code> property on <code>.toggle-group</code>. You can also turn animation off completely.</p>
-			<div class="example">
-				<style>
-					.slow .toggle-group { transition: left 0.7s; -webkit-transition: left 0.7s; }
-					.fast .toggle-group { transition: left 0.1s; -webkit-transition: left 0.1s; }
-					.quick .toggle-group { transition: none; -webkit-transition: none; }
-				</style>
-				<input type="checkbox" checked data-toggle="toggle" data-style="slow">
-				<input type="checkbox" checked data-toggle="toggle" data-class="fast">
-				<input type="checkbox" checked data-toggle="toggle" data-style="quick">
-			</div>
-		<div>
+		</section>
 	</main>
-	<footer>
+	<footer class="bg-light border-top p-4">
 		<div class="container">
-			<p>
-				<img class="nyt-logo" src="doc/nyt.png">
-				<img class="nyt-logo" src="doc/nytdev.svg">
-			</p>
-			<p>Designed and built by <a href="https://github.com/minhur" target="_blank">Min Hur</a> for <a href="http://developers.nytimes.com" target="_blank">The New York Times Company</a></p>
-			<p>Latest Version: 2.2.0 | Code licensed under MIT</p>
-			<p>
-				<iframe src="https://mdo.github.io/github-buttons/github-btn.html?user=minhur&repo=bootstrap-toggle&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-				<iframe src="https://mdo.github.io/github-buttons/github-btn.html?user=minhur&repo=bootstrap-toggle&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+			<h4 class="font-weight-light">
+				Original by <a href="https://github.com/minhur" target="_blank">Min Hur</a> |
+				Updated by <a href="https://github.com/gitbrent" target="_blank">Brent Ely</a> |
+				Available on <a href="https://github.com/gitbrent/bootstrap4-toggle" target_"blank">GitHub</a> |
+				Licensed <a href="https://github.com/gitbrent/bootstrap4-toggle/blob/master/LICENSE" target_"blank">MIT</a>
+			</h4>
+			<p class="mt-4 mb-0">
+				<iframe src="https://ghbtns.com/github-btn.html?user=gitbrent&repo=bootstrap4-toggle&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
+				<iframe src="https://ghbtns.com/github-btn.html?user=gitbrent&repo=bootstrap4-toggle&type=star&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
 			</p>
 		</div>
 	</footer>
+
+	<!-- vvv scripts vvv -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
 	<script src="doc/script.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<script src="js/bootstrap-toggle.js"></script>
+	<script src="js/bootstrap4-toggle.js"></script>
+	<!-- ^^^ scripts ^^^ -->
 	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-55669452-1', 'auto');
-		ga('send', 'pageview');
+		function showChkState() {
+			$('#chkState .badge').remove();
+			var chkBool = document.getElementById('toggle-state').checked;
+			$('#chkState button').after('<div class="badge badge-success px-3 py-2 mb-2 mx-3">'+chkBool+'</div>');
+		}
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75147115-4"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-75147115-4');
 	</script>
 </body>
 </html>
