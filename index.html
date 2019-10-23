@@ -445,6 +445,20 @@
 				</tbody>
 				</table>
 			</div>
+
+			<h3 class="text-secondary mt-4">Checked State</h3>
+			<p>You can determine the checked state of a toggle using the `checked` property.</p>
+			<div class="example">
+				<input id="toggle-state" type="checkbox" data-toggle="toggle">
+			</div>
+			<div id="chkState" class="example">
+				<button type="button" class="btn btn-outline-primary" onClick="showChkState()">Show Toggle State</button>
+			</div>
+			<p>
+				<div>Use the element property for checked state</div>
+				<code>document.getElementById('toggle-state').checked</code>
+				<div>Returns true/false</div>
+			</p>
 		</section>
 
 		<section id="events" class="container my-5 d-none d-sm-none d-md-block">
@@ -542,6 +556,13 @@
 	<script src="doc/script.js"></script>
 	<script src="js/bootstrap4-toggle.js"></script>
 	<!-- ^^^ scripts ^^^ -->
+	<script>
+		function showChkState() {
+			$('#chkState .badge').remove();
+			var chkBool = document.getElementById('toggle-state').checked;
+			$('#chkState button').after('<div class="badge badge-success px-3 py-2 mb-2 mx-3">'+chkBool+'</div>');
+		}
+	</script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75147115-4"></script>
 	<script>
