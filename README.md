@@ -8,6 +8,8 @@ Visit http://www.bootstraptoggle.com for demos.
 ### Installation
 You can [download](https://github.com/minhur/bootstrap-toggle/archive/master.zip) the latest version of Bootstrap Toggle or use CDN to load the library.
 
+`Warning` If you are using Bootstrap v4.*, use `bootstrap4-toggle.min.js` and `bootstrap4-toggle.css` (already minified) instead.
+
 `Warning` If you are using Bootstrap v2.3.2, use `bootstrap2-toggle.min.js` and `bootstrap2-toggle.min.css` instead.
 
 ```html

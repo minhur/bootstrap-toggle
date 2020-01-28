@@ -6,12 +6,6 @@ const uglifyes = require('uglify-es');
 const composer = require('gulp-uglify/composer');
 const uglify = composer(uglifyes, console);
 
-function css() {
-	return src('./scss/*.scss')
-		.pipe(sass())
-		.pipe(dest('./css/'));
-}
-
 function css_minify() {
 	return src('./scss/*.scss')
 		.pipe(sass())
@@ -27,13 +21,11 @@ function js() {
 }
 
 function watchFiles() {
-  watch("./scss/**/*", css_minify)
-	watch("./scss/**/*", css);
+  watch("./scss/**/*", css_minify);
 	watch("./js/bootstrap4-toggle.js", js);
 }
 
 exports.js = js;
-exports.css = css;
 exports.css_minify = css_minify;
 exports.watch = watch;
-exports.default = parallel(css, css_minify, js, watchFiles);
+exports.default = parallel(css_minify, js, watchFiles);
