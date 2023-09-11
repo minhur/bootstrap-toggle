@@ -46,6 +46,11 @@
 	}
 
 	Toggle.prototype.render = function () {
+		if(this.$element.nextAll().last().is('div.toggle-group')) {
+			var parentElement = this.$element.parent();
+			this.$element.insertBefore(parentElement);
+			parentElement.remove();
+		}
 		this._onstyle = 'btn-' + this.options.onstyle
 		this._offstyle = 'btn-' + this.options.offstyle
 		var size = this.options.size === 'large' ? 'btn-lg'
